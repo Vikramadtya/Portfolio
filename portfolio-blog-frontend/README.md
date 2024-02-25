@@ -20,7 +20,7 @@ The favicon package was generated with [RealFaviconGenerator](https://realfavico
 
 Extract the package to the `public` directory
 
-> Usually we extract this package in the root of web site. If site is <code>http://www.example.com</code>, we should be able to access a file named <code>http://www.example.com/favicon.ico</code>.
+> Usually we extract this package in the root of web site. If site is http://www.example.com, we should be able to access a file named http://www.example.com/favicon.icon
 
 Insert the following code in the `head` section of the `index.html`
 
