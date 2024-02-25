@@ -76,3 +76,48 @@ export default function RootLayout({ children }) {
   );
 }
 ```
+
+## Prettier
+
+To install prettier
+
+```shell
+npm install --save-dev prettier
+```
+
+to run the prettier for formatting
+
+```shell
+npx prettier . --write
+```
+
+add the script in json
+
+```json
+"scripts": {
+    ...
+    "format": "npx prettier --write *"
+  }
+```
+
+add file `.prettierrc`
+
+## Eslint
+
+To add eslint configuration for prettier
+
+```shell
+npm install -D eslint-config-prettier@8.5.0
+```
+
+the changes to `.eslintrc.json`
+
+```json
+{
+  "extends": [
+    "next/core-web-vitals",
+    "eslint:recommended", // non-opinionated linting rules
+    "prettier" // ignores some formatting rules, it should always be last
+  ]
+}
+```
