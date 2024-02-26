@@ -1,21 +1,25 @@
 import Image from "next/image";
 
+import { RocketIcon } from "@radix-ui/react-icons";
+
+import { Alert, AlertDescription, AlertTitle } from "@/components/atom/alert";
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
+      <Alert className="w-1/3">
+        <RocketIcon className="h-4 w-4" />
+        <AlertTitle>Welcome</AlertTitle>
+        <AlertDescription>The site is still work in progress</AlertDescription>
+      </Alert>
+
       <Image
         src="/logo.png"
         alt="Portfolio Logo"
-        width={100}
-        height={50}
+        width={300}
+        height={200}
         priority
       />
-
-      <div>
-        <p className="fixed top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Portfolio website by Vikramaditya Singh
-        </p>
-      </div>
     </main>
   );
 }
