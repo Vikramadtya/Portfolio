@@ -1,3 +1,20 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "next/core-web-vitals",
+    "eslint:recommended", // non-opinionated linting rules
+    "prettier" // ignores some formatting rules, it should always be last
+  ],
+  "plugins": [],
+  "parserOptions": {
+    "ecmaVersion": 2022, // how modern js syntax is supported
+    "sourceType": "module", // import/export not common js stuff
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true
+  }
 }
