@@ -121,3 +121,24 @@ the changes to `.eslintrc.json`
   ]
 }
 ```
+
+## UI ToolKit
+
+### shadcn
+
+Using the component library [ui.shadcn.com](https://ui.shadcn.com/) to use a component download it using the CLI for example
+
+```shell
+npx shadcn-ui@latest add alert
+```
+
+### other
+
+1. Use the component library [tremor.so](https://www.tremor.so/components) for adding graph component
+2. Another component library [hyperui.dev](https://www.hyperui.dev/)
+3. Another library with component [sailboatui](https://sailboatui.com/)
+
+### templates
+
+1. Full templates https://lbegey.fr/templates-tailwind.html
+2. Button using tailwind https://buttons.ibelick.com/
