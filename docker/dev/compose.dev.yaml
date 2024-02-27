@@ -7,7 +7,7 @@ version: "3.7"
 
 services:
   database:
-    container_name: database
+    container_name: postgres_database
     image: postgres:latest
     # Required when running on platform other than amd64, like Apple M1/M2:
     # platform: linux/amd64
@@ -23,13 +23,19 @@ services:
       test: pg_isready && echo "PostgreSQL is running" || echo "PostgreSQL is not running"
 
   cache:
-    container_name: cache
-    image: redis:6
+    container_name: redis_cache
+    image: redis:latest
+    networks:
+      - blog_portfolio_dev_network
+
+  reverse_proxy:
+    container_name: nginx_proxy
+    image: nginx:latest
     networks:
       - blog_portfolio_dev_network
 
   backend:
-    container_name: backend-app
+    container_name: directus_backend_app
     image: directus/directus:latest
     depends_on:
       database:
@@ -63,7 +69,7 @@ services:
       - blog_portfolio_dev_network
 
   frontend:
-    container_name: frontend-app
+    container_name: nextjs_frontend_app
     depends_on:
       - backend
     build:
