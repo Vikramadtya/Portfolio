@@ -11,8 +11,7 @@ Mono-repo for the portfolio and blog site [know more..](https://vickysingh.notio
 3. Test tailwind css [here](https://play.tailwindcss.com/)
 4. Using FlatUI color [pallet](https://flatuicolors.com/palette/defo)
 5. For creating Tailwind CSS [app](https://app.uiwithai.com/)
-6. For creating the docker images [check example here](https://github.com/vercel/next.js/blob/canary/examples/with-docker-compose/README.md)
-   Check folder with-docker-multi-env, with-docker, with-docker-compose
+6. For creating the docker images [check folder with-docker-multi-env, with-docker, with-docker-compose example here](https://github.com/vercel/next.js/blob/canary/examples/with-docker-compose/README.md)
 
 ## Some Links
 
