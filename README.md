@@ -15,3 +15,12 @@ Mono-repo for the portfolio and blog site [know more..](https://vickysingh.notio
 ## Some Links 
 1. [How to add a favicon in Nextjs?](https://peerlist.io/blog/engineering/how-to-add-a-favicon-in-nextjs)
 2. [Best free Tailwind based component libraries and UI kits](https://www.reddit.com/r/tailwindcss/comments/1at23n7/best_free_tailwind_based_component_libraries_and/)
+
+## Inspiration
+1. [Portfolio Site](https://www.leohuynh.dev/)
+2. [Portfolio Site](https://karhdo-blog.vercel.app/)
+3. Some example for inspiration [github](https://github.com/timlrx/tailwind-nextjs-starter-blog?tab=readme-ov-file)
+
+## Tool to Integrate
+1. For analysis the website metric [umami](https://umami.is/)
+2. For whole stack on [AWS](https://www.kxlaa.com/articles/building-and-deploying-the-frontend-of-the-cloud-resume)
