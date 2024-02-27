@@ -1,5 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Footer from "@/components/molecules/footer";
+import Header from "@/components/molecules/header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -36,7 +38,13 @@ export default function RootLayout({ children }) {
         <meta name="msapplication-TileColor" content="#1abc9c" />
         <meta name="theme-color" content="#ecf0f1" />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div className="flex h-screen flex-col justify-between">
+          <Header />
+          <main className="mb-auto">{children}</main>
+          <Footer />
+        </div>
+      </body>
     </html>
   );
 }

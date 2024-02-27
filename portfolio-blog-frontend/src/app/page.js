@@ -3,6 +3,7 @@ import Image from "next/image";
 import { RocketIcon } from "@radix-ui/react-icons";
 
 import { Alert, AlertDescription, AlertTitle } from "@/components/atom/alert";
+import Greetings from "@/components/organisms/greeting";
 
 export default function Home() {
   return (
@@ -13,13 +14,7 @@ export default function Home() {
         <AlertDescription>The site is still work in progress</AlertDescription>
       </Alert>
 
-      <Image
-        src="/logo.png"
-        alt="Portfolio Logo"
-        width={300}
-        height={200}
-        priority
-      />
+      <Greetings />
     </main>
   );
 }
