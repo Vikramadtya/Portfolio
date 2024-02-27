@@ -19,7 +19,9 @@ Mono-repo for the portfolio and blog site [know more..](https://vickysingh.notio
 ## Inspiration
 1. [Portfolio Site](https://www.leohuynh.dev/)
 2. [Portfolio Site](https://karhdo-blog.vercel.app/)
-3. Some example for inspiration [github](https://github.com/timlrx/tailwind-nextjs-starter-blog?tab=readme-ov-file)
+3. Another blog with very good blog page design [check here](https://www.kxlaa.com/notes/cs16a-2023)
+4. THis has projects listed in good way [check here](https://www.gregfield.dev/)
+5. Some example for inspiration [github](https://github.com/timlrx/tailwind-nextjs-starter-blog?tab=readme-ov-file)
 
 ## Tool to Integrate
 1. For analysis the website metric [umami](https://umami.is/)
