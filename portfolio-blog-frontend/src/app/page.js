@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import { RocketIcon } from "@radix-ui/react-icons";
 
 import { Alert, AlertDescription, AlertTitle } from "@/components/atom/alert";

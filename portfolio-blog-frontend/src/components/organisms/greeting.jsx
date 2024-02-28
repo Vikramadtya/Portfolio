@@ -52,9 +52,9 @@ const Greetings = () => {
         </p>
         <br />
         <p className="text-left rtl:text-right">
-          It's awesome to have you here. I'm a software engineer with three
-          years of experience under my belt, and I'm excited to share some of
-          the cool stuff I've been working on.
+          It&apos;s awesome to have you here. I&apos;m a software engineer with
+          three years of experience under my belt, and I&apos;m excited to share
+          some of the cool stuff I&apos;ve been working on.
         </p>
 
         <br />
