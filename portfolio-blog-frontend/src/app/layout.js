@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/molecules/footer";
 import Header from "@/components/molecules/header";
+import ThemeProvider from "@/components/utils/themeProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,7 +13,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <link
           rel="apple-touch-icon"
@@ -40,9 +41,16 @@ export default function RootLayout({ children }) {
       </head>
       <body className={inter.className}>
         <div className="flex h-screen flex-col justify-between">
-          <Header />
-          <main className="mb-auto">{children}</main>
-          <Footer />
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <Header />
+            <main className="mb-auto">{children}</main>
+            <Footer />
+          </ThemeProvider>
         </div>
       </body>
     </html>

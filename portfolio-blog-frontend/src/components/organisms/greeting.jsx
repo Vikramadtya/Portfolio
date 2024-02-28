@@ -2,7 +2,7 @@
 
 import React from "react";
 import Typed from "typed.js";
-import Emoji from "@/components/atom/emoji";
+import Icon from "@/components/atom/icon";
 import Link from "next/link";
 
 const Greetings = () => {
@@ -14,13 +14,13 @@ const Greetings = () => {
   React.useEffect(() => {
     const options = {
       strings: [
-        "I was born in 2000.",
-        "I was raised in Alxa, Inner Mongolia.",
+        '"VIKI" is the abbreviation I use on social media',
+        "I was born in 1999.",
+        "I was raised in Delhi, India.",
         "I like 🏊‍♂️ / 🏃 / 🏸.",
-        "I like 進撃の巨人.",
-        "I like Minecraft.",
-        "I like LOL 🎮.",
-        "I like J-POP/Chinese folk music 🎵.",
+        "I like ナルト.",
+        'I like "The Last of Us" 🎮.',
+        "I like Indie music 🎵.",
         "...",
       ],
       typeSpeed: 50,
@@ -40,47 +40,33 @@ const Greetings = () => {
 
   return (
     <div className="lg:mb-10 lg:mt-10">
-      <h1 className="bg-gradient-to-r from-lime-500 to-yellow-400 bg-clip-text text-7xl font-extrabold text-transparent dark:to-blue-500">
-        Hi Friends,
+      <h1 className="bg-gradient-to-r from-lime-500 to-yellow-400 bg-clip-text text-7xl font-extrabold text-transparent dark:to-blue-500 py-1">
+        Hey there, welcome !
       </h1>
+      <br />
       <div className="prose dark:prose-dark lg:prose-lg">
-        <p>
-          Welcome! I’m <b>Zhou Zihang</b>. <Emoji kind="partyingFace" />
-        </p>
-
-        <p>
-          "SOTO" is the abbreviation I use on social media. I currently live in
-          China{` `}
-          <Emoji kind={"chinaFlag"} /> and have just graduated from Beihang
-          University with a bachelor's degree in Computer Science and
-          Technology. I'm planning to study abroad in Canada and am currently
-          waiting for my visa.
-        </p>
-
-        <p>
-          I've been operating a Minecraft server since 2014, which is probably
-          where my interest in programming began. If you're interested, feel
-          free to join by entering <a href="https://www.mcac.cc/">mcac.cc</a> in
-          client.
-        </p>
-
-        <p>
-          I have an adorable Shiba Inu <Emoji kind={"dog"} /> named doudou. You
-          can see him on his{" "}
-          <a href="https://www.instagram.com/puppydoudou/">instagram</a>.
-        </p>
-
-        <div className="type-wrap">
+        <p className="text-left rtl:text-right">
+          I’m <b>Vikramaditya Singh</b> <Icon kind="partyingFace" />
+          {"  , "}
           <span style={{ whiteSpace: "pre" }} ref={el} />
-          <br />
+        </p>
+        <br />
+        <p className="text-left rtl:text-right">
+          It's awesome to have you here. I'm a software engineer with three
+          years of experience under my belt, and I'm excited to share some of
+          the cool stuff I've been working on.
+        </p>
 
-          <p>
-            This website is used to introduce myself, publish some regular
-            blogs, document my travel diaries, as well as record books, movies,
-            and music I've experienced. Feel free to{" "}
-            <Link href="/about"> get to know me better.</Link>
-          </p>
-        </div>
+        <br />
+
+        <p className="text-left rtl:text-right">
+          So kick back, take a look around, and get to know a bit about what
+          makes me tick as a developer. Feel free to{" "}
+          <Link href="/about"> get to know me better.</Link>
+        </p>
+
+        <br />
+        <p className="text-left rtl:text-right">Thanks for dropping by!</p>
       </div>
     </div>
   );

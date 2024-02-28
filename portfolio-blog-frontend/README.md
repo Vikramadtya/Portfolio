@@ -122,9 +122,7 @@ the changes to `.eslintrc.json`
 }
 ```
 
-## UI ToolKit
-
-### shadcn
+## UI ToolKit : shadcn
 
 Using the component library [ui.shadcn.com](https://ui.shadcn.com/) to use a component download it using the CLI for example
 
@@ -142,3 +140,13 @@ npx shadcn-ui@latest add alert
 
 1. Full templates https://lbegey.fr/templates-tailwind.html
 2. Button using tailwind https://buttons.ibelick.com/
+
+## SVG
+
+For handling the SVG as React component, by doing this they work with the dark mode perfectly, [for configuration](https://react-svgr.com/docs/next/)
+
+## Theme
+
+To add dark mode support we are usinf `next-themes` step listed [here](https://ui.shadcn.com/docs/dark-mode/next)
+
+> Check this if you see hydration warning in console if using `next-theme` [how to fix "extra attributes from the server" error?](https://www.reddit.com/r/nextjs/comments/138smpm/how_to_fix_extra_attributes_from_the_server_error/)

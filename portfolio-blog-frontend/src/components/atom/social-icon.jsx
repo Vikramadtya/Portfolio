@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import Mail from "../../../public/mail.svg";
 import Github from "../../../public/github.svg";
 import Facebook from "../../../public/facebook.svg";
@@ -32,10 +30,10 @@ const SocialIcon = ({ kind, href, size }) => {
         href={href}
       >
         <span className="sr-only">{kind}</span>
-        <Image
-          src={SocialSvg}
-          className={`fill-current text-gray-700 hover:text-blue-400 dark:text-gray-200 h-${size} w-${size}`}
-          alt=""
+        <SocialSvg
+          className={`fill-current text-gray-700 hover:text-blue-400 dark:text-gray-200`}
+          width={size}
+          height={size}
         />
       </a>
     </>

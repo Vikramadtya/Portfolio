@@ -1,21 +1,18 @@
+import Image from "next/image";
 import Link from "next/link";
 import siteMetadata from "@/lib/metadata";
-import Image from "next/image";
 import navLinks from "@/lib/navLinks";
+import ThemeToggle from "@/components/atom/themeToggle";
+import React from "react";
+import Logo from "@/components/atom/logo";
 
 const Header = () => {
   return (
-    <header className="flex items-center justify-between py-10">
+    <header className="flex items-center">
       <div>
         <Link href="/" aria-label={siteMetadata.headerTitle}>
           <div className="flex items-center justify-between gap-3 ">
-            <Image
-              className="rounded-md"
-              src="/logo.png"
-              alt="logo"
-              width={36}
-              height={36}
-            />
+            <Logo size={128} />
             {typeof siteMetadata.headerTitle === "string" ? (
               <div className="hidden px-2 text-2xl font-bold sm:block">
                 {siteMetadata.headerTitle}
@@ -26,7 +23,7 @@ const Header = () => {
           </div>
         </Link>
       </div>
-      <div className="flex items-center text-base leading-5">
+      <div className="flex items-center text-base leading-5 relative">
         <div className="hidden sm:block">
           {navLinks.map((link) => (
             <Link
@@ -38,6 +35,7 @@ const Header = () => {
             </Link>
           ))}
         </div>
+        <ThemeToggle />
       </div>
     </header>
   );
