@@ -6,6 +6,7 @@ import Memo from "../../../public/memo.svg";
 import Briefcase from "../../../public/briefcase.svg";
 import ManWithMonocle from "../../../public/man-with-monocole.svg";
 import WrenchAndHammer from "../../../public/wrench-and-hammer.svg";
+import Hand from "../../../public/hand.svg";
 
 const components = {
   dog: Dog,
@@ -16,6 +17,7 @@ const components = {
   manWithMonocle: ManWithMonocle,
   wrenchAndHammer: WrenchAndHammer,
   briefcase: Briefcase,
+  hand: Hand,
 };
 
 const Icon = ({ kind, size }) => {

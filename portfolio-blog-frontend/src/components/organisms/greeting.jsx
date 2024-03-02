@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { Snowfall } from "react-snowfall";
 import TypedBios from "@/components/atom/typedBios";
+import Icon from "@/components/atom/icon";
 
 const Greetings = () => {
   return (
@@ -18,7 +19,10 @@ const Greetings = () => {
       />
       <div className="lg:mb-10 lg:mt-10">
         <h1 className="bg-gradient-to-r from-lime-500 to-yellow-400 bg-clip-text text-7xl font-extrabold text-transparent dark:to-blue-500 py-1">
-          <span className="wavy pr-2">✋</span>
+          <span className="wavy pr-2">
+            {" "}
+            <Icon kind="hand" size={200} />
+          </span>
           Hey there, welcome !
         </h1>
         <br />
