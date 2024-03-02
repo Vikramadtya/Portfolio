@@ -7,7 +7,7 @@ import Icon from "@/components/atom/icon";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen flex-col items-center justify-between pr-80 pl-80 pt-24 pb-24">
       {/* Introduce myself */}
       <div className="mt-8 dark:divide-gray-700 md:mt-8">
         <Greetings />
