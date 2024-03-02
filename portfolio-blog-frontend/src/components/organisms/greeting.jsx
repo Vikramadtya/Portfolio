@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import { useEffect, useRef } from "react";
 import Typed from "typed.js";
 import Icon from "@/components/atom/icon";
 import Link from "next/link";
@@ -8,20 +8,20 @@ import { Snowfall } from "react-snowfall";
 
 const Greetings = () => {
   // Create reference to store the DOM element containing the animation
-  const el = React.useRef(null);
+  const el = useRef(null);
   // Create reference to store the Typed instance itself
   // const typed = (React.useRef < Typed) | (null > null);
 
-  React.useEffect(() => {
+  useEffect(() => {
     const options = {
       strings: [
         '"VIKI" is the abbreviation I use on social media',
         "I was born in 1999.",
-        "I was raised in Delhi, India.",
-        "I like 🏊‍♂️ / 🏃 / 🏸.",
+        "I was raised in Delhi, India 🇮🇳.",
+        "I like 🏊‍ / 🏃 / 🏸.",
         "I like ナルト.",
-        'I like "The Last of Us" 🎮.',
-        "I like Indie music 🎵.",
+        'I like "The Last of Us" 🎮️.',
+        "I like Indie music 🎶.",
         "...",
       ],
       typeSpeed: 50,
@@ -52,6 +52,7 @@ const Greetings = () => {
       />
       <div className="lg:mb-10 lg:mt-10">
         <h1 className="bg-gradient-to-r from-lime-500 to-yellow-400 bg-clip-text text-7xl font-extrabold text-transparent dark:to-blue-500 py-1">
+          <span className="wavy pr-2">✋</span>
           Hey there, welcome !
         </h1>
         <br />
