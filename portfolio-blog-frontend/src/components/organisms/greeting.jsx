@@ -1,44 +1,10 @@
 "use client";
 
-import { useEffect, useRef } from "react";
-import Typed from "typed.js";
-import Icon from "@/components/atom/icon";
 import Link from "next/link";
 import { Snowfall } from "react-snowfall";
+import TypedBios from "@/components/atom/typedBios";
 
 const Greetings = () => {
-  // Create reference to store the DOM element containing the animation
-  const el = useRef(null);
-  // Create reference to store the Typed instance itself
-  // const typed = (React.useRef < Typed) | (null > null);
-
-  useEffect(() => {
-    const options = {
-      strings: [
-        '"VIKI" is the abbreviation I use on social media',
-        "I was born in 1999.",
-        "I was raised in Delhi, India 🇮🇳.",
-        "I like 🏊‍ / 🏃 / 🏸.",
-        "I like ナルト.",
-        'I like "The Last of Us" 🎮️.',
-        "I like Indie music 🎶.",
-        "...",
-      ],
-      typeSpeed: 50,
-      backSpeed: 50,
-      loop: true,
-    };
-
-    // elRef refers to the <span> rendered below
-    const typed = new Typed(el.current, options);
-
-    return () => {
-      // Make sure to destroy Typed instance during cleanup
-      // to prevent memory leaks
-      typed.destroy();
-    };
-  }, []);
-
   return (
     <>
       <Snowfall
@@ -57,11 +23,7 @@ const Greetings = () => {
         </h1>
         <br />
         <div className="prose dark:prose-dark lg:prose-lg">
-          <p className="text-left rtl:text-right">
-            I’m <b>Vikramaditya Singh</b> <Icon kind="partyingFace" />
-            {"  , "}
-            <span style={{ whiteSpace: "pre" }} ref={el} />
-          </p>
+          <TypedBios />
           <br />
           <p className="text-left rtl:text-right">
             It&apos;s awesome to have you here. I&apos;m a software engineer
