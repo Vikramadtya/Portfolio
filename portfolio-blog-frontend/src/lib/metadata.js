@@ -18,6 +18,7 @@ const siteMetadata = {
   linkedin: "https://www.linkedin.com",
   instagram: "https://instagram.com/atksoto",
   locale: "en-US",
+  analyticsURL: "https://eu.umami.is/share/kzVVpxmlV8WbabaH/something.com",
   postDateTemplate: {
     year: "numeric",
     month: "long",

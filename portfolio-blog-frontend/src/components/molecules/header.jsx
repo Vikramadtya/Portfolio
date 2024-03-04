@@ -4,6 +4,7 @@ import navLinks from "@/lib/navLinks";
 import ThemeToggle from "@/components/atom/themeToggle";
 import React from "react";
 import Icon from "@/components/atom/icon";
+import AnalyticsLink from "@/components/atom/analyticsLink";
 
 const Header = () => {
   return (
@@ -34,6 +35,7 @@ const Header = () => {
             </Link>
           ))}
         </div>
+        <AnalyticsLink />
         <ThemeToggle />
       </div>
     </header>

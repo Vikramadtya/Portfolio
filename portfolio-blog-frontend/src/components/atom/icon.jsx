@@ -14,6 +14,7 @@ import TailwindCSS from "../../../public/tailwind.svg";
 import NextJS from "../../../public/nextjs.svg";
 import Umami from "../../../public/umami.svg";
 import Vercel from "../../../public/vercel.svg";
+import Chart from "../../../public/chart.svg";
 
 import LogoLight from "../../../public/logo.png";
 import LogoDark from "../../../public/logo-dark.png";
@@ -33,6 +34,7 @@ const components = {
   nextJS: NextJS,
   umami: Umami,
   vercel: Vercel,
+  chart: Chart,
 };
 
 const Icon = ({ kind, size }) => {
