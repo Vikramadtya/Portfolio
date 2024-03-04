@@ -7,7 +7,7 @@ import Icon from "@/components/atom/icon";
 
 const Header = () => {
   return (
-    <header className="flex items-center">
+    <header className="flex items-center justify-between">
       <div>
         <Link href="/" aria-label={siteMetadata.headerTitle}>
           <div className="flex items-center justify-between gap-3 ">
@@ -22,7 +22,7 @@ const Header = () => {
           </div>
         </Link>
       </div>
-      <div className="relative flex items-center text-base leading-5">
+      <div className="relative mr-7 flex items-center text-base leading-5">
         <div className="hidden sm:block">
           {navLinks.map((link) => (
             <Link
