@@ -22,7 +22,8 @@
     "react-snowfall": "^2.1.0",
     "tailwind-merge": "^2.2.1",
     "tailwindcss-animate": "^1.0.7",
-    "typed.js": "^2.1.0"
+    "typed.js": "^2.1.0",
+    "use-sound": "^4.0.1"
   },
   "devDependencies": {
     "@svgr/webpack": "^8.1.0",
