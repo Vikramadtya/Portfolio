@@ -3,6 +3,7 @@
 import { Snowfall } from "react-snowfall";
 import TypedBios from "@/components/atom/typedBios";
 import Icon from "@/components/atom/icon";
+import { RoughNotation } from "react-rough-notation";
 
 const Greetings = () => {
   return (
@@ -29,11 +30,20 @@ const Greetings = () => {
           <TypedBios />
           <br />
           <p className="text-left rtl:text-right">
-            It&apos;s awesome to have you here. I&apos;m a software engineer
-            with three years of experience under my belt, and I&apos;m excited
-            to share some of the cool stuff I&apos;ve been working on.
+            It&apos;s awesome to have you here. I&apos;m a{" "}
+            <RoughNotation
+              type="underline"
+              show={true}
+              animate="true"
+              color="#DE1D8D"
+              animationDelay={1000}
+              animationDuration={2500}
+            >
+              software engineer with three years of experience under my belt
+            </RoughNotation>
+            , and I&apos;m excited to share some of the cool stuff I&apos;ve
+            been working on.
           </p>
-
           <br />
         </div>
       </div>
