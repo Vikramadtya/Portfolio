@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import Dog from "../../../public/dog.svg";
 import Congrats from "../../../public/congrats.svg";
 import PartyingFace from "../../../public/partying-face.svg";
@@ -12,6 +14,9 @@ import TailwindCSS from "../../../public/tailwind.svg";
 import NextJS from "../../../public/nextjs.svg";
 import Umami from "../../../public/umami.svg";
 import Vercel from "../../../public/vercel.svg";
+
+import LogoLight from "../../../public/logo.png";
+import LogoDark from "../../../public/logo-dark.png";
 
 const components = {
   dog: Dog,
@@ -31,6 +36,29 @@ const components = {
 };
 
 const Icon = ({ kind, size }) => {
+  // Since logo is a png we need to specially handle for the light and dark mode
+  if (kind === "logo") {
+    return (
+      <>
+        {" "}
+        <Image
+          className="rotate-0 scale-100 rounded-md transition-all dark:-rotate-90 dark:scale-0"
+          src={LogoLight}
+          alt="logo"
+          width={size}
+          height={size}
+        />
+        <Image
+          className="absolute rotate-90 scale-0 rounded-md transition-all dark:rotate-0 dark:scale-100"
+          src={LogoDark}
+          alt="logo"
+          width={size}
+          height={size}
+        />
+      </>
+    );
+  }
+
   const IconSvg = components[kind];
   return (
     <>

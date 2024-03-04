@@ -1,5 +1,3 @@
-import siteMetadata from "@/lib/metadata";
-
 import Icon from "./icon";
 import CustomLink from "./customLink";
 

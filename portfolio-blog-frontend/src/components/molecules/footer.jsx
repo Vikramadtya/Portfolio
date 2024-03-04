@@ -42,8 +42,8 @@ const Footer = () => {
 
         <div className="my-2 flex space-x-2 text-sm text-gray-500 dark:text-gray-400">
           <span>
-            {siteMetadata.title}'s Blog - Debugging life with lines of code and
-            a dash of humor
+            {siteMetadata.title}&apos;s Blog - Debugging life with lines of code
+            and a dash of humor
           </span>
         </div>
       </div>

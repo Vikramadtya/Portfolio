@@ -3,7 +3,7 @@ import siteMetadata from "@/lib/metadata";
 import navLinks from "@/lib/navLinks";
 import ThemeToggle from "@/components/atom/themeToggle";
 import React from "react";
-import Logo from "@/components/atom/logo";
+import Icon from "@/components/atom/icon";
 
 const Header = () => {
   return (
@@ -11,7 +11,7 @@ const Header = () => {
       <div>
         <Link href="/" aria-label={siteMetadata.headerTitle}>
           <div className="flex items-center justify-between gap-3 ">
-            <Logo size={128} />
+            <Icon kind="logo" size={128} />
             {typeof siteMetadata.headerTitle === "string" ? (
               <div className="hidden px-2 text-2xl font-bold sm:block">
                 {siteMetadata.headerTitle}

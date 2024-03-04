@@ -115,3 +115,11 @@
     transform: rotate(0deg);
   }
 }
+
+.navbar-logo img {
+  transition: transform 0.3s ease;
+}
+
+.navbar-logo img:hover {
+  transform: scale(1.5);
+}
