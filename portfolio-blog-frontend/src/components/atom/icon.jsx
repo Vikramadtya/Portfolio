@@ -25,7 +25,7 @@ const Icon = ({ kind, size }) => {
   return (
     <>
       <i className={`inline-block`}>
-        <IconSvg className={`h-4 w-4`} width={size} height={size} />
+        <IconSvg width={size} height={size} />
       </i>
     </>
   );

@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { Snowfall } from "react-snowfall";
 import TypedBios from "@/components/atom/typedBios";
 import Icon from "@/components/atom/icon";
@@ -18,7 +17,7 @@ const Greetings = () => {
         }}
       />
       <div className="lg:mb-10 lg:mt-10">
-        <h1 className="bg-gradient-to-r from-lime-500 to-yellow-400 bg-clip-text text-7xl font-extrabold text-transparent dark:to-blue-500 py-1">
+        <h1 className="flex items-center bg-gradient-to-r from-lime-500 to-yellow-400 bg-clip-text py-1 text-7xl font-extrabold text-transparent dark:to-blue-500">
           <span className="wavy pr-2">
             {" "}
             <Icon kind="hand" size={200} />
@@ -36,15 +35,6 @@ const Greetings = () => {
           </p>
 
           <br />
-
-          <p className="text-left rtl:text-right">
-            So kick back, take a look around, and get to know a bit about what
-            makes me tick as a developer. Feel free to{" "}
-            <Link href="/about"> get to know me better.</Link>
-          </p>
-
-          <br />
-          <p className="text-left rtl:text-right">Thanks for dropping by!</p>
         </div>
       </div>
     </>

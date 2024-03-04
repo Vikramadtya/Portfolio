@@ -49,8 +49,7 @@ const TypedBios = () => {
       </ul>
       <p className="text-left rtl:text-right">
         I’m <b>Vikramaditya Singh</b> <Icon kind="partyingFace" />
-        {"  , "}{" "}
-        <span ref={el} className="text-neutral-900 dark:text-neutral-200" />
+        {"  , "} <span ref={el} className="text-gray-600 dark:text-gray-400" />
       </p>
     </>
   );

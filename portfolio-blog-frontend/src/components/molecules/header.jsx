@@ -22,7 +22,7 @@ const Header = () => {
           </div>
         </Link>
       </div>
-      <div className="flex items-center text-base leading-5 relative">
+      <div className="relative flex items-center text-base leading-5">
         <div className="hidden sm:block">
           {navLinks.map((link) => (
             <Link

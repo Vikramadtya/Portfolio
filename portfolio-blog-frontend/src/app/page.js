@@ -2,27 +2,31 @@ import Greetings from "@/components/organisms/greeting";
 import Avatar from "@/components/atom/avatar";
 import React from "react";
 import BlogLinks from "@/components/organisms/blogLinks";
-import SpotifyNowPlaying from "@/components/molecules/spotifyNowPlaying";
 import Icon from "@/components/atom/icon";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between pr-80 pl-80 pt-24 pb-24">
+    <main className="flex min-h-screen flex-col items-center justify-between pb-24 pl-80 pr-80 pt-24">
       {/* Introduce myself */}
-      <div className="mt-8 dark:divide-gray-700 md:mt-8">
+      <div className="mt-8 text-lg leading-8 text-gray-600 dark:text-gray-400 md:mt-8">
         <Greetings />
-        <div className="flex flex-col justify-between md:my-4 md:pb-8 xl:flex-row">
-          <Avatar />
-          {/* <div className="max-h-[430px] overflow-hidden rounded-md">
-            <Image src={'/static/images/avatar.jpg'} alt="avatar" width={430} height={350} />
-          </div> */}
-          <div className="my-auto flex flex-col text-lg leading-8 text-gray-600 dark:text-gray-400">
-            <BlogLinks />
-            <SpotifyNowPlaying />
-            <p className="flex">
-              <span className="mr-2">Happy reading</span>
-              <Icon kind="clinkingBeerMugs" />
-            </p>
+        <div className="grid grid-cols-2 gap-4">
+          <div>
+            <Avatar />
+          </div>
+          <div>
+            {" "}
+            <div className="my-auto flex flex-col text-lg leading-8 text-gray-600 dark:text-gray-400">
+              <BlogLinks />
+              {/*<SpotifyNowPlaying />*/}
+              <br />
+              <p className="flex items-center">
+                <span className="mr-2">
+                  Thanks for dropping by ! Happy reading
+                </span>
+                <Icon kind="clinkingBeerMugs" size={30} />
+              </p>
+            </div>
           </div>
         </div>
       </div>
