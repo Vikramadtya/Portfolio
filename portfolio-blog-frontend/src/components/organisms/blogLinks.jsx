@@ -1,4 +1,4 @@
-import CustomLink from "@/components/atom/CustomLink";
+import CustomLink from "@/components/atom/customLink";
 import Icon from "@/components/atom/icon";
 import Link from "next/link";
 
@@ -27,6 +27,15 @@ const BlogLinks = () => {
           href="/projects"
           className="flex items-center pb-1 pt-1 hover:underline"
         >
+          <Icon kind="bolt" size={30} />
+          <span data-umami-event="home-link-projects" className="ml-1.5">
+            My snippet collection
+          </span>
+        </CustomLink>
+        <CustomLink
+          href="/projects"
+          className="flex items-center pb-1 pt-1 hover:underline"
+        >
           <Icon kind="wrenchAndHammer" size={30} />
           <span data-umami-event="home-link-projects" className="ml-1.5">
             What have I built?
@@ -47,7 +56,7 @@ const BlogLinks = () => {
         >
           <Icon kind="manWithMonocle" size={30} />
           <span data-umami-event="home-link-about" className="ml-1.5">
-            More about me and myself
+            More about me
           </span>
         </CustomLink>
       </div>

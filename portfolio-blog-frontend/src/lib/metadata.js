@@ -5,8 +5,8 @@ const siteMetadata = {
   description: "A posts created with Next.js and Tailwind.css",
   language: "en-us",
   theme: "system", // system, dark or light
-  siteUrl: "https://www.atksoto.com",
-  siteRepo: "https://github.com/timlrx/tailwind-nextjs-starter-blog",
+  siteUrl: "",
+  siteRepo: "",
   siteLogo: "/static/images/logo.png",
   image: "/static/images/logo.png",
   socialBanner: "/static/images/twitter-card.jpg",
