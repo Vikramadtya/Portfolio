@@ -5,6 +5,7 @@ import ThemeToggle from "@/components/atom/themeToggle";
 import React from "react";
 import Icon from "@/components/atom/icon";
 import AnalyticsLink from "@/components/atom/analyticsLink";
+import MobileNav from "@/components/molecules/mobileHeader";
 
 const Header = () => {
   return (
@@ -37,6 +38,7 @@ const Header = () => {
         </div>
         <AnalyticsLink />
         <ThemeToggle />
+        <MobileNav />
       </div>
     </header>
   );
