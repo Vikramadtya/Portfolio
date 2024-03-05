@@ -1,9 +1,15 @@
 "use client";
 
 import * as React from "react";
-import { MoonIcon, SunIcon } from "@radix-ui/react-icons";
+
+import SunIcon from "../../../public/owl.svg";
+import MoonIcon from "../../../public/sun.svg";
+
 import { useTheme } from "next-themes";
 import useSound from "use-sound";
+
+// Another icon that we can use for the theme toggle switch is
+// import { MoonIcon, SunIcon } from "@radix-ui/react-icons";
 
 const ThemeToggle = () => {
   const { theme, setTheme } = useTheme();

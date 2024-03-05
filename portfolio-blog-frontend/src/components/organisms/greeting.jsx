@@ -32,10 +32,10 @@ const Greetings = () => {
           <p className="text-left rtl:text-right">
             It&apos;s awesome to have you here. I&apos;m a{" "}
             <RoughNotation
-              type="underline"
+              type="highlight"
               show={true}
               animate="true"
-              color="#DE1D8D"
+              color="#f1c40f"
               animationDelay={1000}
               animationDuration={2500}
             >
