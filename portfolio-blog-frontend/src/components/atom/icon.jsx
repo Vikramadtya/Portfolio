@@ -21,6 +21,8 @@ import India from "../../../public/india.svg";
 import Swimming from "../../../public/swimming.svg";
 import Gym from "../../../public/gym.svg";
 import Running from "../../../public/running.svg";
+import Me from "../../../public/me.svg";
+import Home from "../../../public/home.svg";
 
 import LogoLight from "../../../public/logo.png";
 import LogoDark from "../../../public/logo-dark.png";
@@ -47,6 +49,8 @@ const components = {
   swimming: Swimming,
   gym: Gym,
   running: Running,
+  me: Me,
+  home: Home,
 };
 
 const Icon = ({ kind, size }) => {
