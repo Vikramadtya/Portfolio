@@ -24,12 +24,12 @@ const Header = () => {
         </Link>
       </div>
       <div className="relative mr-7 flex items-center text-base leading-5">
-        <div className="hidden sm:block">
+        <div className="hidden sm:block ">
           {navLinks.map((link) => (
             <Link
               key={link.title}
               href={link.href}
-              className="rounded-xl font-bold dark:hover:bg-opacity-10 sm:p-4"
+              className="underlined-header-link rounded-xl font-bold dark:hover:bg-opacity-10 sm:p-4"
             >
               {link.title}
             </Link>
