@@ -60,14 +60,14 @@ const Icon = ({ kind, size }) => {
       <>
         {" "}
         <Image
-          className="rotate-0 scale-100 rounded-md transition-all dark:-rotate-90 dark:scale-0"
+          className="navbar-logo rotate-0 scale-100 rounded-md transition-all dark:-rotate-90 dark:scale-0"
           src={LogoLight}
           alt="logo"
           width={size}
           height={size}
         />
         <Image
-          className="absolute rotate-90 scale-0 rounded-md transition-all dark:rotate-0 dark:scale-100"
+          className="navbar-logo absolute rotate-90 scale-0 rounded-md transition-all dark:rotate-0 dark:scale-100"
           src={LogoDark}
           alt="logo"
           width={size}

@@ -116,10 +116,37 @@
   }
 }
 
-.navbar-logo img {
+.navbar-logo {
   transition: transform 0.3s ease;
 }
 
-.navbar-logo img:hover {
-  transform: scale(1.5);
+.navbar-logo:hover {
+  transform: scale(1.2);
+}
+
+.underlined-header-link {
+  position: relative;
+}
+.underlined-header-link:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #000000;
+  transition:
+    width 0.3s ease 0s,
+    left 0.3s ease 0s;
+  width: 0;
+}
+.underlined-header-link:hover:after {
+  width: 100%;
+  left: 0;
+}
+@media screen and (max-height: 300px) {
+  ul {
+    margin-top: 40px;
+  }
 }
