@@ -38,6 +38,11 @@ export default function RootLayout({ children }) {
         <meta name="application-name" content="Portfolio" />
         <meta name="msapplication-TileColor" content="#1abc9c" />
         <meta name="theme-color" content="#ecf0f1" />
+        <script
+          defer
+          src="https://eu.umami.is/script.js"
+          data-website-id="dffddd2d-5cad-4d0e-8d02-5938a359c24a"
+        ></script>
       </head>
       <body className={inter.className}>
         <div className="flex h-screen flex-col justify-between">

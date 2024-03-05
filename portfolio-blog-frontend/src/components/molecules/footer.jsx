@@ -1,6 +1,7 @@
 import siteMetadata from "@/lib/metadata";
 import SocialIcon from "@/components/atom/social-icon";
 import Link from "next/link";
+import BuildWith from "@/components/atom/buildWith";
 
 const Footer = () => {
   return (
@@ -21,19 +22,29 @@ const Footer = () => {
           <SocialIcon kind="rss" href="/feed.xml" size={20} />
         </div>
         <div className="mb-2 flex space-x-2 text-sm text-gray-500 dark:text-gray-400">
-          <div>{`© ${new Date().getFullYear()}`}</div>
+          <div>{`Copyright © ${new Date().getFullYear()}`}</div>
           <div>{` • `}</div>
           <Link href="/">{siteMetadata.title}</Link>
         </div>
         <div className="mb-8 text-sm text-gray-500 dark:text-gray-400">
           Powered by{` `}
           <a className={"underline"} href="https://nextjs.org">
-            NextJS
+            Vercel
           </a>
           {` `}&{` `}
           <a className={"underline"} href="https://tailwindcss.com">
-            TailwindCSS
+            Supabase
           </a>
+        </div>
+      </div>
+      <div className="mb-8 ml-10 mr-10  flex items-center  justify-between space-y-4 md:mb-10 md:flex md:space-y-0">
+        <BuildWith />
+
+        <div className="my-2 flex space-x-2 text-sm text-gray-500 dark:text-gray-400">
+          <span>
+            {siteMetadata.title}&apos;s Blog - Debugging life with lines of code
+            and a dash of humor
+          </span>
         </div>
       </div>
     </footer>

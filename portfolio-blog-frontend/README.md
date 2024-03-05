@@ -150,3 +150,7 @@ For handling the SVG as React component, by doing this they work with the dark m
 To add dark mode support we are usinf `next-themes` step listed [here](https://ui.shadcn.com/docs/dark-mode/next)
 
 > Check this if you see hydration warning in console if using `next-theme` [how to fix "extra attributes from the server" error?](https://www.reddit.com/r/nextjs/comments/138smpm/how_to_fix_extra_attributes_from_the_server_error/)
+
+## Snowfall
+
+Have used the react library [react-snowfall](https://github.com/cahilfoley/react-snowfall) for the snowfall effect

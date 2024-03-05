@@ -25,6 +25,13 @@ Mono-repo for the portfolio and blog site [know more..](https://vickysingh.notio
 3. Another blog with very good blog page design [check here](https://www.kxlaa.com/notes/cs16a-2023)
 4. THis has projects listed in good way [check here](https://www.gregfield.dev/)
 5. Some example for inspiration [github](https://github.com/timlrx/tailwind-nextjs-starter-blog?tab=readme-ov-file)
+6. A very good [blog & portfolio](https://musing.vercel.app/)
+7. Multiple examples of [blog & portfolio](https://github.com/pycoder2000/portfolio-ideas?tab=readme-ov-file)
+8. [Portfolio Site](https://serdargokhan.dev/#about)
+9. [Portfolio Site](https://trinhminhnhat.com/)
+10. [Portfolio Site](https://www.reubence.com/)
+11. [Portfolio Site](https://www.thvu.dev/)
+12. [Portfolio Site](https://georgefrancis.dev/)
 
 ## Tool to Integrate
 
