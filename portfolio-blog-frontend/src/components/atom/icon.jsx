@@ -15,6 +15,12 @@ import NextJS from "../../../public/nextjs.svg";
 import Umami from "../../../public/umami.svg";
 import Vercel from "../../../public/vercel.svg";
 import Chart from "../../../public/chart.svg";
+import Game from "../../../public/game.svg";
+import Music from "../../../public/music.svg";
+import India from "../../../public/india.svg";
+import Swimming from "../../../public/swimming.svg";
+import Gym from "../../../public/gym.svg";
+import Running from "../../../public/running.svg";
 
 import LogoLight from "../../../public/logo.png";
 import LogoDark from "../../../public/logo-dark.png";
@@ -35,6 +41,12 @@ const components = {
   umami: Umami,
   vercel: Vercel,
   chart: Chart,
+  game: Game,
+  music: Music,
+  india: India,
+  swimming: Swimming,
+  gym: Gym,
+  running: Running,
 };
 
 const Icon = ({ kind, size }) => {

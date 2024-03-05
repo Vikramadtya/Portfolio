@@ -29,28 +29,61 @@ const TypedBios = () => {
           I was born in <b className="font-medium">1999</b>.
         </li>
         <li>
-          I was raised in <b className="font-medium">Delhi, India 🇮🇳</b>.
+          <p className="flex items-center ">
+            <span className="pr-1">
+              I was raised in
+              <strong className="font-medium"> Delhi, India</strong>
+            </span>
+            <Icon kind="india" size={20} />.
+          </p>
         </li>
-        <li>I like 🏊‍ / 🏃 / 🏸.</li>
-        <li>I love web development.</li>
-        <li>
-          I like
-          <b className="font-medium">ナルト</b>.
+        <li className="flex items-center">
+          <p className="flex items-center ">
+            I like{" "}
+            <span className="pl-1 pr-1">
+              <Icon kind="swimming" size={20} />
+            </span>{" "}
+            /{" "}
+            <span className="pl-1 pr-1">
+              <Icon kind="running" size={20} />
+            </span>{" "}
+            /{" "}
+            <span className="pl-1 pr-1">
+              <Icon kind="gym" size={20} />
+            </span>{" "}
+            .
+          </p>
         </li>
         <li>
-          I work mostly with{" "}
-          <b className="font-medium">Javascript/Typescript</b> technologies.
+          I like <b className="font-medium"> ナルト</b>.
         </li>
-        <li>I like &quot;The Last of Us&quot; 🎮️.</li>
-        <li>I like Indie music 🎶.</li>
         <li>
-          I love listening <Icon kind="partyingFace" /> and rap music.
+          <p className="flex items-center ">
+            I like &quot;The Last of Us&quot;{" "}
+            <span className="pl-1 pr-1">
+              <Icon kind="game" size={20} />
+            </span>
+            ️.
+          </p>
+        </li>
+        <li>
+          <p className="flex items-center ">
+            I love listening{" "}
+            <span className="pl-1 pr-1">
+              <Icon kind="music" size={20} />
+            </span>{" "}
+            and rap music.
+          </p>
         </li>
       </ul>
-      <p className="text-left rtl:text-right">
-        I’m <b>Vikramaditya Singh</b> <Icon kind="partyingFace" />
-        {"  , "} <span ref={el} className="text-gray-600 dark:text-gray-400" />
-      </p>
+      <div className="flex items-center text-left rtl:text-right">
+        <p className="pr-2">
+          I’m <b>Vikramaditya Singh</b>
+        </p>{" "}
+        <Icon kind="partyingFace" size={20} />
+        {"  , "}{" "}
+        <span ref={el} className="pl-2 text-gray-600 dark:text-gray-400" />
+      </div>
     </>
   );
 };
