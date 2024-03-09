@@ -58,9 +58,18 @@ const Avatar = () => {
     >
       <div
         style={style}
-        className="max-h-[430px] overflow-hidden rounded-md transition-all duration-200 ease-out"
+        className="max-h-[430px] rounded-md transition-all duration-200 ease-out"
       >
-        <Image src={Me} alt="avatar" width={430} height={350} />
+        <Image
+          src={Me}
+          alt="avatar"
+          width={350}
+          height={250}
+          style={{
+            boxShadow: "13px 13px 43px #b3b3b3",
+            borderRadius: "6px",
+          }}
+        />
       </div>
     </div>
   );

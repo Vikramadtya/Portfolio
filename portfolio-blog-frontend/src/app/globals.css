@@ -75,11 +75,6 @@
   }
 }
 
-.shadowOnBox {
-  box-shadow: 21px 21px 61px #aaaaaa;
-  border-radius: 0px;
-}
-
 .wavy {
   animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
   animation-duration: 2.5s; /* Change to speed up or slow down */
