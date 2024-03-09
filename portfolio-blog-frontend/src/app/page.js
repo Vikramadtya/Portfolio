@@ -6,11 +6,11 @@ import Icon from "@/components/atom/icon";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between pb-24 pl-80 pr-80 pt-24">
+    <main className="flex min-h-screen flex-col items-center justify-between">
       {/* Introduce myself */}
-      <div className="mt-8 text-lg leading-8 text-gray-600 dark:text-gray-400 md:mt-8">
+      <div className="mt-8 pb-24 pl-12 pr-12 pt-24 text-lg leading-8 text-gray-600 dark:text-gray-400 md:mt-8 md:pl-80 md:pr-80">
         <Greetings />
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid gap-4 md:grid-cols-2">
           <div>
             <Avatar />
           </div>
@@ -24,7 +24,7 @@ export default function Home() {
                 <span className="mr-2">
                   Thanks for dropping by ! Happy reading
                 </span>
-                <Icon kind="clinkingBeerMugs" size={30} />
+                <Icon kind="clinkingBeerMugs" size={"h-20 w-20"} />
               </p>
             </div>
           </div>

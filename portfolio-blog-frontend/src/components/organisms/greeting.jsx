@@ -18,10 +18,10 @@ const Greetings = () => {
         }}
       />
       <div className="lg:mb-10 lg:mt-10">
-        <h1 className="animate__heartBeat flex items-center bg-gradient-to-r from-lime-500 to-yellow-400 bg-clip-text py-1 text-7xl font-extrabold text-transparent dark:to-blue-500">
+        <h1 className="animate__heartBeat flex items-center bg-gradient-to-r from-lime-500 to-yellow-400 bg-clip-text py-1 text-2xl font-extrabold text-transparent dark:to-blue-500 md:text-7xl">
           <span className="wavy pr-2">
             {" "}
-            <Icon kind="hand" size={200} />
+            <Icon kind="hand" size={"h-28 w-28 md:h-52 md:w-52"} />
           </span>
           Hey there, welcome !
         </h1>

@@ -37,7 +37,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <div className="mb-8 ml-10 mr-10  flex items-center  justify-between space-y-4 md:mb-10 md:flex md:space-y-0">
+      <div className="mb-8 ml-10 mr-10  flex flex-col items-center  justify-between space-y-4 md:mb-10 md:flex md:flex-row md:space-y-0">
         <BuildWith />
 
         <div className="my-2 flex space-x-2 text-sm text-gray-500 dark:text-gray-400">
