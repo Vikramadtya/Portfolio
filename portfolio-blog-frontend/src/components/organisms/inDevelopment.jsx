@@ -3,7 +3,7 @@ import CustomLink from "@/components/atom/customLink";
 
 const InDevelopment = () => {
   return (
-    <div className="flex items-center">
+    <div className="flex flex-col items-center md:flex-row">
       <Icon kind="me" size={"h-44 w-44"} />
       <div className="pl-10">
         <h1 className="text-5xl font-bold ">Uh oh...</h1>
