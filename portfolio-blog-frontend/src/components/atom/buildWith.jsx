@@ -6,17 +6,15 @@ const BuildWith = () => (
     <div className="pr-2 text-sm text-gray-500 dark:text-gray-400">
       Build with
     </div>
-    <div>
-      <CustomLink href="https://nextjs.org" className="pl-1 pr-1">
-        <Icon kind="nextJS" size={15} />
-      </CustomLink>
-      <CustomLink href="https://tailwindcss.com" className="pl-1 pr-1">
-        <Icon kind="tailwindCSS" size={15} />
-      </CustomLink>
-      <CustomLink href="https://umami.is" className="pl-1 pr-1">
-        <Icon kind="umami" size={15} />
-      </CustomLink>{" "}
-    </div>
+    <CustomLink href="https://nextjs.org" className="pl-1 pr-1">
+      <Icon kind="nextJS" size={"h-5 w-5"} />
+    </CustomLink>
+    <CustomLink href="https://tailwindcss.com" className="pl-1 pr-1">
+      <Icon kind="tailwindCSS" size={"h-5 w-5"} />
+    </CustomLink>
+    <CustomLink href="https://umami.is" className="pl-1 pr-1">
+      <Icon kind="umami" size={"h-5 w-5"} />
+    </CustomLink>{" "}
   </div>
 );
 

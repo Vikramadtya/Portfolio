@@ -18,7 +18,7 @@ const BlogLinks = () => {
           href="/blog"
           className="flex items-center pb-1 pt-1 hover:underline"
         >
-          <Icon kind="memo" size={30} />
+          <Icon kind="memo" size={"h-8 w-8"} />
           <span data-umami-event="home-link-blog" className="ml-1.5">
             My writings
           </span>
@@ -27,7 +27,7 @@ const BlogLinks = () => {
           href="/projects"
           className="flex items-center pb-1 pt-1 hover:underline"
         >
-          <Icon kind="bolt" size={30} />
+          <Icon kind="bolt" size={"h-8 w-8"} />
           <span data-umami-event="home-link-projects" className="ml-1.5">
             My snippet collection
           </span>
@@ -36,7 +36,7 @@ const BlogLinks = () => {
           href="/projects"
           className="flex items-center pb-1 pt-1 hover:underline"
         >
-          <Icon kind="wrenchAndHammer" size={30} />
+          <Icon kind="wrenchAndHammer" size={"h-8 w-8"} />
           <span data-umami-event="home-link-projects" className="ml-1.5">
             What have I built?
           </span>
@@ -45,7 +45,7 @@ const BlogLinks = () => {
           href="/resume"
           className="flex items-center pb-1 pt-1 hover:underline"
         >
-          <Icon kind="briefcase" size={30} />
+          <Icon kind="briefcase" size={"h-8 w-8"} />
           <span data-umami-event="home-link-resume" className="ml-1.5">
             My career
           </span>
@@ -54,7 +54,7 @@ const BlogLinks = () => {
           href="/about"
           className="flex items-center pb-1 pt-1 hover:underline"
         >
-          <Icon kind="manWithMonocle" size={30} />
+          <Icon kind="manWithMonocle" size={"h-8 w-8"} />
           <span data-umami-event="home-link-about" className="ml-1.5">
             More about me
           </span>

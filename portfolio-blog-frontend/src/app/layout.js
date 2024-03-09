@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import "animate.css";
 import Footer from "@/components/molecules/footer";
 import Header from "@/components/molecules/header";
 import ThemeProvider from "@/components/utils/themeProvider";

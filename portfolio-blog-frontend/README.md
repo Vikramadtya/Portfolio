@@ -154,3 +154,27 @@ To add dark mode support we are usinf `next-themes` step listed [here](https://u
 ## Snowfall
 
 Have used the react library [react-snowfall](https://github.com/cahilfoley/react-snowfall) for the snowfall effect
+
+## Annotation
+
+Using [library](https://roughnotation.com/) for annotation
+
+## Animation
+
+Using css [library](https://animate.style/) for animation
+
+# Some cool stuff
+
+- [QR code](https://zpao.github.io/qrcode.react/)
+- [Command+k interface](https://kbar.vercel.app/)
+- [Tagify](https://yaireo.github.io/tagify/)
+- [React Skeleton](https://github.com/dvtng/react-loading-skeleton)
+- [React Select](https://react-select.com/home)
+- [Load SVG gracefully](https://github.com/moarwick/react-mt-svg-lines)
+- [Goey Effect](https://gooey-react.netlify.app/examples/around-the-web/)
+- [Cookie banner](https://github.com/porscheofficial/cookie-consent-banner)
+- [Insta like stories](https://mohitk05.github.io/react-insta-stories/)
+- [Draw arrows in react](https://pierpo.github.io/react-archer/)
+- [List of react stuff](https://github.com/enaqx/awesome-react?tab=readme-ov-file)
+- [Email client](https://resend.com/pricing)
+- [Currently playing music][https://medium.com/@stvehayes/working-with-spotifys-api-to-display-currently-playing-with-react-99544f8797d8]

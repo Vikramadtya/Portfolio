@@ -10,7 +10,7 @@ const siteMetadata = {
   siteLogo: "/static/images/logo.png",
   image: "/static/images/logo.png",
   socialBanner: "/static/images/twitter-card.jpg",
-  email: "me@zzhgo.com",
+  email: "vikramaditya.bhadoria@gmail.com",
   github: "https://github.com/Vikramadtya",
   twitter: "https://twitter.com/Twitter",
   facebook: "https://facebook.com",

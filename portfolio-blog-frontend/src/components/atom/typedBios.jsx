@@ -34,22 +34,22 @@ const TypedBios = () => {
               I was raised in
               <strong className="font-medium"> Delhi, India</strong>
             </span>
-            <Icon kind="india" size={20} />.
+            <Icon kind="india" size={"h-8 w-8"} />.
           </p>
         </li>
         <li className="flex items-center">
           <p className="flex items-center ">
             I like{" "}
             <span className="pl-1 pr-1">
-              <Icon kind="swimming" size={20} />
+              <Icon kind="swimming" size={"h-8 w-8"} />
             </span>{" "}
             /{" "}
             <span className="pl-1 pr-1">
-              <Icon kind="running" size={20} />
+              <Icon kind="running" size={"h-8 w-8"} />
             </span>{" "}
             /{" "}
             <span className="pl-1 pr-1">
-              <Icon kind="gym" size={20} />
+              <Icon kind="gym" size={"h-8 w-8"} />
             </span>{" "}
             .
           </p>
@@ -61,7 +61,7 @@ const TypedBios = () => {
           <p className="flex items-center ">
             I like &quot;The Last of Us&quot;{" "}
             <span className="pl-1 pr-1">
-              <Icon kind="game" size={20} />
+              <Icon kind="game" size={"h-8 w-8"} />
             </span>
             ️.
           </p>
@@ -70,19 +70,21 @@ const TypedBios = () => {
           <p className="flex items-center ">
             I love listening{" "}
             <span className="pl-1 pr-1">
-              <Icon kind="music" size={20} />
+              <Icon kind="music" size={"h-8 w-8"} />
             </span>{" "}
             and rap music.
           </p>
         </li>
       </ul>
       <div className="flex items-center text-left rtl:text-right">
-        <p className="pr-2">
-          I’m <b>Vikramaditya Singh</b>
+        <p className="flex flex-col md:flex-row md:items-center">
+          <span className="flex items-center">
+            I’m <b className="pl-2 pr-2">Vikramaditya Singh</b>{" "}
+            <Icon kind="partyingFace" size={"h-8 w-8"} />
+            {","}
+          </span>
+          <span ref={el} className="text-gray-600 dark:text-gray-400 md:pl-2" />
         </p>{" "}
-        <Icon kind="partyingFace" size={20} />
-        {"  , "}{" "}
-        <span ref={el} className="pl-2 text-gray-600 dark:text-gray-400" />
       </div>
     </>
   );

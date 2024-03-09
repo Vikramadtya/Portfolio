@@ -5,7 +5,7 @@ import CustomLink from "@/components/atom/customLink";
 const AnalyticsLink = () => {
   return (
     <CustomLink href={siteMetadata.analyticsURL} className="pl-3 pr-5">
-      <Icon kind="chart" size={30} />
+      <Icon kind="chart" size={"h-8 w-8"} />
     </CustomLink>
   );
 };
