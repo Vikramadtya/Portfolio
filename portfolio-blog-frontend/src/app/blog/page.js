@@ -1,6 +1,8 @@
 import React from "react";
 import InDevelopment from "@/components/organisms/inDevelopment";
 import Icon from "@/components/atom/icon";
+import Card from "@/components/atom/card";
+import BlogList from "@/components/molecules/blogList";
 
 export default function Blog() {
   return (
@@ -29,9 +31,7 @@ export default function Blog() {
           />
         </div>
       </div>
-      <div className="pb-10 pl-12 pr-12 pt-32 md:pl-80 md:pr-80">
-        <InDevelopment />
-      </div>
+      <BlogList />
     </main>
   );
 }
