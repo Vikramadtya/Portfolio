@@ -23,6 +23,7 @@ import Gym from "../../../public/gym.svg";
 import Running from "../../../public/running.svg";
 import Me from "../../../public/me.svg";
 import Home from "../../../public/home.svg";
+import Search from "../../../public/search.svg";
 
 import LogoLight from "../../../public/logo.png";
 import LogoDark from "../../../public/logo-dark.png";
@@ -51,6 +52,7 @@ const components = {
   running: Running,
   me: Me,
   home: Home,
+  search: Search,
 };
 
 const Icon = ({ kind, size }) => {
