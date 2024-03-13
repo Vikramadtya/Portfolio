@@ -1,6 +1,12 @@
 import React from "react";
+import Tag from "@/components/atom/tag";
+import Icon from "@/components/atom/icon";
+import dayjs from "dayjs";
+import relativeTime from "dayjs/plugin/relativeTime";
 
-const Card = () => {
+dayjs.extend(relativeTime);
+
+const Card = ({ title, description, tags, date }) => {
   return (
     <>
       <div className="relative flex max-w-[24rem] flex-col overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
@@ -12,28 +18,28 @@ const Card = () => {
         </div>
         <div className="p-6">
           <h4 className="text-blue-gray-900 block font-sans text-2xl font-semibold leading-snug tracking-normal antialiased">
-            UI/UX Review Check
+            {title}
           </h4>
           <p className="mt-3 block font-sans text-xl font-normal leading-relaxed text-gray-700 antialiased">
-            Because it&apos;s about motivating the doers. Because I&apos;m here
-            to follow my dreams and inspire others.
+            {description}
           </p>
+        </div>
+        <div className=" mt-1 flex flex-wrap gap-1 p-6">
+          {tags.map((tag) => (
+            <Tag key={tag} text={tag} id={3} />
+          ))}
         </div>
         <div className="flex items-center justify-between p-6">
           <div className="flex items-center -space-x-3">
-            <img
-              alt="natali craig"
-              src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1061&amp;q=80"
-              className="relative inline-block h-9 w-9 !rounded-full  border-2 border-white object-cover object-center hover:z-10"
-            />
-            <img
-              alt="Tania Andrew"
-              src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1480&amp;q=80"
-              className="relative inline-block h-9 w-9 !rounded-full  border-2 border-white object-cover object-center hover:z-10"
+            <Icon
+              kind="me"
+              size={
+                "relative inline-block h-9 w-9 rounded  border-2 border-white object-cover object-center hover:z-10"
+              }
             />
           </div>
-          <p class="block font-sans text-base font-normal leading-relaxed text-inherit antialiased">
-            January 10
+          <p className="block font-sans text-base font-normal leading-relaxed text-inherit antialiased">
+            {dayjs(date).fromNow(false)}
           </p>
         </div>
       </div>
