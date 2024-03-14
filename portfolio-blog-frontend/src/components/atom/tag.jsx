@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { cn } from "@/lib/utils";
 
 const colors = {
   1: "border-blue-400 bg-blue-100 text-blue-800",
@@ -17,7 +16,7 @@ const Tag = ({ text, id }) => {
   return (
     <Link
       href={`/tags`}
-      className={`me-2 rounded border ${color} px-2.5 py-0.5 text-xs font-medium dark:bg-gray-700 dark:text-blue-400`}
+      className={`me-2 rounded border ${color} px-2.5 py-0.5 text-xs font-medium `}
     >
       <span>{text.split(" ").join("-")}</span>
     </Link>
