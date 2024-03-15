@@ -26,7 +26,7 @@ const Greetings = () => {
           Hey there, welcome !
         </h1>
         <br />
-        <div className="prose dark:prose-dark lg:prose-lg">
+        <div className="dark:prose-dark prose lg:prose-lg">
           <TypedBios />
           <br />
           <p className="text-left rtl:text-right">

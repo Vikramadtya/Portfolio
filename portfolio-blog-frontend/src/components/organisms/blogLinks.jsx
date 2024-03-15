@@ -6,7 +6,7 @@ const BlogLinks = () => {
   return (
     <div className="flex justify-between ">
       <div className="flex flex-col space-y-1.5">
-        <div className="prose dark:prose-dark lg:prose-lg">
+        <div className="dark:prose-dark prose lg:prose-lg">
           <p className="text-left rtl:text-right">
             So kick back, take a look around, and get to know a bit about what
             makes me tick as a developer. Feel free to{" "}

@@ -4,7 +4,28 @@ import Icon from "@/components/atom/icon";
 import Card from "@/components/atom/card";
 import BlogList from "@/components/molecules/blogList";
 
+import fs from "fs";
+import path from "path";
+import matter from "gray-matter";
+
+import Link from "next/link";
+import BlogMetadata from "@/lib/blogMetadata";
+
 export default function Blog() {
+  const files = fs.readdirSync(path.join(BlogMetadata.localBlogLocation));
+
+  let blogs = files.map((fileName) => {
+    const fileContent = fs.readFileSync(
+      path.join(BlogMetadata.localBlogLocation, fileName),
+      "utf-8",
+    );
+    const { data: frontMatter } = matter(fileContent);
+    return {
+      ...frontMatter,
+      slug: fileName.replace(".mdx", ""),
+    };
+  });
+
   return (
     <main className="flex flex-col items-center justify-between">
       <div className="space-y-2 pb-8 pt-6 md:space-y-5">
@@ -31,7 +52,7 @@ export default function Blog() {
           />
         </div>
       </div>
-      <BlogList />
+      <BlogList blogs={blogs} />
     </main>
   );
 }
