@@ -1,6 +1,5 @@
 const blogMetadata = {
-  localBlogLocation:
-    "/Users/vikramadityasingh/Repository/portfolio-blog/assets/blogs",
+  localBlogLocation: "downloaded/blogs",
 };
 
 export default blogMetadata;

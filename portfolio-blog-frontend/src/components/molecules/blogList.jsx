@@ -13,6 +13,7 @@ const BlogList = ({ blogs }) => {
             tags={blog.tags}
             date={blog.date}
             slug={blog.slug}
+            key={blog.id}
           />
         ))}
       </div>

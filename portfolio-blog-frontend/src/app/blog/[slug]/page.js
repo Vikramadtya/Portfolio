@@ -5,6 +5,11 @@ import matter from "gray-matter";
 import { MDXRemote } from "next-mdx-remote/rsc";
 
 import BlogMetadata from "@/lib/blogMetadata";
+import dayjs from "dayjs";
+import BlogHero from "@/components/molecules/blogHero";
+import { Separator } from "@/components/atom/separator";
+import Doodle from "@/components/atom/svgs/doodle";
+import StickyBar from "@/components/atom/stickyBar";
 
 export async function generateStaticParams() {
   const files = fs.readdirSync(path.join(BlogMetadata.localBlogLocation));
@@ -44,10 +49,20 @@ export default function Post({ params }) {
   const props = getPost(params);
 
   return (
-    <article className="prose prose-sm mx-auto  pb-20 pt-20 md:prose-base lg:prose-lg ">
-      <h1>{props.frontMatter.title}</h1>
+    <article className="prose prose-sm md:prose-base  lg:prose-lg mx-auto pb-20 pt-20 ">
+      <BlogHero
+        title={props.frontMatter.title}
+        date={props.frontMatter.date}
+        tags={props.frontMatter.tags}
+      />
+      <Separator />
 
       <MDXRemote source={props.content} />
+      <StickyBar />
+
+      <div className="flex items-center justify-center">
+        <Doodle classData={"h-20 w-20"} />
+      </div>
     </article>
   );
 }
