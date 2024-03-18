@@ -10,6 +10,9 @@ import BlogHero from "@/components/molecules/blogHero";
 import { Separator } from "@/components/atom/separator";
 import Doodle from "@/components/atom/svgs/doodle";
 import StickyBar from "@/components/atom/stickyBar";
+import Giscus from "@giscus/react";
+import SiteMetadata from "@/lib/metadata";
+import Comments from "@/components/atom/comments";
 
 export async function generateStaticParams() {
   const files = fs.readdirSync(path.join(BlogMetadata.localBlogLocation));
@@ -49,7 +52,7 @@ export default function Post({ params }) {
   const props = getPost(params);
 
   return (
-    <article className="prose prose-sm md:prose-base  lg:prose-lg mx-auto pb-20 pt-20 ">
+    <article className="prose prose-sm mx-auto  pb-20 pt-20 md:prose-base lg:prose-lg ">
       <BlogHero
         title={props.frontMatter.title}
         date={props.frontMatter.date}
@@ -62,6 +65,11 @@ export default function Post({ params }) {
 
       <div className="flex items-center justify-center">
         <Doodle classData={"h-20 w-20"} />
+      </div>
+      <Separator className="mb-20 mt-20" />
+
+      <div className="flex items-center justify-center">
+        <Comments />
       </div>
     </article>
   );
