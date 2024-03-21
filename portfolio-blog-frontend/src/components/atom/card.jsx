@@ -4,7 +4,6 @@ import Icon from "@/components/atom/icon";
 import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime";
 import Link from "next/link";
-import Tags from "@/components/molecules/Tags";
 
 dayjs.extend(relativeTime);
 

@@ -5,14 +5,12 @@ import matter from "gray-matter";
 import { MDXRemote } from "next-mdx-remote/rsc";
 
 import BlogMetadata from "@/lib/blogMetadata";
-import dayjs from "dayjs";
 import BlogHero from "@/components/molecules/blogHero";
 import { Separator } from "@/components/atom/separator";
 import Doodle from "@/components/atom/svgs/doodle";
 import StickyBar from "@/components/atom/stickyBar";
-import Giscus from "@giscus/react";
-import SiteMetadata from "@/lib/metadata";
 import Comments from "@/components/atom/comments";
+import readingTime from "reading-time";
 
 export async function generateStaticParams() {
   const files = fs.readdirSync(path.join(BlogMetadata.localBlogLocation));
@@ -32,19 +30,26 @@ function getPost({ slug }) {
 
   const { data: frontMatter, content } = matter(markdownFile);
 
+  const readingData = readingTime(content);
+
+  const contentMetadata = {
+    frontMatter: frontMatter,
+    readingData: readingData,
+  };
+
   return {
-    frontMatter,
+    contentMetadata,
     slug,
     content,
   };
 }
 
 export async function generateMetadata({ params }) {
-  const blog = getPost(params);
+  const props = getPost(params);
 
   return {
-    title: blog.frontMatter.title,
-    description: blog.frontMatter.description,
+    title: props.contentMetadata.frontMatter.title,
+    description: props.contentMetadata.frontMatter.description,
   };
 }
 
@@ -54,9 +59,10 @@ export default function Post({ params }) {
   return (
     <article className="prose prose-sm mx-auto  pb-20 pt-20 md:prose-base lg:prose-lg ">
       <BlogHero
-        title={props.frontMatter.title}
-        date={props.frontMatter.date}
-        tags={props.frontMatter.tags}
+        title={props.contentMetadata.frontMatter.title}
+        date={props.contentMetadata.frontMatter.date}
+        tags={props.contentMetadata.frontMatter.tags}
+        readingData={props.contentMetadata.readingData}
       />
       <Separator />
 

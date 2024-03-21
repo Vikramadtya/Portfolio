@@ -1,14 +1,11 @@
 import React from "react";
-import InDevelopment from "@/components/organisms/inDevelopment";
 import Icon from "@/components/atom/icon";
-import Card from "@/components/atom/card";
 import BlogList from "@/components/molecules/blogList";
 
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 
-import Link from "next/link";
 import BlogMetadata from "@/lib/blogMetadata";
 
 export default function Blog() {

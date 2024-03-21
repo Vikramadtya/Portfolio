@@ -31,6 +31,9 @@ import Share from "../../../public/share.svg";
 import TableOfContent from "../../../public/toc.svg";
 import Up from "../../../public/up.svg";
 import Comment from "../../../public/comment.svg";
+import Clock from "../../../public/clock.svg";
+import Pencil from "../../../public/pencil.svg";
+import Eye from "../../../public/eye.svg";
 
 import LogoLight from "../../../public/logo.png";
 import LogoDark from "../../../public/logo-dark.png";
@@ -67,6 +70,9 @@ const components = {
   comment: Comment,
   tableOfContent: TableOfContent,
   share: Share,
+  clock: Clock,
+  pencil: Pencil,
+  eye: Eye,
 };
 
 const Icon = ({ kind, size }) => {
