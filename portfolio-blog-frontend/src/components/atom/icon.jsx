@@ -36,6 +36,14 @@ import Pencil from "../../../public/pencil.svg";
 import Eye from "../../../public/eye.svg";
 import PostBox from "../../../public/postbox.svg";
 import Location from "../../../public/location.svg";
+import Born from "../../../public/born.svg";
+import Birthday from "../../../public/birthday-cake.svg";
+import Work from "../../../public/work.svg";
+import School from "../../../public/school.svg";
+import College from "../../../public/college.svg";
+import JuniorSchool from "../../../public/junior-school.svg";
+import Degree from "../../../public/degree.svg";
+import Growing from "../../../public/growing.svg";
 
 import LogoLight from "../../../public/logo.png";
 import LogoDark from "../../../public/logo-dark.png";
@@ -77,6 +85,14 @@ const components = {
   eye: Eye,
   post: PostBox,
   location: Location,
+  born: Born,
+  birthday: Birthday,
+  juniorSchool: JuniorSchool,
+  school: School,
+  college: College,
+  work: Work,
+  degree: Degree,
+  growing: Growing,
 };
 
 const Icon = ({ kind, size }) => {
