@@ -11,7 +11,7 @@ export default function Home() {
       <div className="mt-8 pb-24 pl-12 pr-12 pt-24 text-lg leading-8 text-gray-600 dark:text-gray-400 md:pl-24 md:pr-24 lg:pl-32 lg:pr-32 xl:mt-8 xl:pl-64 xl:pr-64 2xl:mt-8 2xl:pl-80 2xl:pr-80">
         <Greetings />
         <div className="grid gap-x-4 gap-y-40 xl:grid-cols-2">
-          <div className="flex items-center justify-center">
+          <div className="flex items-start justify-start md:items-center md:justify-start">
             <Avatar />
           </div>
           <div>
