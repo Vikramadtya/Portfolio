@@ -13,7 +13,10 @@ const WhatsNew = () => {
           </div>
 
           <div>
-            Check out my blog <Link href={siteMetadata.blogLink}>here</Link>{" "}
+            Check out my blog{" "}
+            <u>
+              <Link href={siteMetadata.blogLink}>here</Link>
+            </u>{" "}
           </div>
         </div>
       </div>
