@@ -41,15 +41,15 @@ const TypedBios = () => {
           <p className="flex items-center ">
             I like{" "}
             <span className="pl-1 pr-1">
-              <Icon kind="swimming" size={"h-8 w-8"} />
+              <Icon kind="swimming" size={"h-6 w-6"} />
             </span>{" "}
             /{" "}
             <span className="pl-1 pr-1">
-              <Icon kind="running" size={"h-8 w-8"} />
+              <Icon kind="running" size={"h-6 w-6"} />
             </span>{" "}
             /{" "}
             <span className="pl-1 pr-1">
-              <Icon kind="gym" size={"h-8 w-8"} />
+              <Icon kind="gym" size={"h-6 w-6"} />
             </span>{" "}
             .
           </p>
@@ -61,7 +61,7 @@ const TypedBios = () => {
           <p className="flex items-center ">
             I like &quot;The Last of Us&quot;{" "}
             <span className="pl-1 pr-1">
-              <Icon kind="game" size={"h-8 w-8"} />
+              <Icon kind="game" size={"h-6 w-6"} />
             </span>
             ️.
           </p>
