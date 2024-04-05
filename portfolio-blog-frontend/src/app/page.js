@@ -10,8 +10,8 @@ export default function Home() {
       {/* Introduce myself */}
       <div className="mt-8 pb-24 pl-12 pr-12 pt-24 text-lg leading-8 text-gray-600 dark:text-gray-400 md:mt-8 md:pl-80 md:pr-80">
         <Greetings />
-        <div className="grid gap-4 md:grid-cols-2">
-          <div>
+        <div className="grid gap-x-4 gap-y-40 lg:grid-cols-2">
+          <div className="flex items-center justify-center">
             <Avatar />
           </div>
           <div>
