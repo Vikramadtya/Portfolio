@@ -9,7 +9,7 @@ const WhatsNew = () => {
         <div>
           <div className="flex items-center pb-3">
             <Icon kind={"post"} size={"h-8 w-8"} />
-            <h1 className="text-lg font-semibold">What's New?</h1>
+            <h1 className="text-lg font-semibold">What&apos;s New?</h1>
           </div>
 
           <div>
