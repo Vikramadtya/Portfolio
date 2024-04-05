@@ -18,7 +18,7 @@ const Greetings = () => {
         }}
       />
       <div className="lg:mb-10 lg:mt-10">
-        <h1 className="animate__heartBeat flex items-center bg-gradient-to-r from-lime-500 to-yellow-400 bg-clip-text py-1 text-2xl font-extrabold text-transparent dark:to-blue-500 md:text-7xl">
+        <h1 className="animate__heartBeat flex items-center bg-gradient-to-r from-lime-500 to-yellow-400 bg-clip-text py-1 text-3xl font-extrabold text-transparent dark:to-blue-500 sm:text-5xl md:text-7xl">
           <span className="wavy pr-2">
             {" "}
             <Icon kind="hand" size={"h-28 w-28 md:h-52 md:w-52"} />
@@ -26,7 +26,7 @@ const Greetings = () => {
           Hey there, welcome !
         </h1>
         <br />
-        <div className="prose dark:prose-dark lg:prose-lg">
+        <div className="">
           <TypedBios />
           <br />
           <p className="text-left rtl:text-right">

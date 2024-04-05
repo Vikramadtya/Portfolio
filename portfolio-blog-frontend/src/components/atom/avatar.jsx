@@ -63,8 +63,8 @@ const Avatar = () => {
         <Image
           src={Me}
           alt="avatar"
-          width={350}
-          height={250}
+          width={400}
+          height={300}
           style={{
             boxShadow: "13px 13px 43px #b3b3b3",
             borderRadius: "6px",

@@ -2,16 +2,8 @@
 
 import { useState } from "react";
 import clsx from "clsx";
-
+import headerNavLinks from "../../lib/navLinks";
 import CustomLink from "../atom/customLink";
-
-const headerNavLinks = [
-  { href: "/blog", title: "Blog" },
-  { href: "/tags", title: "Tags" },
-  { href: "/projects", title: "Projects" },
-  { href: "/about", title: "About" },
-  { href: "/resume", title: "Resume" },
-];
 
 const MobileNav = () => {
   const [navShow, setNavShow] = useState(false);

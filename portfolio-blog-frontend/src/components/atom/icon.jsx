@@ -23,6 +23,17 @@ import Gym from "../../../public/gym.svg";
 import Running from "../../../public/running.svg";
 import Me from "../../../public/me.svg";
 import Home from "../../../public/home.svg";
+import Search from "../../../public/search.svg";
+import Tag from "../../../public/tag.svg";
+import Calendar from "../../../public/calendar.svg";
+import Heart from "../../../public/heart.svg";
+import Share from "../../../public/share.svg";
+import TableOfContent from "../../../public/toc.svg";
+import Up from "../../../public/up.svg";
+import Comment from "../../../public/comment.svg";
+import Clock from "../../../public/clock.svg";
+import Pencil from "../../../public/pencil.svg";
+import Eye from "../../../public/eye.svg";
 
 import LogoLight from "../../../public/logo.png";
 import LogoDark from "../../../public/logo-dark.png";
@@ -51,6 +62,17 @@ const components = {
   running: Running,
   me: Me,
   home: Home,
+  search: Search,
+  tag: Tag,
+  calendar: Calendar,
+  up: Up,
+  heart: Heart,
+  comment: Comment,
+  tableOfContent: TableOfContent,
+  share: Share,
+  clock: Clock,
+  pencil: Pencil,
+  eye: Eye,
 };
 
 const Icon = ({ kind, size }) => {

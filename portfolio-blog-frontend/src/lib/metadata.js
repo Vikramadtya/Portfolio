@@ -24,6 +24,22 @@ const siteMetadata = {
     month: "long",
     day: "numeric",
   },
+  giscus: {
+    label: "comments",
+    commentsRepo: "Vikramadtya/Blog-Scratch",
+    commentsRepoId: "R_kgDOLhesvg",
+    commentsMapping: "pathname",
+    gitHubDiscussionCategory: "Announcements",
+    gitHubDiscussionCategoryId: "DIC_kwDOLhesvs4CeB2W",
+    emitMetadata: "0",
+    strict: "0",
+    lightTheme: "noborder_light",
+    darkTheme: "noborder_dark",
+    reactionsEnabled: "1",
+    inputPosition: "top",
+    lang: "en",
+    loading: "lazy",
+  },
 };
 
 export default siteMetadata;
