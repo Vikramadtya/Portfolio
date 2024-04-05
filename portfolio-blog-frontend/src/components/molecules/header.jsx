@@ -6,11 +6,12 @@ import React from "react";
 import Icon from "@/components/atom/icon";
 import AnalyticsLink from "@/components/atom/analyticsLink";
 import MobileNav from "@/components/molecules/mobileHeader";
+import CurrentPath from "@/components/atom/currentPath";
 
 const Header = () => {
   return (
     <header className="flex items-center justify-between">
-      <div>
+      <div className="flex items-center justify-between md:gap-10">
         <Link href="/" aria-label={siteMetadata.headerTitle}>
           <div className="flex items-center justify-between gap-3 ">
             <Icon kind="logo" size={128} />
@@ -23,8 +24,20 @@ const Header = () => {
             )}
           </div>
         </Link>
+        <CurrentPath />
       </div>
       <div className="relative mr-7 flex items-center text-base leading-5">
+        {siteMetadata.openToWork === true ? (
+          <div className="flex items-center gap-3 rounded-xl border border-border px-2">
+            <span className="relative flex h-3 w-3">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-400 opacity-75" />
+              <span className="relative inline-flex h-3 w-3 rounded-full bg-sky-500" />
+            </span>
+            <a href={siteMetadata.email}>Open to work</a>
+          </div>
+        ) : (
+          ""
+        )}
         <div className="hidden sm:block ">
           {navLinks.map((link) => (
             <Link

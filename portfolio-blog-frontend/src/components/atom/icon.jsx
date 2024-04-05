@@ -34,6 +34,7 @@ import Comment from "../../../public/comment.svg";
 import Clock from "../../../public/clock.svg";
 import Pencil from "../../../public/pencil.svg";
 import Eye from "../../../public/eye.svg";
+import PostBox from "../../../public/postbox.svg";
 
 import LogoLight from "../../../public/logo.png";
 import LogoDark from "../../../public/logo-dark.png";
@@ -73,6 +74,7 @@ const components = {
   clock: Clock,
   pencil: Pencil,
   eye: Eye,
+  post: PostBox,
 };
 
 const Icon = ({ kind, size }) => {

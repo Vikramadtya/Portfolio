@@ -24,6 +24,8 @@ const siteMetadata = {
     month: "long",
     day: "numeric",
   },
+  blogLink: "https://www.vikramaditya-singh.in",
+  openToWork: true,
   giscus: {
     label: "comments",
     commentsRepo: "Vikramadtya/Blog-Scratch",
