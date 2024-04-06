@@ -44,6 +44,8 @@ import College from "../../../public/college.svg";
 import JuniorSchool from "../../../public/junior-school.svg";
 import Degree from "../../../public/degree.svg";
 import Growing from "../../../public/growing.svg";
+import Rocket from "../../../public/rocket.svg";
+import Stats from "../../../public/stats.svg";
 
 import LogoLight from "../../../public/logo.png";
 import LogoDark from "../../../public/logo-dark.png";
@@ -93,6 +95,8 @@ const components = {
   work: Work,
   degree: Degree,
   growing: Growing,
+  rocket: Rocket,
+  stats: Stats,
 };
 
 const Icon = ({ kind, size }) => {

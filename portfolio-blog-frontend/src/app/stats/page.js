@@ -1,5 +1,4 @@
 import React from "react";
-import TimeLine from "@/components/organisms/timeLine";
 import Icon from "@/components/atom/icon";
 
 export default function Home() {
@@ -7,8 +6,8 @@ export default function Home() {
     <main className="flex flex-col items-center justify-between">
       <div className="pb-10 pl-12 pr-12 pt-32 md:pl-80 md:pr-80">
         <h1 className="flex animate-bounce items-center pb-5 text-5xl">
-          <Icon kind="rocket" size="h-12 w-12" />
-          <span className="pl-1">Timeline</span>
+          <Icon kind="stats" size="h-12 w-12" />
+          <span className="pl-1">Stats</span>
         </h1>
         <p className="pb-24 text-base">
           There are many variations of passages of Lorem Ipsum available, but
@@ -24,7 +23,6 @@ export default function Home() {
           is therefore always free from repetition, injected humour, or
           non-characteristic words etc.
         </p>
-        <TimeLine />
       </div>
     </main>
   );

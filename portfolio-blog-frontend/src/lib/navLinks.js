@@ -8,3 +8,8 @@ const navLinks = [
 ];
 
 export default navLinks;
+
+export const dropDownMenuNavLinks = [
+  { href: "/timeline", title: "Journey", icon: "rocket" },
+  { href: "/stats", title: "Statistic", icon: "stats" },
+];
