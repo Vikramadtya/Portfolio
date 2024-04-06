@@ -46,6 +46,14 @@ import Degree from "../../../public/degree.svg";
 import Growing from "../../../public/growing.svg";
 import Rocket from "../../../public/rocket.svg";
 import Stats from "../../../public/stats.svg";
+import Resume from "../../../public/resume.svg";
+import Reading from "../../../public/reading.svg";
+import Watching from "../../../public/watching.svg";
+import Tool from "../../../public/tools.svg";
+import Quote from "../../../public/quote.svg";
+import Now from "../../../public/now.svg";
+import Snippet from "../../../public/snippet.svg";
+import Photography from "../../../public/photography.svg";
 
 import LogoLight from "../../../public/logo.png";
 import LogoDark from "../../../public/logo-dark.png";
@@ -97,6 +105,14 @@ const components = {
   growing: Growing,
   rocket: Rocket,
   stats: Stats,
+  resume: Resume,
+  reading: Reading,
+  watching: Watching,
+  tool: Tool,
+  quote: Quote,
+  snippet: Snippet,
+  now: Now,
+  photography: Photography,
 };
 
 const Icon = ({ kind, size }) => {

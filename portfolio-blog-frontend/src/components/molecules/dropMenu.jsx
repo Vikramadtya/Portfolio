@@ -3,6 +3,7 @@ import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
+  DropdownMenuSeparator,
   DropdownMenuShortcut,
   DropdownMenuTrigger,
 } from "@/components/atom/dropdown-menu";
@@ -39,17 +40,24 @@ const DropMenu = () => {
             <span className="sr-only">Icon description</span>
           </DropdownMenuTrigger>
 
-          <DropdownMenuContent>
+          <DropdownMenuContent className="mr-2 ">
             {dropDownMenuNavLinks.map((menuItem) => {
+              if (menuItem.title === "")
+                return <DropdownMenuSeparator key={menuItem.key} />;
               return (
-                <DropdownMenuItem key={menuItem.title}>
-                  <Link
-                    href={menuItem.href}
-                    className="flex items-center justify-center"
-                  >
-                    <Icon kind={menuItem.icon} size="h-4 w-4" />
-                    <span className="pl-2 pr-2">{menuItem.title}</span>
-                    <DropdownMenuShortcut>⌘+B</DropdownMenuShortcut>
+                <DropdownMenuItem key={menuItem.key}>
+                  <Link href={menuItem.href}>
+                    <div className="flex w-56 items-center justify-between">
+                      <div>
+                        <Icon kind={menuItem.icon} size="h-4 w-4" />
+                        <span className="pl-2 pr-2 ">{menuItem.title}</span>
+                      </div>
+                      <div>
+                        <DropdownMenuShortcut>
+                          {menuItem.shortcut}
+                        </DropdownMenuShortcut>
+                      </div>
+                    </div>
                   </Link>
                 </DropdownMenuItem>
               );
