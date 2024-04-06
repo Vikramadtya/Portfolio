@@ -7,6 +7,7 @@ import Icon from "@/components/atom/icon";
 import AnalyticsLink from "@/components/atom/analyticsLink";
 import MobileNav from "@/components/molecules/mobileHeader";
 import CurrentPath from "@/components/atom/currentPath";
+import DropMenu from "@/components/molecules/dropMenu";
 
 const Header = () => {
   return (
@@ -51,6 +52,7 @@ const Header = () => {
         </div>
         <AnalyticsLink />
         <ThemeToggle />
+        <DropMenu />
         <MobileNav />
       </div>
     </header>

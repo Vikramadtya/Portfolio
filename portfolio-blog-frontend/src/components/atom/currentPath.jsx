@@ -3,6 +3,7 @@
 import { usePathname } from "next/navigation";
 import React from "react";
 import Typed from "typed.js";
+import Icon from "@/components/atom/icon";
 
 const CurrentPath = () => {
   const pathname = usePathname();
@@ -11,7 +12,7 @@ const CurrentPath = () => {
   const el = React.useRef(null);
   React.useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: [`~${pathname}`],
+      strings: [`${pathname === "/" ? "/home" : pathname}`],
       typeSpeed: 50,
     });
 
@@ -23,6 +24,7 @@ const CurrentPath = () => {
   return (
     <>
       <div className="text-primary-color dark:text-primary-color-dark flex items-center justify-between text-xl font-semibold">
+        <Icon kind={"location"} size={"h-5 w-5"} /> <span ref={el} />
         <span ref={el} />
       </div>
     </>

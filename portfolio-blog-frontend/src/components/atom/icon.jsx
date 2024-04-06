@@ -35,6 +35,25 @@ import Clock from "../../../public/clock.svg";
 import Pencil from "../../../public/pencil.svg";
 import Eye from "../../../public/eye.svg";
 import PostBox from "../../../public/postbox.svg";
+import Location from "../../../public/location.svg";
+import Born from "../../../public/born.svg";
+import Birthday from "../../../public/birthday-cake.svg";
+import Work from "../../../public/work.svg";
+import School from "../../../public/school.svg";
+import College from "../../../public/college.svg";
+import JuniorSchool from "../../../public/junior-school.svg";
+import Degree from "../../../public/degree.svg";
+import Growing from "../../../public/growing.svg";
+import Rocket from "../../../public/rocket.svg";
+import Stats from "../../../public/stats.svg";
+import Resume from "../../../public/resume.svg";
+import Reading from "../../../public/reading.svg";
+import Watching from "../../../public/watching.svg";
+import Tool from "../../../public/tools.svg";
+import Quote from "../../../public/quote.svg";
+import Now from "../../../public/now.svg";
+import Snippet from "../../../public/snippet.svg";
+import Photography from "../../../public/photography.svg";
 
 import LogoLight from "../../../public/logo.png";
 import LogoDark from "../../../public/logo-dark.png";
@@ -75,6 +94,25 @@ const components = {
   pencil: Pencil,
   eye: Eye,
   post: PostBox,
+  location: Location,
+  born: Born,
+  birthday: Birthday,
+  juniorSchool: JuniorSchool,
+  school: School,
+  college: College,
+  work: Work,
+  degree: Degree,
+  growing: Growing,
+  rocket: Rocket,
+  stats: Stats,
+  resume: Resume,
+  reading: Reading,
+  watching: Watching,
+  tool: Tool,
+  quote: Quote,
+  snippet: Snippet,
+  now: Now,
+  photography: Photography,
 };
 
 const Icon = ({ kind, size }) => {

@@ -21,7 +21,7 @@ const InDevelopment = () => {
         >
           Take me
           <span className="pl-2">
-            <Icon kind="home" size={25} />
+            <Icon kind="home" size={"h-24 w-24"} />
           </span>
         </CustomLink>
       </div>
