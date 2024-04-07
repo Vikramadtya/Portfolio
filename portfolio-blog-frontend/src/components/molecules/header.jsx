@@ -5,9 +5,9 @@ import ThemeToggle from "@/components/atom/themeToggle";
 import React from "react";
 import Icon from "@/components/atom/icon";
 import AnalyticsLink from "@/components/atom/analyticsLink";
-import MobileNav from "@/components/molecules/mobileHeader";
 import CurrentPath from "@/components/atom/currentPath";
 import DropMenu from "@/components/molecules/dropMenu";
+import CommandPallete from "@/components/molecules/commandPallete";
 
 const Header = () => {
   return (
@@ -42,7 +42,7 @@ const Header = () => {
         <div className="hidden sm:block ">
           {navLinks.map((link) => (
             <Link
-              key={link.title}
+              key={link.key}
               href={link.href}
               className="underlined-header-link rounded-xl font-bold dark:hover:bg-opacity-10 sm:p-4"
             >
@@ -53,7 +53,7 @@ const Header = () => {
         <AnalyticsLink />
         <ThemeToggle />
         <DropMenu />
-        <MobileNav />
+        <CommandPallete />
       </div>
     </header>
   );
