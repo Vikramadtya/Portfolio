@@ -8,7 +8,7 @@ import Icon from "@/components/atom/icon";
 import Command from "../../../public/command.svg";
 import * as React from "react";
 
-import { dropDownMenuNavLinks } from "../../lib/navLinks";
+import { dropDownMenuNavLinks } from "@/lib/navLinks";
 
 export default function CommandPalette() {
   const router = useRouter();
@@ -30,9 +30,9 @@ export default function CommandPalette() {
     setIsOpen(!isOpen);
   };
 
-  const [ThemeSound] = useSound("/static/sounds/open.mp3");
+  const [ThemeSound] = useSound("/sounds/switch-on.mp3");
 
-  const filterednavigation = query
+  const searchResult = query
     ? dropDownMenuNavLinks.filter((page) =>
         page.title.toLowerCase().includes(query.toLocaleLowerCase()),
       )
@@ -99,13 +99,13 @@ export default function CommandPalette() {
                   autoComplete="on"
                 />
               </div>
-              {filterednavigation.length > 0 && (
+              {searchResult.length > 0 && (
                 <Combobox.Options
                   static
                   className="max-h-30 overflow-y-auto py-4 text-sm"
                 >
-                  {filterednavigation.map((page) => (
-                    <Combobox.Option key={page.title} value={page}>
+                  {searchResult.map((link) => (
+                    <Combobox.Option key={link.key} value={link}>
                       {({ active }) => (
                         <div
                           className={`cursor-pointer space-x-1 px-14  py-2  ${
@@ -121,7 +121,7 @@ export default function CommandPalette() {
                                 : "text-neutral-900 dark:text-neutral-200"
                             }`}
                           >
-                            {page.title}
+                            {link.title}
                           </span>
                         </div>
                       )}
@@ -129,7 +129,7 @@ export default function CommandPalette() {
                   ))}
                 </Combobox.Options>
               )}
-              {query && filterednavigation.length === 0 && (
+              {query && searchResult.length === 0 && (
                 <p className="px-12 py-4 text-sm text-gray-500 ">
                   no results found
                 </p>

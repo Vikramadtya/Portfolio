@@ -55,7 +55,7 @@ const Header = () => {
         <ThemeToggle />
         <DropMenu />
         <CommandPallete />
-        <MobileNav />
+        {/*<MobileNav />*/}
       </div>
     </header>
   );
