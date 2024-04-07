@@ -42,7 +42,7 @@ const Header = () => {
         <div className="hidden sm:block ">
           {navLinks.map((link) => (
             <Link
-              key={link.title}
+              key={link.key}
               href={link.href}
               className="underlined-header-link rounded-xl font-bold dark:hover:bg-opacity-10 sm:p-4"
             >
