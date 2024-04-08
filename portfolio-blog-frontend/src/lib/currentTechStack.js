@@ -1,0 +1,20 @@
+const CurrentTechStack = [
+  { key: 1, title: "python", icon: "work", iconClass: "h-4 w-4" },
+  { key: 2, title: "python", icon: "work", iconClass: "h-4 w-4" },
+  { key: 3, title: "python", icon: "work", iconClass: "h-4 w-4" },
+  { key: 4, title: "python", icon: "work", iconClass: "h-4 w-4" },
+  { key: 5, title: "python", icon: "work", iconClass: "h-4 w-4" },
+  { key: 6, title: "python", icon: "work", iconClass: "h-4 w-4" },
+  { key: 7, title: "python", icon: "work", iconClass: "h-4 w-4" },
+  { key: 8, title: "python", icon: "work", iconClass: "h-4 w-4" },
+  { key: 9, title: "python", icon: "work", iconClass: "h-4 w-4" },
+  { key: 10, title: "python", icon: "work", iconClass: "h-4 w-4" },
+  { key: 11, title: "python", icon: "work", iconClass: "h-4 w-4" },
+  { key: 12, title: "python", icon: "work", iconClass: "h-4 w-4" },
+  { key: 13, title: "python", icon: "work", iconClass: "h-4 w-4" },
+  { key: 14, title: "python", icon: "work", iconClass: "h-4 w-4" },
+  { key: 15, title: "python", icon: "work", iconClass: "h-4 w-4" },
+  { key: 16, title: "python", icon: "work", iconClass: "h-4 w-4" },
+  { key: 17, title: "python", icon: "work", iconClass: "h-4 w-4" },
+];
+export default CurrentTechStack;

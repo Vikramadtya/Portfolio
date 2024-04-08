@@ -1,0 +1,67 @@
+import Icon from "@/components/atom/icon";
+import TechStack from "@/components/molecules/techStack";
+
+This is some **bold** and _italics_ text.
+
+This is a list in markdown:
+
+- One
+- Two
+- Three
+
+# GFM
+
+## Autolink literals
+
+www.example.com, https://example.com, and contact@example.com.
+
+## Footnote
+
+A note[^1]
+
+[^1]: Big note.
+
+## Strikethrough
+
+~one~ or ~~two~~ tildes.
+
+## Table
+
+| a   | b   |   c |  d  |
+| --- | :-- | --: | :-: |
+
+## Tasklist
+
+- [ ] to do
+- [x] done
+
+<Icon kind="me" size={"h-44 w-44"} />
+
+```
+wewewq
+```
+
+
+
+
+Checkout my React component: `here`
+
+
+```js showLineNumbers {1-3,4}
+import { useFloating } from "@floating-ui/react";
+
+function MyComponent() {
+  const { refs, floatingStyles } = useFloating();
+
+  return (
+    <>
+      <div ref={refs.setReference} />
+      <div ref={refs.setFloating} style={floatingStyles} />
+    </>
+  );
+}
+```
+
+## Tech Stack I'm familiar with:
+
+<TechStack />
