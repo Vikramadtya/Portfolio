@@ -7,7 +7,7 @@ import { getHighlighter } from "shiki";
 
 const prettyCodeOptions = {
   // theme: 'github-dark',
-  theme: "github-light",
+  theme: "catppuccin-latte",
   keepBackground: true, // to use our own background color
   defaultLang: {
     block: "plaintext",
