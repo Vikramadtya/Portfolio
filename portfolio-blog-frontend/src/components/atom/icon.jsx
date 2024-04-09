@@ -54,6 +54,7 @@ import Quote from "../../../public/quote.svg";
 import Now from "../../../public/now.svg";
 import Snippet from "../../../public/snippet.svg";
 import Photography from "../../../public/photography.svg";
+import User from "../../../public/user.svg";
 
 import LogoLight from "../../../public/logo.png";
 import LogoDark from "../../../public/logo-dark.png";
@@ -113,6 +114,7 @@ const components = {
   snippet: Snippet,
   now: Now,
   photography: Photography,
+  user: User,
 };
 
 const Icon = ({ kind, size }) => {
