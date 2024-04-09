@@ -42,19 +42,11 @@ code:not(pre code) {
 	@apply relative;
 
 	& pre {
-		@apply overflow-x-auto py-2 text-base font-medium;
+		@apply overflow-x-auto py-2 text-base font-medium grid min-w-full break-words rounded-none border-0 bg-transparent p-0;
 		display: flex;
 		flex-direction: column;
-	}
-
-	& code {
-		@apply grid min-w-full break-words rounded-none border-0 bg-transparent p-0;
 		counter-reset: line;
 		box-decoration-break: clone;
-	}
-
-	& [data-line] {
-		@apply inline-block w-full basis-4 border-l-[3px] border-l-transparent py-0.5 pl-2 pr-5;
 	}
 
 	& [data-highlighted-line] {
@@ -131,3 +123,7 @@ span.code-delete::before {
 [data-metadata]:not(:has(pre)) {
 	display: none;
 } */
+
+pre > code > span[data-line]  {
+	@apply inline-block w-full basis-4 border-l-[3px] border-l-transparent py-0.5 pl-2 pr-5;
+}
