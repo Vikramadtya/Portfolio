@@ -31,7 +31,7 @@ export const dropDownMenuNavLinks = [
     key: 17,
     href: "/contact",
     title: "Contact",
-    icon: "chart",
+    icon: "contact",
     shortcut: "⌘+U",
   },
   { key: 5, href: "", title: "", icon: "", shortcut: "" },

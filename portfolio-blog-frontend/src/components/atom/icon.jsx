@@ -55,6 +55,11 @@ import Now from "../../../public/now.svg";
 import Snippet from "../../../public/snippet.svg";
 import Photography from "../../../public/photography.svg";
 import User from "../../../public/user.svg";
+import Contact from "../../../public/contact.svg";
+import Mail from "../../../public/mail.svg";
+import LinkedIn from "../../../public/linkedin-2.svg";
+import Github from "../../../public/github-2.svg";
+import Instagram from "../../../public/instagram.svg";
 
 import LogoLight from "../../../public/logo.png";
 import LogoDark from "../../../public/logo-dark.png";
@@ -115,6 +120,11 @@ const components = {
   now: Now,
   photography: Photography,
   user: User,
+  contact: Contact,
+  mail: Mail,
+  github: Github,
+  linkedin: LinkedIn,
+  instagram: Instagram,
 };
 
 const Icon = ({ kind, size }) => {
