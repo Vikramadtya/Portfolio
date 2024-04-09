@@ -94,7 +94,7 @@ export default function CommandPalette() {
                   onChange={(event) => {
                     setQuery(event.target.value);
                   }}
-                  className="h-12 border-0 bg-transparent text-sm text-gray-800 placeholder-gray-400 focus:outline-none dark:text-neutral-400"
+                  className="h-12 border-0 bg-transparent pl-3 text-sm text-gray-800 placeholder-gray-400 focus:outline-none dark:text-neutral-400"
                   placeholder="Search..."
                   autoComplete="on"
                 />
@@ -108,14 +108,15 @@ export default function CommandPalette() {
                     <Combobox.Option key={link.key} value={link}>
                       {({ active }) => (
                         <div
-                          className={`cursor-pointer space-x-1 px-14  py-2  ${
+                          className={`flex cursor-pointer items-center space-x-1 px-14  py-2  ${
                             active
                               ? "bg-zinc-300 dark:bg-zinc-600"
                               : "bg-zinc-200 dark:bg-zinc-800"
                           }`}
                         >
+                          <Icon kind={link.icon} size={"h-4 w-4"} />
                           <span
-                            className={`font-medium  ${
+                            className={`pl-3 font-medium ${
                               active
                                 ? "text-neutral-900 dark:text-neutral-200"
                                 : "text-neutral-900 dark:text-neutral-200"
