@@ -4,8 +4,6 @@ import Icon from "@/components/atom/icon";
 import SocialIcon from "@/components/atom/social-icon";
 import siteMetadata from "@/lib/metadata";
 
-import "../markdown.css";
-
 export default function Home() {
   return (
     <>

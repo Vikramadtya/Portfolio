@@ -7,9 +7,51 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import BlogHero from "@/components/molecules/blogHero";
 import { Separator } from "@/components/atom/separator";
 
-import "../../markdown.css";
 import remarkGfm from "remark-gfm";
 import rehypePrettyCode from "rehype-pretty-code";
+import { getHighlighter } from "shiki";
+import rehypeSlug from "rehype-slug";
+
+const prettyCodeOptions = {
+  // theme: 'github-dark',
+  theme: "catppuccin-latte",
+  keepBackground: true, // to use our own background color
+  defaultLang: {
+    block: "plaintext",
+    inline: "plaintext",
+  },
+  onVisitLine(node) {
+    if (node.children.length === 0) {
+      node.children = { type: "text", value: " " };
+    }
+  },
+  getHighlighter: (options) => {
+    return getHighlighter({
+      ...options,
+      langs: [
+        "svelte",
+        "typescript",
+        "html",
+        "css",
+        "javascript",
+        "bash",
+        "shell",
+        "python",
+        "java",
+        "md",
+        "go",
+        "rust",
+        "c",
+        "cpp",
+        "csharp",
+        "php",
+        "json",
+        "yaml",
+        "swift",
+      ],
+    });
+  },
+};
 
 const projects = path.join(
   __dirname,
@@ -77,8 +119,8 @@ export default function Post({ params }) {
         source={props.content}
         options={{
           mdxOptions: {
-            remarkPlugins: [remarkGfm],
-            rehypePlugins: [rehypePrettyCode],
+            remarkPlugins: [],
+            rehypePlugins: [rehypeSlug, [rehypePrettyCode, prettyCodeOptions]],
           },
         }}
       />
