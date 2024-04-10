@@ -27,6 +27,13 @@ export const dropDownMenuNavLinks = [
     icon: "memo",
     shortcut: "⌘+B",
   },
+  {
+    key: 17,
+    href: "/contact",
+    title: "Contact",
+    icon: "contact",
+    shortcut: "⌘+U",
+  },
   { key: 5, href: "", title: "", icon: "", shortcut: "" },
   {
     key: 6,
