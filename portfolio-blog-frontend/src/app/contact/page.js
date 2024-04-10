@@ -1,5 +1,4 @@
 import React from "react";
-import InDevelopment from "@/components/organisms/inDevelopment";
 import { Button } from "@/components/atom/button";
 import Icon from "@/components/atom/icon";
 

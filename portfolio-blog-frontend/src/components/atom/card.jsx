@@ -1,10 +1,8 @@
 import React from "react";
 import Tag from "@/components/atom/tag";
-import Icon from "@/components/atom/icon";
 import Link from "next/link";
-import Image from "next/image";
 
-const Card = ({ title, description, tags, date, slug }) => {
+const Card = ({ title, description, tags, slug }) => {
   const tagsComponent = [];
   for (let i = 0; i < tags.length; ++i) {
     tagsComponent.push(<Tag key={i} text={tags[i]} id={i % 9} />);

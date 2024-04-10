@@ -146,7 +146,6 @@
   }
 }
 
-
 [data-theme] {
   display: flex;
   flex-direction: column;
@@ -276,7 +275,5 @@ span.code-delete::before {
 pre > code > span[data-line] {
   @apply inline-block w-full basis-4 border-l-[3px] border-l-transparent py-0.5 pl-2 pr-5;
 }
-
-
 
 /* Remote */

@@ -2,7 +2,7 @@ import Tag from "@/components/atom/tag";
 import React from "react";
 import Icon from "@/components/atom/icon";
 
-const BlogHero = ({ title, date, tags, readingData }) => {
+const BlogHero = ({ title, tags }) => {
   const tagsComponent = [];
   for (let i = 0; i < tags.length; ++i) {
     tagsComponent.push(<Tag key={i} text={tags[i]} id={i % 9} />);

@@ -7,7 +7,6 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import BlogHero from "@/components/molecules/blogHero";
 import { Separator } from "@/components/atom/separator";
 
-import remarkGfm from "remark-gfm";
 import rehypePrettyCode from "rehype-pretty-code";
 import { getHighlighter } from "shiki";
 import rehypeSlug from "rehype-slug";
@@ -109,9 +108,7 @@ export default function Post({ params }) {
     <article className="prose prose-sm mx-auto  pb-20 pt-20 md:prose-base lg:prose-lg ">
       <BlogHero
         title={props.contentMetadata.frontMatter.title}
-        date={props.contentMetadata.frontMatter.date}
         tags={props.contentMetadata.frontMatter.tags}
-        readingData={props.contentMetadata.readingData}
       />
       <Separator className="mb-20 mt-20" />
 
