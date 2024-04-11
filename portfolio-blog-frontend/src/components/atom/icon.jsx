@@ -60,7 +60,7 @@ import Mail from "../../../public/mail.svg";
 import LinkedIn from "../../../public/linkedin-2.svg";
 import Github from "../../../public/github-2.svg";
 import Instagram from "../../../public/instagram.svg";
-
+import BlueTick from "../../../public/blue_tick.svg";
 import LogoLight from "../../../public/logo.png";
 import LogoDark from "../../../public/logo-dark.png";
 
@@ -125,6 +125,7 @@ const components = {
   github: Github,
   linkedin: LinkedIn,
   instagram: Instagram,
+  blueTick: BlueTick,
 };
 
 const Icon = ({ kind, size }) => {

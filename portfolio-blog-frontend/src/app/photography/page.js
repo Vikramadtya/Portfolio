@@ -1,9 +1,7 @@
 import React from "react";
-import InDevelopment from "@/components/organisms/inDevelopment";
 import fs from "fs";
 import path from "path";
 import Image from "next/image";
-import Me from "../../../public/Me.jpg";
 
 export default function Home() {
   const projects = path.join(
@@ -43,12 +41,12 @@ export default function Home() {
           <div
             className="z-10 scale-100 py-10 transition-all duration-200 ease-out hover:z-50 hover:scale-[1.02]"
             style={{ perspective: "800px" }}
+            key={photo.key}
           >
             <div className="max-h-[430px] rounded-md transition-all duration-200 ease-out">
               <Image
                 className="object-cover"
                 src={photo.location}
-                key={photo.key}
                 alt={""}
                 width="500"
                 height="500"

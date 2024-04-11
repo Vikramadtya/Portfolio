@@ -1,5 +1,4 @@
 import React from "react";
-import InDevelopment from "@/components/organisms/inDevelopment";
 
 export default function Home() {
   return (
@@ -24,8 +23,8 @@ export default function Home() {
           <div className="relative z-10">
             <p className="text-gray-800 dark:text-white sm:text-xl">
               <em>
-                I just wanted to say that I'm very happy with my purchase so
-                far. The documentation is outstanding - clear and detailed.
+                I just wanted to say that I&apos;m very happy with my purchase
+                so far. The documentation is outstanding - clear and detailed.
               </em>
             </p>
           </div>

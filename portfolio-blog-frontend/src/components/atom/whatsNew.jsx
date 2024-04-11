@@ -1,6 +1,4 @@
 import Icon from "@/components/atom/icon";
-import siteMetadata from "@/lib/metadata";
-import Link from "next/link";
 
 const WhatsNew = () => {
   return (
