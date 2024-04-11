@@ -9,7 +9,7 @@ const Card = ({ title, description, tags, slug }) => {
   }
   return (
     <>
-      <div className="relative mx-5 mb-10 flex max-w-[24rem] flex-col overflow-hidden rounded-xl border-2 bg-white bg-clip-border text-gray-700 shadow-md hover:border-solid hover:border-gray-700 dark:bg-black dark:hover:border-white">
+      <div className="relative mb-10 flex max-w-[24rem] flex-col overflow-hidden rounded-xl border-2 bg-white bg-clip-border text-gray-700 shadow-md hover:border-solid hover:border-gray-700 dark:bg-black dark:hover:border-white">
         <Link href={"/projects/" + slug} passHref>
           <div className="relative m-0 overflow-hidden rounded-none bg-transparent bg-clip-border text-gray-700 shadow-none"></div>
           <div className="p-6">

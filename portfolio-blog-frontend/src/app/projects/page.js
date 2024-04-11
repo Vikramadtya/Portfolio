@@ -29,8 +29,8 @@ export default function Blog() {
   });
 
   return (
-    <main className="flex flex-col items-center justify-between">
-      <div className="space-y-2 pb-8 pt-6 md:space-y-5 ">
+    <main className="flex flex-col items-center justify-between px-48">
+      <div className="w-full space-y-2 pb-8 pt-6 md:space-y-5 ">
         <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-relaxed">
           Projects
         </h1>
