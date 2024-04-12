@@ -4,7 +4,7 @@ const WhatsNew = () => {
   return (
     <>
       <div
-        className="mt-10 w-1/3 rounded-lg border border-gray-200 bg-slate-100  p-4 shadow-lg dark:border-gray-700 dark:bg-gray-800"
+        className="mt-10 w-1/2 rounded-lg border border-gray-200 bg-slate-100 p-4  shadow-lg dark:border-gray-700 dark:bg-gray-800 md:w-1/3"
         role="alert"
       >
         <div className="flex">

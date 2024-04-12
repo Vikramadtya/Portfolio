@@ -39,7 +39,7 @@ const Header = () => {
         ) : (
           ""
         )}
-        <div className="hidden sm:block ">
+        <div className="hidden lg:block">
           {navLinks.map((link) => (
             <Link
               key={link.key}
