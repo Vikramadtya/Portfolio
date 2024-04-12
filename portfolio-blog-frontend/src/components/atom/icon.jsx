@@ -61,6 +61,12 @@ import LinkedIn from "../../../public/linkedin-2.svg";
 import Github from "../../../public/github-2.svg";
 import Instagram from "../../../public/instagram.svg";
 import BlueTick from "../../../public/blue_tick.svg";
+import Tv from "../../../public/tv.svg";
+import Spotify from "../../../public/spotify.svg";
+import Toolbox from "../../../public/toolbox.svg";
+import BookMark from "../../../public/bookmark.svg";
+import HotDrink from "../../../public/hot-drink.svg";
+
 import LogoLight from "../../../public/logo.png";
 import LogoDark from "../../../public/logo-dark.png";
 
@@ -126,6 +132,11 @@ const components = {
   linkedin: LinkedIn,
   instagram: Instagram,
   blueTick: BlueTick,
+  tv: Tv,
+  spotify: Spotify,
+  bookmark: BookMark,
+  toolbox: Toolbox,
+  hotDrink: HotDrink,
 };
 
 const Icon = ({ kind, size }) => {

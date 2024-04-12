@@ -1,4 +1,3 @@
-import Icon from "@/components/atom/icon";
 import React from "react";
 
 const GenericCard = ({ icon, heading, content }) => {

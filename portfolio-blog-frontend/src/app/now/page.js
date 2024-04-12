@@ -2,10 +2,11 @@
 import React, { useEffect, useState } from "react";
 import Icon from "@/components/atom/icon";
 import dynamic from "next/dynamic";
-
+import Sign from "../../../public/sign.png";
 import "react-clock/dist/Clock.css";
 import GenericCard from "@/components/atom/genericCard";
 import WeatherCard from "@/components/atom/weatherCard";
+import Image from "next/image";
 
 const Clock = dynamic(() => import("react-clock"), { ssr: false });
 
@@ -42,9 +43,7 @@ export default function Home() {
         </div>
         <div className="grid grid-cols-2 gap-10">
           <GenericCard
-            icon={
-              <Icon kind="work" size="inline-block size-[62px] rounded-lg" />
-            }
+            icon={<Icon kind="tv" size="inline-block size-[62px] rounded-lg" />}
             content={
               "With supporting text below as a natural lead-in to additional content."
             }
@@ -52,7 +51,10 @@ export default function Home() {
           />
           <GenericCard
             icon={
-              <Icon kind="work" size="inline-block size-[62px] rounded-lg" />
+              <Icon
+                kind="bookmark"
+                size="inline-block size-[62px] rounded-lg"
+              />
             }
             content={
               "With supporting text below as a natural lead-in to additional content."
@@ -61,7 +63,10 @@ export default function Home() {
           />
           <GenericCard
             icon={
-              <Icon kind="work" size="inline-block size-[62px] rounded-lg" />
+              <Icon
+                kind="hotDrink"
+                size="inline-block size-[62px] rounded-lg"
+              />
             }
             content={
               "With supporting text below as a natural lead-in to additional content."
@@ -70,7 +75,7 @@ export default function Home() {
           />
           <GenericCard
             icon={
-              <Icon kind="work" size="inline-block size-[62px] rounded-lg" />
+              <Icon kind="spotify" size="inline-block size-[62px] rounded-lg" />
             }
             content={
               "With supporting text below as a natural lead-in to additional content."
@@ -88,6 +93,13 @@ export default function Home() {
           <li>License</li>
           <li>Terms & Conditions</li>
         </ul>
+        <div className="flex flex-col items-center rounded-xl border border-gray-200 bg-green-600  p-4 shadow-sm dark:border-gray-700 dark:bg-slate-900 dark:text-gray-400 md:p-5 ">
+          <Image
+            className="inline-block size-[62px] rounded-lg"
+            src={Sign}
+            alt="Image Description"
+          />
+        </div>
       </div>
     </main>
   );

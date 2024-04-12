@@ -1,5 +1,4 @@
 import React from "react";
-import InDevelopment from "@/components/organisms/inDevelopment";
 import Icon from "@/components/atom/icon";
 
 export default function Home() {
