@@ -67,6 +67,29 @@ import Toolbox from "../../../public/toolbox.svg";
 import BookMark from "../../../public/bookmark.svg";
 import HotDrink from "../../../public/hot-drink.svg";
 
+// Tech stack
+import Aws from "../../../public/assets/techstack-icon/aws.svg";
+import CMake from "../../../public/assets/techstack-icon/cmake.svg";
+import Docker from "../../../public/assets/techstack-icon/docker.svg";
+import Git from "../../../public/assets/techstack-icon/git.svg";
+import GoLang from "../../../public/assets/techstack-icon/golang.svg";
+import Gradle from "../../../public/assets/techstack-icon/gradle.svg";
+import Java from "../../../public/assets/techstack-icon/java.svg";
+import Javascript from "../../../public/assets/techstack-icon/javascript.svg";
+import Jenkins from "../../../public/assets/techstack-icon/jenkins.svg";
+import Keras from "../../../public/assets/techstack-icon/keras.svg";
+import Linux from "../../../public/assets/techstack-icon/linux.svg";
+import MariaDb from "../../../public/assets/techstack-icon/mariadb.svg";
+import Maven from "../../../public/assets/techstack-icon/maven.svg";
+import MongoDb from "../../../public/assets/techstack-icon/maven.svg";
+import NextJs from "../../../public/assets/techstack-icon/nextjs.svg";
+import Perl from "../../../public/assets/techstack-icon/perl.svg";
+import Python from "../../../public/assets/techstack-icon/python.svg";
+import ReactJs from "../../../public/assets/techstack-icon/reactjs.svg";
+import Redis from "../../../public/assets/techstack-icon/redis.svg";
+import Spring from "../../../public/assets/techstack-icon/spring.svg";
+import Tailwind from "../../../public/assets/techstack-icon/tailwind.svg";
+
 import LogoLight from "../../../public/logo.png";
 import LogoDark from "../../../public/logo-dark.png";
 
@@ -137,6 +160,29 @@ const components = {
   bookmark: BookMark,
   toolbox: Toolbox,
   hotDrink: HotDrink,
+
+  // tech-stack
+  aws: Aws,
+  cmake: CMake,
+  docker: Docker,
+  git: Git,
+  golang: GoLang,
+  gradle: Gradle,
+  java: Java,
+  javascript: Javascript,
+  jenkins: Jenkins,
+  keras: Keras,
+  linux: Linux,
+  mariadb: MariaDb,
+  maven: Maven,
+  mongodb: MongoDb,
+  nextjs: NextJS,
+  perl: Perl,
+  python: Python,
+  reactjs: ReactJs,
+  redis: Redis,
+  spring: Spring,
+  tailwind: Tailwind,
 };
 
 const Icon = ({ kind, size }) => {
