@@ -10,6 +10,7 @@ const TechStack = () => {
               name={stack.title}
               icon={stack.icon}
               iconClass={stack.iconClass}
+              index={stack.key}
             />
           </div>
         ))}
