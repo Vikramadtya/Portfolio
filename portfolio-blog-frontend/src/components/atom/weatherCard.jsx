@@ -1,4 +1,4 @@
-const WeatherCard = ({ city, country }) => {
+const WeatherCard = () => {
   return (
     <>
       <div className="flex  items-center justify-center">
