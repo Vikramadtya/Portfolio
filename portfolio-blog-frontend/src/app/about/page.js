@@ -17,8 +17,9 @@ export default function Home() {
               }
             />
           </div>
-          <h3 className="pb-2 pt-4  font-bold leading-8">
+          <h3 className="flex items-center gap-1 pb-2 pt-4  font-bold leading-8">
             {siteMetadata.author}
+            <Icon kind="blueTick" size="h-6 w-6" />
           </h3>
           <div className="text-gray-500 dark:text-gray-400">
             {siteMetadata.designation}
