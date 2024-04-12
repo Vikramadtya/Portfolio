@@ -30,6 +30,7 @@
     "next-mdx-remote": "^4.4.1",
     "next-themes": "^0.2.1",
     "react": "^18",
+    "react-clock": "^4.6.0",
     "react-dom": "^18",
     "react-rough-notation": "^1.0.5",
     "react-snowfall": "^2.1.0",

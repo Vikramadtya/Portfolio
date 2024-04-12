@@ -39,7 +39,7 @@ export default function Home() {
       <div className="w-full columns-4 gap-10 ">
         {photos.map((photo) => (
           <div
-            className="z-10 scale-100 py-10 transition-all duration-200 ease-out hover:z-50 hover:scale-[1.02]"
+            className="z-10 scale-100 py-14 transition-all duration-200 ease-out hover:z-50 hover:scale-[1.02]"
             style={{ perspective: "800px" }}
             key={photo.key}
           >
