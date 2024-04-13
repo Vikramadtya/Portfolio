@@ -1,5 +1,6 @@
-import Icon from "@/components/atom/icon";
 import Link from "next/link";
+import Image from "next/image";
+import FirstPublication from "../../../../public/assets/publications/first_publication.webp";
 
 const certifications = [
   {
@@ -23,7 +24,7 @@ const Courses = () => {
           key={certification.key}
           className="mt-5 flex flex-row items-center gap-8 align-middle"
         >
-          <Icon kind={certification.icon} size="h-12 w-12" />
+          <Image src={FirstPublication} alt={""} className="h-14 w-10" />
           <div className="flex flex-col gap-1">
             <div className="text-base">{certification.heading}</div>
             <div className="text-sm">{certification.description}</div>
