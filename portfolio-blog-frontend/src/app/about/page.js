@@ -22,7 +22,7 @@ export default function Home() {
             <Icon kind="blueTick" size="h-6 w-6" />
           </h3>
           <div className="text-gray-500 dark:text-gray-400">
-            {siteMetadata.designation}
+            {siteMetadata.designation}, {siteMetadata.company}
           </div>
           <div className="flex items-center space-x-4 pt-4">
             <SocialIcon

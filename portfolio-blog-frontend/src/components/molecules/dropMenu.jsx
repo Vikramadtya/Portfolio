@@ -7,8 +7,8 @@ import {
   DropdownMenuShortcut,
   DropdownMenuTrigger,
 } from "@/components/atom/dropdown-menu";
-import MenuOpen from "../../../public/menu-open.svg";
-import MenuClose from "../../../public/menu-close.svg";
+import MenuOpen from "../../../public/assets/icons/menu-open.svg";
+import MenuClose from "../../../public/assets/icons/menu-close.svg";
 import * as React from "react";
 import useSound from "use-sound";
 import { useState } from "react";

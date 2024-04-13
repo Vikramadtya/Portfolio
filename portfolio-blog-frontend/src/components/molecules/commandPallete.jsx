@@ -5,7 +5,7 @@ import { useState, useEffect, Fragment } from "react";
 import { useRouter } from "next/navigation";
 import useSound from "use-sound";
 import Icon from "@/components/atom/icon";
-import Command from "../../../public/command.svg";
+import Command from "../../../public/assets/icons/command.svg";
 import * as React from "react";
 
 import { dropDownMenuNavLinks } from "@/lib/navLinks";
