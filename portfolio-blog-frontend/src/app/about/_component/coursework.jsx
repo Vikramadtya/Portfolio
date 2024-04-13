@@ -14,7 +14,7 @@ const Coursework = () => {
           <button
             className="hs-accordion-toggle hs-accordion-active:text-blue-600 dark:hs-accordion-active:text-blue-500 inline-flex w-full items-center gap-x-3 rounded-lg py-3 text-start font-semibold text-gray-800 hover:text-gray-500 disabled:pointer-events-none disabled:opacity-50 dark:text-gray-200 dark:hover:text-gray-400 dark:focus:text-gray-400 dark:focus:outline-none"
             aria-controls="hs-basic-with-arrow-collapse-one"
-            onClick={(e) => {
+            onClick={() => {
               setCollapse(!collapse);
             }}
           >

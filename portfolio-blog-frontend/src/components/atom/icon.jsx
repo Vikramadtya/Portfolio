@@ -82,7 +82,6 @@ import Linux from "../../../public/assets/techstack-icon/linux.svg";
 import MariaDb from "../../../public/assets/techstack-icon/mariadb.svg";
 import Maven from "../../../public/assets/techstack-icon/maven.svg";
 import MongoDb from "../../../public/assets/techstack-icon/maven.svg";
-import NextJs from "../../../public/assets/techstack-icon/nextjs.svg";
 import Perl from "../../../public/assets/techstack-icon/perl.svg";
 import Python from "../../../public/assets/techstack-icon/python.svg";
 import ReactJs from "../../../public/assets/techstack-icon/reactjs.svg";
