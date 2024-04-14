@@ -1,6 +1,17 @@
 "use client";
 import React, { useState } from "react";
 
+const courses = [
+  { key: "1", courseId: "CS101", courseName: "Computer Programming" },
+  { key: "2", courseId: "CS110", courseName: "Computer Programming Lab" },
+  { key: "3", courseId: "CS102", courseName: "IT Workshop I" },
+  { key: "4", courseId: "EC101", courseName: "Digital Design" },
+  { key: "5", courseId: "EC110", courseName: "Digital Design Lab" },
+  { key: "6", courseId: "EC102", courseName: "Electrical Circuit Analysis" },
+  { key: "7", courseId: "HS101", courseName: "English" },
+  { key: "8", courseId: "MA101", courseName: "Mathematics I" },
+];
+
 const Coursework = () => {
   const [collapse, setCollapse] = useState(true);
 
@@ -54,9 +65,13 @@ const Coursework = () => {
             aria-labelledby="hs-basic-with-arrow-heading-one"
           >
             <ul className="ml-10 w-full list-disc  ps-5 text-base text-gray-600 marker:text-blue-600 dark:text-gray-400">
-              <li>FAQ</li>
-              <li>License</li>
-              <li>Terms & Conditions</li>
+              {courses.map((course) => (
+                <li key={course.key}>
+                  <span className="text-black">{course.courseId}</span>{" "}
+                  <span className="px-2">:</span>
+                  <span className="text-gray">{course.courseName} </span>{" "}
+                </li>
+              ))}
             </ul>
           </div>
         </div>
