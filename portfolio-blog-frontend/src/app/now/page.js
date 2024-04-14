@@ -22,9 +22,9 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="pb-10 pl-12 pr-12 pt-32 md:pl-80 md:pr-80">
+    <main className="px-12 pb-10 pt-32 md:px-24 lg:px-32 xl:px-48 2xl:px-80">
       <div className="flex flex-col items-center justify-between gap-10">
-        <div className="grid w-full grid-cols-2 gap-10">
+        <div className="grid w-full grid-cols-1 gap-10 md:grid-cols-2">
           <Card
             heading={"Time at my place"}
             subHeading={"Card subtitle"}
@@ -41,7 +41,7 @@ export default function Home() {
             content={<WeatherCard />}
           />
         </div>
-        <div className="grid grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
           <GenericCard
             icon={<Icon kind="tv" size="inline-block size-[62px] rounded-lg" />}
             content={

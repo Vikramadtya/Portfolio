@@ -25,7 +25,7 @@ export default function Home() {
   }
 
   return (
-    <main className="flex flex-col items-center justify-between px-48">
+    <main className="flex flex-col items-center justify-between px-12 sm:px-24 md:px-32 lg:px-48 xl:px-64">
       <div className="w-full space-y-2 pb-8 pt-6 md:space-y-5 ">
         <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-relaxed">
           Photo wall
@@ -36,7 +36,7 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="w-full columns-4 gap-10 ">
+      <div className="w-full columns-1 gap-10 sm:columns-2 md:columns-3 lg:columns-4 2xl:columns-5">
         {photos.map((photo) => (
           <div
             className="z-10 scale-100 py-14 transition-all duration-200 ease-out hover:z-50 hover:scale-[1.02]"
