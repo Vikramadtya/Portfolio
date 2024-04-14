@@ -1,10 +1,15 @@
 // This file allows you to provide custom React components
 // to be used in MDX files. You can import and use any
-// React component you want, including inline styles,
+// React _component you want, including inline styles,
 // components from other libraries, and more.
 
 export function useMDXComponents(components) {
   return {
+    h1: ({ children }) => (
+      <h1 className="mt-12 scroll-m-20 pb-10  pt-20  text-4xl font-bold tracking-tight first:mt-0 md:text-6xl lg:text-8xl">
+        {children}
+      </h1>
+    ),
     h2: ({ children }) => (
       <h2 className="mt-12 scroll-m-20 border-b pb-2 text-2xl font-semibold tracking-tight first:mt-0">
         {children}

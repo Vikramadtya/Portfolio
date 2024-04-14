@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Icon from "@/components/atom/icon";
 import dynamic from "next/dynamic";
-import Sign from "../../../public/sign.png";
+import Sign from "../../../public/assets/icons/sign.png";
 import "react-clock/dist/Clock.css";
 import GenericCard from "@/components/atom/genericCard";
 import WeatherCard from "@/components/atom/weatherCard";

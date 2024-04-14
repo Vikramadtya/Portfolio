@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
-import Me from "../../../public/Me.jpg";
+import Me from "../../../public/assets/icons/Me.jpg";
 import Image from "next/image";
 
 const Avatar = () => {

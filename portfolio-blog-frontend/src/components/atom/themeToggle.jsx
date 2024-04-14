@@ -2,8 +2,8 @@
 
 import * as React from "react";
 
-import SunIcon from "../../../public/owl.svg";
-import MoonIcon from "../../../public/sun.svg";
+import SunIcon from "../../../public/assets/icons/owl.svg";
+import MoonIcon from "../../../public/assets/icons/sun.svg";
 
 import { useTheme } from "next-themes";
 import useSound from "use-sound";

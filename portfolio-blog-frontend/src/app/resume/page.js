@@ -8,8 +8,17 @@ export default function Home() {
           Resume
         </h1>
         <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-          I primarily cover tech topics, occasionally sharing insights into my
-          personal life.
+          Welcome to my Resume page! Here you&apos;ll find a detailed overview
+          of my professional journey, skills, and accomplishments. As a
+          technology enthusiast and Software Engineer II at Cisco, I bring a
+          blend of technical expertise, creativity, and a passion for innovation
+          to the table.
+        </p>
+        <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
+          Browse through my resume to learn more about my professional
+          background, projects, and contributions to the tech industry. If you
+          have any questions or would like to discuss potential opportunities,
+          please feel free to reach out. Thank you for visiting!
         </p>
       </div>
       <div className="w-full pb-10  pt-32 ">

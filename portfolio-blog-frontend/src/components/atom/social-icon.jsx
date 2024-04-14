@@ -1,11 +1,11 @@
-import Mail from "../../../public/mail.svg";
-import Github from "../../../public/github.svg";
-import Facebook from "../../../public/facebook.svg";
-import Youtube from "../../../public/youtube.svg";
-import Linkedin from "../../../public/linkedin.svg";
-import Twitter from "../../../public/twitter.svg";
-import Instagram from "../../../public/instagram.svg";
-import Rss from "../../../public/rss.svg";
+import Mail from "../../../public/assets/icons/mail.svg";
+import Github from "../../../public/assets/icons/github.svg";
+import Facebook from "../../../public/assets/icons/facebook.svg";
+import Youtube from "../../../public/assets/icons/youtube.svg";
+import Linkedin from "../../../public/assets/icons/linkedin.svg";
+import Twitter from "../../../public/assets/icons/twitter.svg";
+import Instagram from "../../../public/assets/icons/instagram.svg";
+import Rss from "../../../public/assets/icons/rss.svg";
 
 const components = {
   mail: Mail,

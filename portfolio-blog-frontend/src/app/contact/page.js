@@ -15,10 +15,6 @@ export default function Home() {
             <h1 className="mt-2 text-2xl font-semibold text-gray-800 dark:text-white md:text-3xl">
               Get in touch
             </h1>
-
-            <p className="mt-3 text-gray-500 dark:text-gray-400">
-              Our friendly team is always here to chat.
-            </p>
           </div>
 
           <div className="mt-10 grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
@@ -31,10 +27,10 @@ export default function Home() {
                 Email
               </h2>
               <p className="mt-2 text-gray-500 dark:text-gray-400">
-                Our friendly team is here to help.
+                Mail me your query
               </p>
               <p className="mt-2 text-blue-500 dark:text-blue-400">
-                hello@merakiui.com
+                vikramaditya.bhadoria@gmail.com
               </p>
             </div>
 
@@ -43,13 +39,13 @@ export default function Home() {
                 <Icon kind="linkedin" size="h-6 w-6" />
               </span>
               <h2 className="mt-4 text-lg font-medium text-gray-800 dark:text-white">
-                Office
+                LinkedIn
               </h2>
               <p className="mt-2 text-gray-500 dark:text-gray-400">
-                Come say hello at our office HQ.
+                Connect with me on LinkedIn
               </p>
               <p className="mt-2 text-blue-500 dark:text-blue-400">
-                100 Smith Street Collingwood VIC 3066 AU
+                https://www.linkedin.com/in/vikrmadityasngh/
               </p>
             </div>
 
@@ -59,13 +55,13 @@ export default function Home() {
               </span>
 
               <h2 className="mt-4 text-lg font-medium text-gray-800 dark:text-white">
-                Phone
+                Instagram
               </h2>
               <p className="mt-2 text-gray-500 dark:text-gray-400">
-                Mon-Fri from 8am to 5pm.
+                Liked my photography skills, follow me on Instagram
               </p>
               <p className="mt-2 text-blue-500 dark:text-blue-400">
-                +1 (555) 000-0000
+                https://www.instagram.com/blissfullvibes101/
               </p>
             </div>
           </div>
@@ -74,8 +70,7 @@ export default function Home() {
       <section className="bg-white dark:bg-gray-900">
         <div className="mx-auto max-w-screen-md px-4 py-8 lg:py-16">
           <p className="mb-8 text-center font-light text-gray-500 dark:text-gray-400 sm:text-xl lg:mb-16">
-            If you Have some query? Want to send feedback ? or Just say hi help
-            yourself below
+            Not satisfied from above options message me directly below
           </p>
           <form action="#" className="space-y-8">
             <div>
@@ -89,7 +84,7 @@ export default function Home() {
                 type="email"
                 id="email"
                 className="focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
-                placeholder="name@flowbite.com"
+                placeholder="name@email-service-provider.com"
                 required
               />
             </div>
@@ -104,7 +99,7 @@ export default function Home() {
                 type="text"
                 id="subject"
                 className="focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light block w-full rounded-lg border border-gray-300 bg-gray-50 p-3 text-sm text-gray-900 shadow-sm dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
-                placeholder="Let us know how we can help you"
+                placeholder="Let me know how can i help you"
                 required
               />
             </div>
@@ -119,7 +114,7 @@ export default function Home() {
                 id="message"
                 rows="6"
                 className="focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-500 dark:focus:border-primary-500 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
-                placeholder="Leave a comment..."
+                placeholder="Type the message here..."
               ></textarea>
             </div>
             <Button className="w-full">Send message</Button>

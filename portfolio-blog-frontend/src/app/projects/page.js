@@ -35,8 +35,22 @@ export default function Blog() {
           Projects
         </h1>
         <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-          I primarily cover tech topics, occasionally sharing insights into my
-          personal life.
+          Welcome to my Projects page! Here, you&apos;ll find a curated
+          selection of projects that showcase my technical skills, creativity,
+          and problem-solving abilities. From innovative software solutions to
+          collaborative initiatives, each project reflects my commitment to
+          excellence and passion for technology. Explore these projects to gain
+          insights into my approach to problem-solving, design, and
+          implementation. Whether it&apos;s algorithms, data structures,
+          application development, or cybersecurity, each project demonstrates
+          my versatility and adaptability in tackling diverse challenges.
+        </p>
+        <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
+          I invite you to click on each project to learn more about its
+          objectives, technologies used, and my role in its development. Feel
+          free to reach out if you have any questions or would like to discuss
+          these projects in more detail. Thank you for taking the time to
+          explore my work!
         </p>
       </div>
       <MarkDownContentList blogs={blogs} />

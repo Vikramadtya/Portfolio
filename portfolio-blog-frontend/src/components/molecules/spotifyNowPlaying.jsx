@@ -1,4 +1,4 @@
-import Spotify from "../../../public/spotify.svg";
+import Spotify from "../../../public/assets/icons/spotify.svg";
 
 import MusicBar from "@/components/atom/musicBar";
 
