@@ -4,7 +4,7 @@ import Icon from "@/components/atom/icon";
 export default function Home() {
   return (
     <main className="flex flex-col items-center justify-between">
-      <div className="pb-10 pl-12 pr-12 pt-32 md:pl-80 md:pr-80">
+      <div className="px-12 pb-10 pt-32 md:px-24   lg:px-32 xl:px-48 2xl:px-80">
         <div className="flex flex-col rounded-xl border bg-white shadow-sm dark:border-gray-700 dark:bg-slate-900 dark:shadow-slate-700/[.7]">
           <div className="flex items-center">
             <div className="relative inline-block pl-10 pr-10">
