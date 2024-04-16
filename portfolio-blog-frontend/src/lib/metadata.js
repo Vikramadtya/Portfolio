@@ -26,7 +26,7 @@ const siteMetadata = {
     month: "long",
     day: "numeric",
   },
-  blogLink: "https://www.vikramaditya-singh.in",
+  blogLink: "https://www.neuralcook.com",
   openToWork: true,
   giscus: {
     label: "comments",
