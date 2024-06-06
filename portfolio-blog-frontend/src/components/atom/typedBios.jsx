@@ -83,7 +83,7 @@ const TypedBios = () => {
             <Icon kind="partyingFace" size={"h-8 w-8"} />
             {","}
           </span>
-          <span ref={el} className="text-gray-600 dark:text-gray-400 md:pl-2" />
+          <span ref={el} className="text-gray-600 dark:text-gray-100 md:pl-2" />
         </p>{" "}
       </div>
     </>

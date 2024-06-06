@@ -17,7 +17,7 @@ export default function Home() {
                 </h3>
               </div>
               <div className="p-4 md:p-5">
-                <p className="mt-2 text-gray-500 dark:text-gray-400">
+                <p className="mt-2 text-gray-500 dark:text-gray-100">
                   With supporting text below as a natural lead-in to additional
                   content.
                 </p>

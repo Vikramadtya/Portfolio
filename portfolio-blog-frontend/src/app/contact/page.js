@@ -26,7 +26,7 @@ export default function Home() {
               <h2 className="mt-4 text-lg font-medium text-gray-800 dark:text-white">
                 Email
               </h2>
-              <p className="mt-2 text-gray-500 dark:text-gray-400">
+              <p className="mt-2 text-gray-500 dark:text-gray-100">
                 Mail me your query
               </p>
               <p className="mt-2 text-blue-500 dark:text-blue-400">
@@ -41,7 +41,7 @@ export default function Home() {
               <h2 className="mt-4 text-lg font-medium text-gray-800 dark:text-white">
                 LinkedIn
               </h2>
-              <p className="mt-2 text-gray-500 dark:text-gray-400">
+              <p className="mt-2 text-gray-500 dark:text-gray-100">
                 Connect with me on LinkedIn
               </p>
               <p className="mt-2 text-blue-500 dark:text-blue-400">
@@ -57,7 +57,7 @@ export default function Home() {
               <h2 className="mt-4 text-lg font-medium text-gray-800 dark:text-white">
                 Instagram
               </h2>
-              <p className="mt-2 text-gray-500 dark:text-gray-400">
+              <p className="mt-2 text-gray-500 dark:text-gray-100">
                 Liked my photography skills, follow me on Instagram
               </p>
               <p className="mt-2 text-blue-500 dark:text-blue-400">
@@ -69,7 +69,7 @@ export default function Home() {
       </section>
       <section className="bg-white dark:bg-gray-900">
         <div className="mx-auto max-w-screen-md px-4 py-8 lg:py-16">
-          <p className="mb-8 text-center font-light text-gray-500 dark:text-gray-400 sm:text-xl lg:mb-16">
+          <p className="mb-8 text-center font-light text-gray-500 dark:text-gray-100 sm:text-xl lg:mb-16">
             Not satisfied from above options message me directly below
           </p>
           <form action="#" className="space-y-8">
@@ -106,7 +106,7 @@ export default function Home() {
             <div className="sm:col-span-2">
               <label
                 htmlFor="message"
-                className="mb-2 block text-sm font-medium text-gray-900 dark:text-gray-400"
+                className="mb-2 block text-sm font-medium text-gray-900 dark:text-gray-100"
               >
                 Your message
               </label>

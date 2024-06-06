@@ -34,7 +34,7 @@ export default function Blog() {
         <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-relaxed">
           Projects
         </h1>
-        <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
+        <p className="text-lg leading-7 text-gray-500 dark:text-gray-100">
           Welcome to my Projects page! Here, you&apos;ll find a curated
           selection of projects that showcase my technical skills, creativity,
           and problem-solving abilities. From innovative software solutions to
@@ -45,7 +45,7 @@ export default function Blog() {
           application development, or cybersecurity, each project demonstrates
           my versatility and adaptability in tackling diverse challenges.
         </p>
-        <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
+        <p className="text-lg leading-7 text-gray-500 dark:text-gray-100">
           I invite you to click on each project to learn more about its
           objectives, technologies used, and my role in its development. Feel
           free to reach out if you have any questions or would like to discuss

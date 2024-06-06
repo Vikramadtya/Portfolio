@@ -1,10 +1,11 @@
 import Icon from "@/components/atom/icon";
+import siteMetadata from "@/lib/metadata";
 
 const WhatsNew = () => {
   return (
     <>
       <div
-        className="mt-10 w-1/2 rounded-lg border border-gray-200 bg-slate-100 p-4  shadow-lg dark:border-gray-700 dark:bg-gray-800 md:w-1/3"
+        className="mt-10 w-1/2 rounded-lg border border-gray-200 bg-slate-100 p-4  shadow-lg dark:border-gray-700 dark:bg-gray-800 sm:w-1/2 md:w-1/3"
         role="alert"
       >
         <div className="flex">
@@ -18,8 +19,12 @@ const WhatsNew = () => {
             <h3 className="font-semibold text-gray-800 dark:text-white">
               What&apos;s New?
             </h3>
-            <p className="mt-2 text-sm text-gray-700 dark:text-gray-400">
+            <p className="mt-2  text-sm text-gray-700 dark:text-gray-100">
               Check out my blog{" "}
+              <a className="hover:text-blue-500" href={siteMetadata.blogLink}>
+                neural cook
+              </a>{" "}
+              {""}
             </p>
           </div>
         </div>

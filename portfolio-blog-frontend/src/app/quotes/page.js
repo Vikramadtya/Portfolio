@@ -30,7 +30,7 @@ export default function Home() {
           </div>
 
           <footer className="mt-6">
-            <div class="text-base font-semibold text-gray-800 dark:text-gray-400">
+            <div class="text-base font-semibold text-gray-800 dark:text-gray-100">
               Josh Grazioso
             </div>
           </footer>
