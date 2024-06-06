@@ -64,7 +64,7 @@ const Coursework = () => {
             className={`hs-accordion-content  w-full overflow-hidden transition-[height] duration-300 ${collapse ? "hidden" : ""}`}
             aria-labelledby="hs-basic-with-arrow-heading-one"
           >
-            <ul className="ml-10 w-full list-disc  ps-5 text-base text-gray-600 marker:text-blue-600 dark:text-gray-400">
+            <ul className="ml-10 w-full list-disc  ps-5 text-base text-gray-600 marker:text-blue-600 dark:text-gray-100">
               {courses.map((course) => (
                 <li key={course.key}>
                   <span className="text-black">{course.courseId}</span>{" "}

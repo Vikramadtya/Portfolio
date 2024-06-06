@@ -19,7 +19,7 @@ export function useMDXComponents(components) {
       <li className="mt-2 leading-7 text-primary/90 md:text-lg">{children}</li>
     ),
     ul: ({ children }) => (
-      <ul className="ml-6 list-disc space-y-2 ps-5 text-sm text-gray-600 marker:text-blue-600 dark:text-gray-400">
+      <ul className="ml-6 list-disc space-y-2 ps-5 text-sm text-gray-600 marker:text-blue-600 dark:text-gray-100">
         {children}
       </ul>
     ),

@@ -31,7 +31,7 @@ export default function Home() {
             content={
               <Clock
                 value={value}
-                className="mt-2 text-gray-500 dark:text-gray-400"
+                className="mt-2 text-gray-500 dark:text-gray-100"
               />
             }
           />
@@ -88,12 +88,12 @@ export default function Home() {
           <span className="mx-4 flex-shrink text-gray-400">~~~~~</span>
           <div className="flex-grow border-t border-gray-400"></div>
         </div>
-        <ul className="mb-20 w-full list-disc space-y-2 ps-5 text-base text-gray-600 marker:text-blue-600 dark:text-gray-400">
+        <ul className="mb-20 w-full list-disc space-y-2 ps-5 text-base text-gray-600 marker:text-blue-600 dark:text-gray-100">
           <li>FAQ</li>
           <li>License</li>
           <li>Terms & Conditions</li>
         </ul>
-        <div className="flex flex-col items-center rounded-xl border border-gray-200 bg-green-600  p-4 shadow-sm dark:border-gray-700 dark:bg-slate-900 dark:text-gray-400 md:p-5 ">
+        <div className="flex flex-col items-center rounded-xl border border-gray-200 bg-green-600  p-4 shadow-sm dark:border-gray-700 dark:bg-slate-900 dark:text-gray-100 md:p-5 ">
           <Image
             className="inline-block size-[62px] rounded-lg"
             src={Sign}

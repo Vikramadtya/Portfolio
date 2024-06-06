@@ -20,7 +20,7 @@ const WhatsNew = () => {
             <h3 className="font-semibold text-gray-800 dark:text-white">
               What&apos;s New?
             </h3>
-            <p className="mt-2 flex items-center text-sm text-gray-700 dark:text-gray-400">
+            <p className="mt-2 flex items-center text-sm text-gray-700 dark:text-gray-100">
               Check out my blog{" "}
               <Link className="pl-1" href={siteMetadata.blogLink}>
                 neural cook

@@ -21,7 +21,7 @@ const TimeLine = () => {
               <time className="mb-2 block text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
                 Released on January 13th, 2022
               </time>
-              <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+              <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-100">
                 Get access to over 20+ pages including a dashboard layout,
                 charts, kanban board, calendar, and pre-order E-commerce &
                 Marketing pages.
@@ -35,7 +35,7 @@ const TimeLine = () => {
               <time className="mb-2 block text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
                 Released on January 13th, 2022
               </time>
-              <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+              <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-100">
                 Get access to over 20+ pages including a dashboard layout,
                 charts, kanban board, calendar, and pre-order E-commerce &
                 Marketing pages.
@@ -49,7 +49,7 @@ const TimeLine = () => {
               <time className="mb-2 block text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
                 Released on January 13th, 2022
               </time>
-              <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+              <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-100">
                 Get access to over 20+ pages including a dashboard layout,
                 charts, kanban board, calendar, and pre-order E-commerce &
                 Marketing pages.
@@ -73,7 +73,7 @@ const TimeLine = () => {
             <time className="mb-2 block text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
               Released on December 2nd, 2021
             </time>
-            <p className="text-base font-normal text-gray-500 dark:text-gray-400">
+            <p className="text-base font-normal text-gray-500 dark:text-gray-100">
               Get started with dozens of web components and interactive elements
               built on top of Tailwind CSS.
             </p>
@@ -98,7 +98,7 @@ const TimeLine = () => {
               <time className="mb-2 block text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
                 Released on December 2nd, 2021
               </time>
-              <p className="text-base font-normal text-gray-500 dark:text-gray-400">
+              <p className="text-base font-normal text-gray-500 dark:text-gray-100">
                 Get started with dozens of web components and interactive
                 elements built on top of Tailwind CSS.
               </p>
@@ -121,7 +121,7 @@ const TimeLine = () => {
             <time className="mb-2 block text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
               Released on December 2nd, 2021
             </time>
-            <p className="text-base font-normal text-gray-500 dark:text-gray-400">
+            <p className="text-base font-normal text-gray-500 dark:text-gray-100">
               Get started with dozens of web components and interactive elements
               built on top of Tailwind CSS.
             </p>
@@ -146,7 +146,7 @@ const TimeLine = () => {
               <time className="mb-2 block text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
                 Released on December 2nd, 2021
               </time>
-              <p className="text-base font-normal text-gray-500 dark:text-gray-400">
+              <p className="text-base font-normal text-gray-500 dark:text-gray-100">
                 Get started with dozens of web components and interactive
                 elements built on top of Tailwind CSS.
               </p>
@@ -169,7 +169,7 @@ const TimeLine = () => {
             <time className="mb-2 block text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
               Released on December 2nd, 2021
             </time>
-            <p className="text-base font-normal text-gray-500 dark:text-gray-400">
+            <p className="text-base font-normal text-gray-500 dark:text-gray-100">
               Get started with dozens of web components and interactive elements
               built on top of Tailwind CSS.
             </p>
@@ -191,7 +191,7 @@ const TimeLine = () => {
               <time className="mb-2 block text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
                 Released on December 2nd, 2021
               </time>
-              <p className="text-base font-normal text-gray-500 dark:text-gray-400">
+              <p className="text-base font-normal text-gray-500 dark:text-gray-100">
                 Get started with dozens of web components and interactive
                 elements built on top of Tailwind CSS.
               </p>
@@ -211,7 +211,7 @@ const TimeLine = () => {
             <time className="mb-2 block text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
               Released on December 2nd, 2021
             </time>
-            <p className="text-base font-normal text-gray-500 dark:text-gray-400">
+            <p className="text-base font-normal text-gray-500 dark:text-gray-100">
               Get started with dozens of web components and interactive elements
               built on top of Tailwind CSS.
             </p>
