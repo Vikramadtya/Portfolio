@@ -1,5 +1,6 @@
 import siteMetadata from "@/lib/metadata";
 
+// todo : uncomment the resume page once the new resume is ready
 const navLinks = [
   { key: 1, href: siteMetadata.blogLink, title: "Blog", shortcut: "⌘+B" },
   { key: 2, href: "/about", title: "About", shortcut: "⌘+A" },
@@ -9,6 +10,7 @@ const navLinks = [
 
 export default navLinks;
 
+// todo : uncomment the stats page once the statistic fetch is ready
 export const dropDownMenuNavLinks = [
   { key: 1, href: "/", title: "Home", icon: "home", shortcut: "⌘+H" },
   { key: 2, href: "/about", title: "About", icon: "me", shortcut: "⌘+A" },
