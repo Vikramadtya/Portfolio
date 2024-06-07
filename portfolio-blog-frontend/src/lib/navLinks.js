@@ -2,8 +2,8 @@ import siteMetadata from "@/lib/metadata";
 
 const navLinks = [
   { key: 1, href: siteMetadata.blogLink, title: "Blog", shortcut: "⌘+B" },
-  { key: 2, href: "/resume", title: "Resume", shortcut: "⌘+R" },
-  { key: 3, href: "/about", title: "About", shortcut: "⌘+A" },
+  { key: 2, href: "/about", title: "About", shortcut: "⌘+A" },
+  // { key: 3, href: "/resume", title: "Resume", shortcut: "⌘+R" },
   { key: 4, href: "/projects", title: "Projects", shortcut: "⌘+P" },
 ];
 
@@ -11,8 +11,8 @@ export default navLinks;
 
 export const dropDownMenuNavLinks = [
   { key: 1, href: "/", title: "Home", icon: "home", shortcut: "⌘+H" },
-  { key: 2, href: "/resume", title: "Resume", icon: "resume", shortcut: "⌘+R" },
-  { key: 3, href: "/about", title: "About", icon: "me", shortcut: "⌘+A" },
+  { key: 2, href: "/about", title: "About", icon: "me", shortcut: "⌘+A" },
+  { key: 3, href: "/resume", title: "Resume", icon: "resume", shortcut: "⌘+R" },
   {
     key: 4,
     href: "/projects",
@@ -42,13 +42,13 @@ export const dropDownMenuNavLinks = [
     icon: "rocket",
     shortcut: "⌘+J",
   },
-  {
-    key: 7,
-    href: "/stats",
-    title: "Statistic",
-    icon: "stats",
-    shortcut: "⌘+S",
-  },
+  // {
+  //   key: 7,
+  //   href: "/stats",
+  //   title: "Statistic",
+  //   icon: "stats",
+  //   shortcut: "⌘+S",
+  // },
   {
     key: 8,
     href: "/snippets",
