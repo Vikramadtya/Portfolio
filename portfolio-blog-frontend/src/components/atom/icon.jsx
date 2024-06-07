@@ -66,6 +66,7 @@ import Spotify from "../../../public/assets/icons/spotify.svg";
 import Toolbox from "../../../public/assets/icons/toolbox.svg";
 import BookMark from "../../../public/assets/icons/bookmark.svg";
 import HotDrink from "../../../public/assets/icons/hot-drink.svg";
+import SmilingFace from "../../../public/assets/icons/smiling_face.svg";
 
 // Tech stack
 import Aws from "../../../public/assets/techstack-icon/aws.svg";
@@ -167,6 +168,7 @@ const components = {
   bookmark: BookMark,
   toolbox: Toolbox,
   hotDrink: HotDrink,
+  smilingFace: SmilingFace,
 
   // tech-stack
   aws: Aws,
