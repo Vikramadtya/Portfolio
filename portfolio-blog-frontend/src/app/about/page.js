@@ -3,6 +3,8 @@ import Content from "./content.mdx";
 import Icon from "@/components/atom/icon";
 import SocialIcon from "@/components/atom/social-icon";
 import siteMetadata from "@/lib/metadata";
+import Image from "next/image";
+import Profile from "../../../public/assets/icons/profile.jpg";
 
 export default function Home() {
   return (
@@ -10,9 +12,12 @@ export default function Home() {
       <main className="mt-8 flex flex-col items-start pb-24 pl-12 pr-12  pt-24 text-lg leading-8 text-gray-600 dark:text-gray-100 md:flex-row md:pl-24 md:pr-24 lg:pl-32 lg:pr-32 xl:mt-8 xl:pl-48 xl:pr-48 ">
         <div className="flex w-full flex-col items-center  px-6 pt-8 xl:sticky xl:top-0">
           <div className="px-6">
-            <Icon
-              kind="user"
-              size={
+            <Image
+              src={Profile}
+              alt="avatar"
+              width={400}
+              height={300}
+              className={
                 "h-44 w-44 rounded-full ring-2 ring-gray-300 dark:ring-gray-500"
               }
             />

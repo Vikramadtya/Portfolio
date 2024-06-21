@@ -13,14 +13,13 @@ const BlogLinks = () => {
             <Link href="/about"> get to know me better.</Link>
           </p>
         </div>
-
         <CustomLink
-          href="/blog"
+          href="/about"
           className="flex items-center pb-1 pt-1 hover:underline"
         >
-          <Icon kind="memo" size={"h-8 w-8"} />
-          <span data-umami-event="home-link-blog" className="ml-1.5">
-            My writings
+          <Icon kind="manWithMonocle" size={"h-8 w-8"} />
+          <span data-umami-event="home-link-about" className="ml-1.5">
+            More about me
           </span>
         </CustomLink>
         <CustomLink
@@ -42,21 +41,21 @@ const BlogLinks = () => {
           </span>
         </CustomLink>
         <CustomLink
-          href="/resume"
+          href="/blog"
           className="flex items-center pb-1 pt-1 hover:underline"
         >
-          <Icon kind="briefcase" size={"h-8 w-8"} />
-          <span data-umami-event="home-link-resume" className="ml-1.5">
-            My career
+          <Icon kind="memo" size={"h-8 w-8"} />
+          <span data-umami-event="home-link-blog" className="ml-1.5">
+            My writings
           </span>
         </CustomLink>
         <CustomLink
-          href="/about"
+          href="/timeline"
           className="flex items-center pb-1 pt-1 hover:underline"
         >
-          <Icon kind="manWithMonocle" size={"h-8 w-8"} />
-          <span data-umami-event="home-link-about" className="ml-1.5">
-            More about me
+          <Icon kind="rocket" size={"h-8 w-8"} />
+          <span data-umami-event="home-link-resume" className="ml-1.5">
+            My journey
           </span>
         </CustomLink>
       </div>
