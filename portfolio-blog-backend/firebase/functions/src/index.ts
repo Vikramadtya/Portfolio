@@ -13,8 +13,17 @@ import {notifySlack} from "./services";
 import {Message} from "./message";
 
 export const sendMessage = onRequest(
-    {cors: [/firebase\.com$/, "flutter.com"]},
+    {cors: [/vikramaditya-singh\.in$/, "vikramaditya-singh.in"]},
     (request, response) => {
+        // send response back if not request is POST
+        if (request.method != "POST") {
+            response.status(400).send({
+                message: "only post request is supported",
+                timestamp: Date.now(),
+            });
+            return;
+        }
+
         const body: Message = request.body;
         logger.info("received message", body);
 

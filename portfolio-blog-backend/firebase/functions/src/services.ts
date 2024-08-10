@@ -1,8 +1,11 @@
 import * as logger from "firebase-functions/logger";
 
 export const notifySlack = (message: string) => {
+    const slackToken1 = process.env.SLACK_TOKEN_1;
+    const slackToken2 = process.env.SLACK_TOKEN_2;
+    const slackToken3 = process.env.SLACK_TOKEN_3;
     fetch(
-        "https://hooks.slack.com/services/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",
+        `https://hooks.slack.com/services/${slackToken1}/${slackToken2}/${slackToken3}`,
         {
             method: "POST",
             body: JSON.stringify({
