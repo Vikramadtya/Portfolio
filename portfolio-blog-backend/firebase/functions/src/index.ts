@@ -9,11 +9,22 @@
 
 import {onRequest} from "firebase-functions/v2/https";
 import * as logger from "firebase-functions/logger";
+import {notifySlack} from "./services";
+import {Message} from "./message";
 
-// Start writing functions
-// https://firebase.google.com/docs/functions/typescript
+export const sendMessage = onRequest(
+    {cors: [/firebase\.com$/, "flutter.com"]},
+    (request, response) => {
+        const body: Message = request.body;
+        logger.info("received message", body);
 
-// export const helloWorld = onRequest((request, response) => {
-//   logger.info("Hello logs!", {structuredData: true});
-//   response.send("Hello from Firebase!");
-// });
+        // notify the slack
+        notifySlack(JSON.stringify(body));
+
+        // send response back
+        response.status(200).send({
+            ...body,
+            timestamp: Date.now(),
+        });
+    }
+);
