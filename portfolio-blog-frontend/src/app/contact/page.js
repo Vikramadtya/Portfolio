@@ -1,6 +1,6 @@
 import React from "react";
-import { Button } from "@/components/atom/button";
 import Icon from "@/components/atom/icon";
+import ContactForm from "@/components/molecules/contactForm";
 
 export default function Home() {
   return (
@@ -72,53 +72,7 @@ export default function Home() {
           <p className="mb-8 text-center font-light text-gray-500 dark:text-gray-100 sm:text-xl lg:mb-16">
             Not satisfied from above options message me directly below
           </p>
-          <form action="#" className="space-y-8">
-            <div>
-              <label
-                htmlFor="email"
-                className="mb-2 block text-sm font-medium text-gray-900 dark:text-gray-300"
-              >
-                Your email
-              </label>
-              <input
-                type="email"
-                id="email"
-                className="focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
-                placeholder="name@email-service-provider.com"
-                required
-              />
-            </div>
-            <div>
-              <label
-                htmlFor="subject"
-                className="mb-2 block text-sm font-medium text-gray-900 dark:text-gray-300"
-              >
-                Subject
-              </label>
-              <input
-                type="text"
-                id="subject"
-                className="focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light block w-full rounded-lg border border-gray-300 bg-gray-50 p-3 text-sm text-gray-900 shadow-sm dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
-                placeholder="Let me know how can i help you"
-                required
-              />
-            </div>
-            <div className="sm:col-span-2">
-              <label
-                htmlFor="message"
-                className="mb-2 block text-sm font-medium text-gray-900 dark:text-gray-100"
-              >
-                Your message
-              </label>
-              <textarea
-                id="message"
-                rows="6"
-                className="focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-500 dark:focus:border-primary-500 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
-                placeholder="Type the message here..."
-              ></textarea>
-            </div>
-            <Button className="w-full">Send message</Button>
-          </form>
+          <ContactForm />
         </div>
       </section>
     </main>
