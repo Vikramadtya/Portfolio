@@ -1,6 +1,7 @@
 import CustomLink from "@/components/atom/customLink";
 import Icon from "@/components/atom/icon";
 import Link from "next/link";
+import siteMetadata from "@/lib/metadata";
 
 const BlogLinks = () => {
   return (
@@ -26,27 +27,18 @@ const BlogLinks = () => {
           href="/projects"
           className="flex items-center pb-1 pt-1 hover:underline"
         >
-          <Icon kind="bolt" size={"h-8 w-8"} />
-          <span data-umami-event="home-link-projects" className="ml-1.5">
-            My snippet collection
-          </span>
-        </CustomLink>
-        <CustomLink
-          href="/projects"
-          className="flex items-center pb-1 pt-1 hover:underline"
-        >
           <Icon kind="wrenchAndHammer" size={"h-8 w-8"} />
           <span data-umami-event="home-link-projects" className="ml-1.5">
             What have I built?
           </span>
         </CustomLink>
         <CustomLink
-          href="/blog"
+          href="/projects"
           className="flex items-center pb-1 pt-1 hover:underline"
         >
-          <Icon kind="memo" size={"h-8 w-8"} />
-          <span data-umami-event="home-link-blog" className="ml-1.5">
-            My writings
+          <Icon kind="bolt" size={"h-8 w-8"} />
+          <span data-umami-event="home-link-projects" className="ml-1.5">
+            My snippet collection
           </span>
         </CustomLink>
         <CustomLink
@@ -56,6 +48,15 @@ const BlogLinks = () => {
           <Icon kind="rocket" size={"h-8 w-8"} />
           <span data-umami-event="home-link-resume" className="ml-1.5">
             My journey
+          </span>
+        </CustomLink>
+        <CustomLink
+          href={siteMetadata.blogLink}
+          className="flex items-center pb-1 pt-1 hover:underline"
+        >
+          <Icon kind="memo" size={"h-8 w-8"} />
+          <span data-umami-event="home-link-blog" className="ml-1.5">
+            My writings
           </span>
         </CustomLink>
       </div>
