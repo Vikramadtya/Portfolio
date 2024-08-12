@@ -1,7 +1,5 @@
 import React from "react";
-import { Button } from "@/components/atom/button";
 import Icon from "@/components/atom/icon";
-import { notify } from "@/lib/notificationService";
 import ContactForm from "@/components/molecules/contactForm";
 
 export default function Home() {
