@@ -2,7 +2,7 @@ import React from "react";
 import Tag from "@/components/atom/tag";
 import Link from "next/link";
 
-const Card = ({ title, description, tags, slug }) => {
+const Card = ({ title, description, tags, slug, demo, repo }) => {
   const tagsComponent = [];
   for (let i = 0; i < tags.length; ++i) {
     tagsComponent.push(<Tag key={i} text={tags[i]} id={i % 9} />);
@@ -22,14 +22,27 @@ const Card = ({ title, description, tags, slug }) => {
           </div>
         </Link>
         <div className="mt-1 flex flex-wrap gap-1 p-6">{...tagsComponent}</div>
-        <Link href={"/blog/" + slug} passHref>
+        <div>
           <div className="flex items-center justify-between p-6">
-            <div className="flex items-center -space-x-3"> visit </div>
-            <p className="block font-sans text-base font-normal leading-relaxed text-inherit antialiased dark:text-white">
+            <Link
+              target="_blank"
+              rel="noopener noreferrer"
+              href={demo !== undefined ? demo : "#"}
+              className="block flex items-center -space-x-3 font-sans text-base font-normal leading-relaxed text-inherit antialiased dark:text-white"
+            >
+              {" "}
+              visit{" "}
+            </Link>
+            <Link
+              target="_blank"
+              rel="noopener noreferrer"
+              href={repo !== undefined ? repo : "#"}
+              className="block font-sans text-base font-normal leading-relaxed text-inherit antialiased dark:text-white"
+            >
               view source
-            </p>
+            </Link>
           </div>
-        </Link>
+        </div>
       </div>
     </>
   );

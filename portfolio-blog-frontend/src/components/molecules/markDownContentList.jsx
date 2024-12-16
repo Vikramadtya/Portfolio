@@ -12,6 +12,8 @@ const MarkDownContentList = ({ blogs }) => {
             tags={blog.tags}
             slug={blog.slug}
             key={blog.id}
+            repo={blog.repo}
+            demo={blog.demo}
           />
         ))}
       </div>
