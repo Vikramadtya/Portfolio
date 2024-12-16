@@ -34,7 +34,7 @@ const Header = () => {
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-400 opacity-75" />
               <span className="relative inline-flex h-3 w-3 rounded-full bg-sky-500" />
             </span>
-            <a href={siteMetadata.email}>Open to work</a>
+            <a href={`mailto:${siteMetadata.email}`}>Open to work</a>
           </div>
         ) : (
           ""
@@ -49,9 +49,6 @@ const Header = () => {
               {link.title}
             </Link>
           ))}
-        </div>
-        <div className="hidden sm:block ">
-          <AnalyticsLink />
         </div>
         <ThemeToggle />
         <DropMenu />
