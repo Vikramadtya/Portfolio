@@ -6,7 +6,7 @@ import path from "path";
 import matter from "gray-matter";
 
 export default function Blog() {
-  const projects = path.join(
+  const watching = path.join(
     __dirname,
     "..",
     "..",
@@ -14,13 +14,12 @@ export default function Blog() {
     "..",
     "..",
     "_markdown_content",
-    "projects",
+    "watching",
   );
-  console.log(projects);
-  const files = fs.readdirSync(projects);
+  const files = fs.readdirSync(watching);
 
   let blogs = files.map((fileName) => {
-    const fileContent = fs.readFileSync(path.join(projects, fileName), "utf-8");
+    const fileContent = fs.readFileSync(path.join(watching, fileName), "utf-8");
     const { data: frontMatter } = matter(fileContent);
     return {
       ...frontMatter,

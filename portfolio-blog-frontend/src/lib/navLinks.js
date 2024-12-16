@@ -51,13 +51,13 @@ export const dropDownMenuNavLinks = [
   //   icon: "stats",
   //   shortcut: "⌘+S",
   // },
-  {
-    key: 8,
-    href: "/snippets",
-    title: "Snippets",
-    icon: "snippet",
-    shortcut: "⌘+X",
-  },
+  // {
+  //   key: 8,
+  //   href: "/snippets",
+  //   title: "Snippets",
+  //   icon: "snippet",
+  //   shortcut: "⌘+X",
+  // },
   {
     key: 9,
     href: "/reading",
