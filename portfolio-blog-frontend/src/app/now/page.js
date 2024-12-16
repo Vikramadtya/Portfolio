@@ -54,7 +54,7 @@ export default function Home() {
         <div className="grid w-full grid-cols-1 gap-10 md:grid-cols-2">
           <Card
             heading={"Time at my place"}
-            subHeading={"Card subtitle"}
+            subHeading={"Delhi, India "}
             content={
               <Clock
                 value={value}
@@ -64,7 +64,7 @@ export default function Home() {
           />
           <Card
             heading={"Weather at my place"}
-            subHeading={"Card subtitle"}
+            subHeading={"Delhi, India "}
             content={<WeatherCard />}
           />
         </div>
