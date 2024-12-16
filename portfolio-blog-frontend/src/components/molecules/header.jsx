@@ -4,7 +4,6 @@ import navLinks from "@/lib/navLinks";
 import ThemeToggle from "@/components/atom/themeToggle";
 import React from "react";
 import Icon from "@/components/atom/icon";
-import AnalyticsLink from "@/components/atom/analyticsLink";
 import CurrentPath from "@/components/atom/currentPath";
 import DropMenu from "@/components/molecules/dropMenu";
 import CommandPallete from "@/components/molecules/commandPallete";

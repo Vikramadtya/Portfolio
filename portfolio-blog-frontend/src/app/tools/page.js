@@ -1,5 +1,4 @@
 import React from "react";
-import Icon from "@/components/atom/icon";
 
 import Docker from "../../../public/assets/icons/tools/docker.svg";
 import DrawIo from "../../../public/assets/icons/tools/drawio.svg";

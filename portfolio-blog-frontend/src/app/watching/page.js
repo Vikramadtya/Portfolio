@@ -1,10 +1,8 @@
 import React from "react";
-import MarkDownContentList from "@/components/molecules/markDownContentList";
 
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import ProjectCard from "@/components/atom/projectCard";
 import Card from "@/components/atom/card";
 
 export default function Blog() {
