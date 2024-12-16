@@ -1,4 +1,4 @@
-import Card from "@/components/atom/card";
+import ProjectCard from "@/components/atom/projectCard";
 import React from "react";
 
 const MarkDownContentList = ({ blogs }) => {
@@ -6,7 +6,7 @@ const MarkDownContentList = ({ blogs }) => {
     <>
       <div className="w-full columns-1 pb-32 pt-32 md:columns-2  xl:columns-3">
         {blogs.map((blog) => (
-          <Card
+          <ProjectCard
             title={blog.title}
             description={blog.description}
             tags={blog.tags}

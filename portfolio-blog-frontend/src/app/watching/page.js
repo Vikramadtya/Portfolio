@@ -4,6 +4,8 @@ import MarkDownContentList from "@/components/molecules/markDownContentList";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import ProjectCard from "@/components/atom/projectCard";
+import Card from "@/components/atom/card";
 
 export default function Blog() {
   const watching = path.join(
@@ -34,11 +36,23 @@ export default function Blog() {
           Watchlist
         </h1>
         <p className="text-lg leading-7 text-gray-500 dark:text-gray-100">
-          I primarily cover tech topics, occasionally sharing insights into my
-          personal life.
+          A collection of shows, movies, and videos that have caught my
+          attention. From gripping narratives to thought-provoking
+          documentaries, this section offers a peek into the stories and visuals
+          that inspire and entertain me.
         </p>
       </div>
-      <MarkDownContentList blogs={blogs} />
+      <div className="w-full columns-1 pb-32 pt-32 md:columns-2  xl:columns-3">
+        {blogs.map((blog) => (
+          <Card
+            title={blog.title}
+            description={blog.description}
+            tags={blog.tags}
+            slug={"/watching/" + blog.slug}
+            key={blog.id}
+          />
+        ))}
+      </div>
     </main>
   );
 }

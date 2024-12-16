@@ -39,7 +39,7 @@ const Greetings = () => {
               animationDelay={1000}
               animationDuration={2500}
             >
-              software engineer with three years of experience under my belt
+              software engineer with approx. four years of experience under my belt
             </RoughNotation>
             , and I&apos;m excited to share some of the cool stuff I&apos;ve
             been working on.

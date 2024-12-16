@@ -4,6 +4,7 @@ import MarkDownContentList from "@/components/molecules/markDownContentList";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import Card from "@/components/atom/card";
 
 export default function Blog() {
   const projects = path.join(
@@ -14,7 +15,7 @@ export default function Blog() {
     "..",
     "..",
     "_markdown_content",
-    "projects",
+    "bookshelf",
   );
   console.log(projects);
   const files = fs.readdirSync(projects);
@@ -35,11 +36,22 @@ export default function Blog() {
           BookShelf
         </h1>
         <p className="text-lg leading-7 text-gray-500 dark:text-gray-100">
-          I primarily cover tech topics, occasionally sharing insights into my
-          personal life.
+          A glimpse into the books, articles, and ideas that are currently
+          inspiring me. From thought-provoking concepts to captivating stories,
+          this section reflects my journey of learning and exploration.
         </p>
       </div>
-      <MarkDownContentList blogs={blogs} />
+      <div className="w-full columns-1 pb-32 pt-32 md:columns-2  xl:columns-3">
+        {blogs.map((blog) => (
+          <Card
+            title={blog.title}
+            description={blog.description}
+            tags={blog.tags}
+            slug={"/reading/" + blog.slug}
+            key={blog.id}
+          />
+        ))}
+      </div>
     </main>
   );
 }

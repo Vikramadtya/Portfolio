@@ -31,8 +31,9 @@ export default function Home() {
           Photo wall
         </h1>
         <p className="text-lg leading-7 text-gray-500 dark:text-gray-100">
-          I primarily cover tech topics, occasionally sharing insights into my
-          personal life.
+          A tapestry of memories, moments, and stories captured through the
+          lens. Each photo holds a special place, showcasing adventures,
+          milestones, and the little joys that make life extraordinary.
         </p>
       </div>
 

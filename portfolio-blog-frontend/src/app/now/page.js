@@ -8,6 +8,33 @@ import GenericCard from "@/components/atom/genericCard";
 import WeatherCard from "@/components/atom/weatherCard";
 import Image from "next/image";
 
+const items = [
+  {
+    heading: "Watching",
+    icon: "tv",
+    content:
+      "I'm currently watching 'YellowStone' and absolutely hooked on its storyline!",
+  },
+  {
+    heading: "Reading",
+    icon: "bookmark",
+    content:
+      "I'm currently reading [book name] and finding it incredibly insightful and engaging!",
+  },
+  {
+    heading: "Drinking",
+    icon: "hotDrink",
+    content:
+      "I'm not addicted to coffee, we’re just in a committed relationship, and I’m fully loyal!",
+  },
+  {
+    heading: "Listening",
+    icon: "spotify",
+    content:
+      "My favorite soundtrack is 'Nachna' by Babbulicious and ZZORAWAR it's like the perfect vibe for conquering Monday mornings and life’s chaos!",
+  },
+];
+
 const Clock = dynamic(() => import("react-clock"), { ssr: false });
 
 export default function Home() {
@@ -42,52 +69,31 @@ export default function Home() {
           />
         </div>
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
-          <GenericCard
-            icon={<Icon kind="tv" size="inline-block size-[62px] rounded-lg" />}
-            content={
-              "With supporting text below as a natural lead-in to additional content."
-            }
-            heading={"Watching"}
-          />
-          <GenericCard
-            icon={
-              <Icon
-                kind="bookmark"
-                size="inline-block size-[62px] rounded-lg"
+          {items.map((item, index) => (
+            <div key={index}>
+              <GenericCard
+                icon={
+                  <Icon
+                    kind={item.icon}
+                    size="inline-block size-[62px] rounded-lg"
+                  />
+                }
+                content={item.content}
+                heading={item.heading}
               />
-            }
-            content={
-              "With supporting text below as a natural lead-in to additional content."
-            }
-            heading={"Reading"}
-          />
-          <GenericCard
-            icon={
-              <Icon
-                kind="hotDrink"
-                size="inline-block size-[62px] rounded-lg"
-              />
-            }
-            content={
-              "With supporting text below as a natural lead-in to additional content."
-            }
-            heading={"Drinking"}
-          />
-          <GenericCard
-            icon={
-              <Icon kind="spotify" size="inline-block size-[62px] rounded-lg" />
-            }
-            content={
-              "With supporting text below as a natural lead-in to additional content."
-            }
-            heading={"Listening"}
-          />
+            </div>
+          ))}
         </div>
         <div className="relative flex w-full items-center py-5">
           <div className="flex-grow border-t border-gray-400"></div>
           <span className="mx-4 flex-shrink text-gray-400">~~~~~</span>
           <div className="flex-grow border-t border-gray-400"></div>
         </div>
+        <p className="mt-1 text-base font-medium  text-gray-500 dark:text-gray-500">
+          Right now, I&apos;m juggling between work, a strong cup of coffee, and
+          some good music, trying to stay productive and beat the day’s to-do
+          list one task at a time !
+        </p>
         <ul className="mb-20 w-full list-disc space-y-2 ps-5 text-base text-gray-600 marker:text-blue-600 dark:text-gray-100">
           <li>FAQ</li>
           <li>License</li>
