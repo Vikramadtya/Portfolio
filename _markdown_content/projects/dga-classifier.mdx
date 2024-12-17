@@ -1,28 +1,16 @@
 ---
-title: Domain Generating Algorithm Classifier
+title: Domain Generating Algorithm Detector
 author: Vikramaditya Singh
 topics: technical writing, writing, documentation
 description: A machine learning model to detect and classify algorithmically generated domains with high accuracy (96% detection, 87% classification by variant). Utilizes Python, Keras, and clustering techniques to identify unknown DGA variants, enhancing cybersecurity measures against botnet communication.
-repo: https://github.com/Vikramadtya/visualizer
+repo: https://github.com/Vikramadtya/DGA-Detector
 tags: [machine learning, python]
 id: 1
 ---
 
-As someone who's always been fascinated by the inner workings of algorithms, I know firsthand how challenging it can be to fully grasp sorting algorithms just by reading through lines of code. That’s why I created this Sorting Visualizer—to make learning these essential concepts more engaging, intuitive, and, most importantly, fun.
+A Domain Generating Algorithm (DGA) is a program or subroutine that provides malware with new domains on-demand or on the ﬂy. Each bot of a given botnet is shipped with the same DGA.
 
-# Why I Built This Sorting Visualizer
-I’ve spent countless hours trying to decode how different sorting algorithms work, from the simple Bubble Sort to the more complex Quick Sort. But I realized that understanding these algorithms becomes much easier when you can actually see them in action. This led me to develop a tool that turns abstract concepts into clear, interactive visuals, making it accessible for everyone—from beginners to seasoned developers.
-
-# What Makes My Tool Unique?
-1. Interactive Learning: You can choose from a variety of sorting algorithms and watch them operate on different data sets in real-time. Whether you’re just getting started or looking to refine your knowledge, this tool adapts to your learning pace.
-2. Customizable Experience: I’ve made sure you can tweak the tool to fit your needs—adjust the speed, change the size of the data set, or even input your own numbers to see how the algorithms respond.
-3. Educational Insights: Along with the visualizations, I’ve included brief explanations of each algorithm to help you understand not just how they work, but why they work that way.
-
-# Who Is This For?
-Whether you’re a student struggling to visualize how sorting algorithms function, a developer looking to refresh your knowledge, or just someone curious about how data gets sorted behind the scenes, this visualizer is designed for you. I’ve built it to be an invaluable resource for anyone who learns best by seeing concepts in action.
-
-If you’re ready to deepen your understanding of sorting algorithms, I invite you to check out my Sorting Visualizer. It’s an excellent way to see theory come to life and enhance your coding skills with each interaction. Dive in and start visualizing today!
-
+Advantages of DGA botnet is that if the domain of C&C server is detected and blocked all connections to these addresses, the botnet has not been eliminated completely. Botmaster just registers a new address in domain dataset and the bot will still operate as normal. This strategy improves the robustness of botnet even though one or more CC servers are located and taken down, the bots will ﬁnally get the relocated CC server via DNS queries to the next set of automatically generated domains. There are some well-known DGA botnets such as Conﬁcker, Kraken, etc, each of them has its own domain generation algorithm for a list of candidate CC domain.
 
 
 
