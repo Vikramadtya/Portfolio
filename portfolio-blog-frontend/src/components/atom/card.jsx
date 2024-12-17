@@ -10,7 +10,7 @@ const Card = ({ title, description, tags, slug, cover }) => {
   }
   return (
     <>
-      <div className="overflow-hidden rounded-xl border-2 bg-white bg-clip-border text-gray-700 shadow-md hover:border-solid hover:border-gray-700 dark:bg-black dark:hover:border-white">
+      <div className="mt-5 overflow-hidden rounded-xl border-2 bg-white bg-clip-border text-gray-700 shadow-md hover:border-solid hover:border-gray-700 dark:bg-black dark:hover:border-white">
         <Link
           href={slug}
           className="flex flex-col items-center rounded-lg md:max-w-xl md:flex-row"
