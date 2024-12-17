@@ -61,7 +61,7 @@ const projects = path.join(
   "..",
   "..",
   "_markdown_content",
-  "projects",
+  "bookshelf",
 );
 export async function generateStaticParams() {
   const files = fs.readdirSync(projects);
