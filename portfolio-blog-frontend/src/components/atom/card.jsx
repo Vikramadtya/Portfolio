@@ -17,7 +17,7 @@ const Card = ({ title, description, tags, slug }) => {
               {title}
             </h4>
             <p className="mt-3 block font-sans text-xl font-normal leading-relaxed text-gray-700 antialiased dark:text-white">
-              {description}
+              <i>{description}</i>
             </p>
           </div>
         </Link>
