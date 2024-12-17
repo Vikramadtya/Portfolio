@@ -48,6 +48,7 @@ export default function Blog() {
             tags={blog.tags}
             slug={"/reading/" + blog.slug}
             key={blog.id}
+            cover={`books/${blog.cover}`}
           />
         ))}
       </div>

@@ -46,7 +46,8 @@ export default function Blog() {
             title={blog.title}
             description={blog.description}
             tags={blog.tags}
-            slug={"/watching/" + blog.slug}
+            slug={`/watching/${blog.slug}`}
+            cover={`watching/${blog.cover}`}
             key={blog.id}
           />
         ))}
