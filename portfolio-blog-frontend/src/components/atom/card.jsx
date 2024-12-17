@@ -12,7 +12,7 @@ const Card = ({ title, description, tags, slug, cover }) => {
     <>
       <div className="overflow-hidden rounded-xl border-2 bg-white bg-clip-border text-gray-700 shadow-md hover:border-solid hover:border-gray-700 dark:bg-black dark:hover:border-white">
         <Link
-          href="#"
+          href={slug}
           className="flex flex-col items-center rounded-lg md:max-w-xl md:flex-row"
         >
           <Image
@@ -27,7 +27,7 @@ const Card = ({ title, description, tags, slug, cover }) => {
               {title}
             </h5>
             <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-              {description}
+              <i>{description}</i>
             </p>
           </div>
         </Link>
