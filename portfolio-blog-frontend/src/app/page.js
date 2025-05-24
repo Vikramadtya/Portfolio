@@ -19,7 +19,6 @@ export default function Home() {
             {" "}
             <div className="my-auto flex flex-col text-lg leading-8 text-gray-600 dark:text-gray-100">
               <BlogLinks />
-              {/*<SpotifyNowPlaying />*/}
               <br />
               <p className="flex items-center">
                 <span className="mr-2">

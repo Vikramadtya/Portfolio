@@ -1,32 +1,9 @@
 import React from "react";
-
-import fs from "fs";
-import path from "path";
-import matter from "gray-matter";
 import Card from "@/components/atom/card";
+import { getSortedMarkdownData } from "../../lib/mdxUtils";
 
-export default function Blog() {
-  const projects = path.join(
-    __dirname,
-    "..",
-    "..",
-    "..",
-    "..",
-    "..",
-    "_markdown_content",
-    "bookshelf",
-  );
-  console.log(projects);
-  const files = fs.readdirSync(projects);
-
-  let blogs = files.map((fileName) => {
-    const fileContent = fs.readFileSync(path.join(projects, fileName), "utf-8");
-    const { data: frontMatter } = matter(fileContent);
-    return {
-      ...frontMatter,
-      slug: fileName.replace(".mdx", ""),
-    };
-  });
+export default async function ReadingPage() {
+  const readingItems = await getSortedMarkdownData("bookshelf");
 
   return (
     <main className="flex flex-col items-center justify-between  px-12 md:px-24 lg:px-32 xl:px-48 ">
@@ -41,14 +18,14 @@ export default function Blog() {
         </p>
       </div>
       <div className="w-full columns-1 pb-32 pt-32 md:columns-2  xl:columns-3">
-        {blogs.map((blog) => (
+        {readingItems.map((item) => (
           <Card
-            title={blog.title}
-            description={blog.description}
-            tags={blog.tags}
-            slug={"/reading/" + blog.slug}
-            key={blog.id}
-            cover={`books/${blog.cover}`}
+            title={item.title}
+            description={item.description}
+            tags={item.tags}
+            slug={"/reading/" + item.slug}
+            key={item.slug} // Using slug as key, assuming it's unique
+            cover={`books/${item.cover}`} // Assuming 'cover' is in frontmatter
           />
         ))}
       </div>

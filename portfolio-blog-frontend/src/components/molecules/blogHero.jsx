@@ -1,13 +1,8 @@
-import Tag from "@/components/atom/tag";
 import React from "react";
 import Icon from "@/components/atom/icon";
+import TagList from "./TagList"; // Updated import path
 
 const BlogHero = ({ title, tags }) => {
-  const tagsComponent = [];
-  for (let i = 0; i < tags.length; ++i) {
-    tagsComponent.push(<Tag key={i} text={tags[i]} id={i % 9} />);
-  }
-
   return (
     <>
       <div className="flex flex-col items-center justify-center space-y-4">
@@ -18,7 +13,7 @@ const BlogHero = ({ title, tags }) => {
         <div className="flex flex-col items-center justify-center space-y-2">
           <div className="flex items-center gap-2 ">
             <Icon kind="tag" size={"h-6 w-6"} />
-            {...tagsComponent}
+            <TagList tags={tags} />
           </div>
         </div>
       </div>

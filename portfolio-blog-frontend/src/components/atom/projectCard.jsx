@@ -1,12 +1,8 @@
 import React from "react";
-import Tag from "@/components/atom/tag";
 import Link from "next/link";
+import TagList from "../molecules/TagList"; // Updated import path
 
 const ProjectCard = ({ title, description, tags, slug, demo, repo }) => {
-  const tagsComponent = [];
-  for (let i = 0; i < tags.length; ++i) {
-    tagsComponent.push(<Tag key={i} text={tags[i]} id={i % 9} />);
-  }
   return (
     <>
       <div className="relative mb-10 flex max-w-[24rem] flex-col overflow-hidden rounded-xl border-2 bg-white bg-clip-border text-gray-700 shadow-md hover:border-solid hover:border-gray-700 dark:bg-black dark:hover:border-white">
@@ -21,7 +17,9 @@ const ProjectCard = ({ title, description, tags, slug, demo, repo }) => {
             </p>
           </div>
         </Link>
-        <div className="mt-1 flex flex-wrap gap-1 p-6">{...tagsComponent}</div>
+        <div className="mt-1 flex flex-wrap gap-1 p-6">
+          <TagList tags={tags} />
+        </div>
         <div>
           <div className="flex items-center justify-between p-6">
             <Link

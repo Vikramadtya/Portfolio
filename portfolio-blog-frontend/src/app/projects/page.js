@@ -1,32 +1,9 @@
 import React from "react";
 import MarkDownContentList from "@/components/molecules/markDownContentList";
+import { getSortedMarkdownData } from "../../lib/mdxUtils";
 
-import fs from "fs";
-import path from "path";
-import matter from "gray-matter";
-
-export default function Blog() {
-  const projects = path.join(
-    __dirname,
-    "..",
-    "..",
-    "..",
-    "..",
-    "..",
-    "_markdown_content",
-    "projects",
-  );
-  console.log(projects);
-  const files = fs.readdirSync(projects);
-
-  let blogs = files.map((fileName) => {
-    const fileContent = fs.readFileSync(path.join(projects, fileName), "utf-8");
-    const { data: frontMatter } = matter(fileContent);
-    return {
-      ...frontMatter,
-      slug: fileName.replace(".mdx", ""),
-    };
-  });
+export default async function Blog() {
+  const blogs = await getSortedMarkdownData("projects");
 
   return (
     <main className="flex flex-col items-center justify-between px-12 md:px-24 lg:px-32 xl:px-48">

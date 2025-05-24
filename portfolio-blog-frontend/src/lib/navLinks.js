@@ -36,7 +36,6 @@ export const dropDownMenuNavLinks = [
     icon: "contact",
     shortcut: "⌘+U",
   },
-  { key: 5, href: "", title: "", icon: "", shortcut: "" },
   {
     key: 6,
     href: "/timeline",
@@ -82,7 +81,6 @@ export const dropDownMenuNavLinks = [
     shortcut: "⌘+P",
   },
   { key: 14, href: "/now", title: "Now", icon: "now", shortcut: "⌘+N" },
-  { key: 15, href: "", title: "", icon: "", shortcut: "" },
   {
     key: 16,
     href: siteMetadata.analyticsURL,
