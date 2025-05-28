@@ -1,3 +1,4 @@
+import Oracle from "../../../../public/assets/company/oracle.png";
 import Cisco from "../../../../public/assets/company/cisco.png";
 import Securonix from "../../../../public/assets/company/securonix.png";
 import Image from "next/image";
@@ -9,7 +10,83 @@ const WorkHistory = () => {
       <div className="pb-5 pt-10">
         <div className="my-2 ps-2 first:mt-0">
           <h3 className="text-xs font-medium uppercase text-gray-500 dark:text-gray-100">
-            Oct 2022 - Present
+            April 2025 - Present
+          </h3>
+        </div>
+        <div className="flex gap-x-3">
+          <div className="relative after:absolute after:bottom-0 after:start-3.5 after:top-7 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 last:after:hidden dark:after:bg-gray-700">
+            <div className="relative z-10 flex size-7 items-center justify-center">
+              <Image
+                className="mt-1 flex size-4  h-8 w-8 flex-shrink-0  items-center justify-center rounded-full border border-gray-200 bg-white text-[10px] font-semibold uppercase text-gray-600 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-100"
+                src={Oracle}
+                alt={""}
+              />
+            </div>
+          </div>
+
+          <div className="grow pb-8 pt-0.5">
+            <h3 className="flex gap-x-1.5 font-semibold text-gray-800 dark:text-white">
+              Senior Member of Technical Staff, Oracle
+            </h3>
+            <p className="mt-1 text-sm text-gray-600 dark:text-gray-100"></p>
+            <ul className="w-full list-disc  ps-5 text-sm text-gray-600 marker:text-blue-600 dark:text-gray-100">
+              <li>Shh... its hidden for now 🤫 </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="my-2 ps-2 first:mt-0">
+          <h3 className="text-xs font-medium uppercase text-gray-500 dark:text-gray-100">
+            Oct 2024 - April 2025
+          </h3>
+        </div>
+        <div className="flex gap-x-3">
+          <div className="relative after:absolute after:bottom-0 after:start-3.5 after:top-7 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 last:after:hidden dark:after:bg-gray-700">
+            <div className="relative z-10 flex size-7 items-center justify-center">
+              <Image
+                className="mt-1 flex size-4  h-8 w-8 flex-shrink-0  items-center justify-center rounded-full border border-gray-200 bg-white text-[10px] font-semibold uppercase text-gray-600 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-100"
+                src={Cisco}
+                alt={""}
+              />
+            </div>
+          </div>
+
+          <div className="grow pb-8 pt-0.5">
+            <h3 className="flex gap-x-1.5 font-semibold text-gray-800 dark:text-white">
+              Software Engineer III, Cisco
+            </h3>
+            <p className="mt-1 text-sm text-gray-600 dark:text-gray-100"></p>
+            <ul className="w-full list-disc  ps-5 text-sm text-gray-600 marker:text-blue-600 dark:text-gray-100">
+              <li>
+                Improved the NAP & IPS policy snapshot performance reducing the
+                operation time by 70%, which in turn reduced the time to deploy
+                the configuration to the devices from the FMC.{" "}
+              </li>
+              <li>
+                Designed & implemented the Zero trust policy on FMC which is a
+                key feature of the product. Implemented the complete backend
+                which included changes in the API, global search, database,
+                service & model layer, various validations, reporting, audit &
+                telemetery.
+              </li>
+              <li>
+                Implemented the changes needed for deploying the Zero Trust
+                policy to the device. Added the Snort3 configuration creation &
+                handled the Lina CLI generation by enhancing the parser with
+                multiple new commands.
+              </li>
+              <li>
+                Added ability to auto-enroll the certificate selected within the
+                Zero trust policy onto the device which greatly enhanced the
+                user experience.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="my-2 ps-2 first:mt-0">
+          <h3 className="text-xs font-medium uppercase text-gray-500 dark:text-gray-100">
+            Oct 2022 - SEP 2024
           </h3>
         </div>
 
