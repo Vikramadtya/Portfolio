@@ -4,7 +4,7 @@ import Icon from "@/components/atom/icon";
 import SocialIcon from "@/components/atom/social-icon";
 import siteMetadata from "@/lib/metadata";
 import Image from "next/image";
-import Profile from "../../../public/assets/icons/profile.jpg";
+import Profile from "../../../public/assets/icons/profile.jpeg";
 
 export default function Home() {
   return (
