@@ -1,8 +1,8 @@
 const siteMetadata = {
   title: "VIKI",
   author: "Vikramaditya Singh",
-  designation: "Software engineer III",
-  company: "Cisco",
+  designation: "Senior Member of Technical Staff",
+  company: "Oracle",
   headerTitle: "VIKI",
   description: "A posts created with Next.js and Tailwind.css",
   language: "en-us",
