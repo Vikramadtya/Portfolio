@@ -1,41 +1,24 @@
 import React from "react";
+import PageHeader from "@/components/shared/PageHeader";
 import fs from "fs";
 import path from "path";
 import Image from "next/image";
+import { PHOTOS_DIR } from "@/lib/constants";
+import { genPageMetadata } from "@/lib/seo";
 
-export default function Home() {
-  const projects = path.join(
-    __dirname,
-    "..",
-    "..",
-    "..",
-    "..",
-    "public",
-    "assets",
-    "photos",
-  );
+export const metadata = genPageMetadata({ title: "Photography" });
 
-  const files = fs.readdirSync(projects);
-  const photos = [];
-  for (let i = 0; i < files.length; ++i) {
-    photos.push({
-      location: path.join("/assets", "photos", files[i]),
-      key: i,
-    });
-  }
+export default function PhotographyPage() {
+  const files = fs.readdirSync(PHOTOS_DIR);
+  const photos = files.map((file, i) => ({
+    location: path.join("/assets", "photos", file),
+    alt: file.replace(/\.[^.]+$/, "").replace(/[-_]/g, " "),
+    key: i,
+  }));
 
   return (
     <main className="flex flex-col items-center justify-between px-12 sm:px-24 md:px-32 lg:px-48 xl:px-64">
-      <div className="w-full space-y-2 pb-8 pt-6 md:space-y-5 ">
-        <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-relaxed">
-          Photo wall
-        </h1>
-        <p className="text-lg leading-7 text-gray-500 dark:text-gray-100">
-          A tapestry of memories, moments, and stories captured through the
-          lens. Each photo holds a special place, showcasing adventures,
-          milestones, and the little joys that make life extraordinary.
-        </p>
-      </div>
+      <PageHeader pageName="photography" />
 
       <div className="w-full columns-1 gap-10 sm:columns-2 md:columns-3 lg:columns-4 2xl:columns-5">
         {photos.map((photo) => (
@@ -48,7 +31,7 @@ export default function Home() {
               <Image
                 className="object-cover"
                 src={photo.location}
-                alt={""}
+                alt={photo.alt}
                 width="500"
                 height="500"
                 style={{
@@ -59,12 +42,6 @@ export default function Home() {
             </div>
           </div>
         ))}
-      </div>
-      <div className="w-full space-y-2 pb-8 pt-6 md:space-y-5 ">
-        <p className="text-lg leading-7 text-gray-500 dark:text-gray-100">
-          I primarily cover tech topics, occasionally sharing insights into my
-          personal life.
-        </p>
       </div>
     </main>
   );

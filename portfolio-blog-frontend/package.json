@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format": "npx prettier --write *"
+    "format": "prettier --write ."
   },
   "dependencies": {
     "@discordapp/twemoji": "^15.0.2",
@@ -37,6 +37,7 @@
     "rehype-pretty-code": "^0.13.1",
     "rehype-slug": "^6.0.0",
     "remark-gfm": "^4.0.0",
+    "sharp": "^0.34.5",
     "shiki": "^1.2.4",
     "tailwind-merge": "^2.2.1",
     "tailwindcss-animate": "^1.0.7",

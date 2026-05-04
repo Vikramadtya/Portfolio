@@ -1,0 +1,111 @@
+/* 
+  =========================================
+  MDX SYNTAX HIGHLIGHTING & STYLING
+  =========================================
+  Styles for rehype-pretty-code and markdown blocks
+*/
+
+[data-theme] {
+  display: flex;
+  flex-direction: column;
+}
+
+[data-rehype-pretty-code-figure] [data-line-numbers] > [data-line]::before {
+  @apply text-xs text-black dark:text-white/70;
+  counter-increment: line;
+  content: counter(line);
+  display: inline-block;
+  width: 1rem;
+  margin-right: 1rem;
+  text-align: right;
+}
+
+span[data-rehype-pretty-code-figure] {
+  @apply inline-flex w-fit;
+}
+
+span[data-rehype-pretty-code-figure] code[data-theme="github-light"] {
+  @apply rounded-md bg-slate-100 px-2 text-base dark:hidden;
+}
+
+code:not(pre code) {
+  @apply mx-1 rounded-md border border-primary bg-slate-200 px-1 font-mono text-base tracking-wide dark:bg-zinc-700/70;
+}
+
+[data-metadata] [data-code-copy] {
+  @apply top-16 !important;
+}
+
+[data-rehype-pretty-code-figure] {
+  @apply relative;
+
+  & pre {
+    @apply grid min-w-full overflow-x-auto break-words rounded-none border-0 bg-transparent p-0 py-2 text-base font-medium;
+    display: flex;
+    flex-direction: column;
+    counter-reset: line;
+    box-decoration-break: clone;
+  }
+
+  & [data-highlighted-line] {
+    @apply border-l-orange-500 bg-orange-500/[0.1] dark:border-l-orange-800;
+  }
+
+  & [data-chars-id] {
+    @apply pb-0.5 shadow-none;
+  }
+}
+
+.code-add {
+  @apply bg-green-600/40;
+}
+
+.code-delete {
+  @apply bg-red-400/30;
+}
+
+span.code-add::before {
+  content: "+";
+  margin-left: -10px;
+  @apply text-green-700 dark:text-[#2ecc71];
+}
+
+span.code-delete::before {
+  content: "-";
+  color: #e74c3c;
+  margin-left: -10px;
+}
+
+[data-comp-preview] [data-rehype-pretty-code-figure] {
+  & pre {
+    @apply mt-0 rounded-b-lg rounded-t-none;
+  }
+}
+
+[data-chars-id="ul"] {
+  @apply border-b border-b-green-500 font-bold !important;
+}
+
+[data-chars-id="hi"] {
+  @apply rounded bg-teal-700/60 p-1 font-bold !important;
+}
+
+[data-chars-id="rb"] {
+  @apply rounded border border-red-600 p-[2px] font-bold !important;
+}
+
+[data-chars-id="yb"] {
+  @apply rounded border border-yellow-600 p-[2px] font-bold !important;
+}
+
+[data-rehype-pretty-code-title] {
+  @apply hidden;
+}
+
+[data-rehype-pretty-code-title] + pre {
+  @apply mt-2;
+}
+
+pre > code > span[data-line] {
+  @apply inline-block w-full basis-4 border-l-[3px] border-l-transparent py-0.5 pl-2 pr-5;
+}

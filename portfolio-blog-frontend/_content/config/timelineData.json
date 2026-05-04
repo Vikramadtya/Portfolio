@@ -1,0 +1,94 @@
+[
+  {
+    "icon": "work",
+    "iconSize": "h-8 w-8",
+    "isGrouped": true,
+    "roles": [
+      {
+        "title": "Software Developer III",
+        "company": "Cisco",
+        "date": "October 2024 to Present",
+        "description": "Contributing to cross-functional projects .. more to come ;)"
+      },
+      {
+        "title": "Software Developer II",
+        "company": "Cisco",
+        "date": "October 2022 to October 2024 (2 year 1 months)",
+        "description": "Architected key solutions like the Policy Analyser and Zero Trust policies, driving significant business impact. Led efforts to design and optimize core functionalities, improve performance, and integrate advanced features."
+      },
+      {
+        "title": "Software Developer I",
+        "company": "Cisco",
+        "date": "August 2021 to September 2022 (1 year 2 months)",
+        "description": "Focused on foundational development tasks, including implementing backend services, optimizing code performance, and building robust APIs. Collaborated with team members to execute well-defined projects, ensuring high-quality and maintainable code while gaining hands-on experience."
+      }
+    ]
+  },
+  {
+    "icon": "degree",
+    "iconSize": "h-8 w-8",
+    "title": "Completed B.Tech. in Computer Science and Engineering",
+    "subtitle": "Indian Institute of Information Technology Guwahati (IIITG)",
+    "date": "May, 2021",
+    "description": "Graduated with a solid academic foundation and practical experience in building scalable and efficient solutions."
+  },
+  {
+    "icon": "work",
+    "iconSize": "h-8 w-8",
+    "title": "Software Intern",
+    "company": "Securonix",
+    "date": "August 2020 - April 2021 (9 months)",
+    "description": "Developed microservices for automated incident reporting and email notifications using Spring Framework and Jasper Reports. Additionally, created scripts to streamline various tasks and automated data analysis reports, improving efficiency for the Cyber Threat Analysis (CTA) team."
+  },
+  {
+    "icon": "degree",
+    "iconSize": "h-8 w-8",
+    "title": "Continued B.Tech. in Computer Science and Engineering",
+    "subtitle": "Indian Institute of Information Technology Guwahati (IIITG)"
+  },
+  {
+    "icon": "work",
+    "iconSize": "h-8 w-8",
+    "title": "Software Intern",
+    "company": "Cisco",
+    "date": "May 2020 to July 2020 (3 months)",
+    "description": "Contributed to enhancing network security by developing tools for real-time threat detection and integrating frameworks to analyze and process data efficiently. This work improved system capabilities and strengthened overall security measures."
+  },
+  {
+    "icon": "college",
+    "iconSize": "h-10 w-10",
+    "title": "Started B.Tech. in Computer Science and Engineering",
+    "subtitle": "Indian Institute of Information Technology Guwahati (IIITG)",
+    "date": "August, 2017",
+    "description": "Began my B.Tech. in Computer Science and Engineering at IIIT Guwahati, focusing on foundational and advanced concepts in algorithms, data structures, operating systems, and software engineering, while developing a strong technical and problem-solving skill set."
+  },
+  {
+    "icon": "school",
+    "iconSize": "h-8 w-8",
+    "title": "12th Science from CBSE Board",
+    "subtitle": "Modern Delhi Public School, Faridabad, Haryana",
+    "date": "2015-2016",
+    "description": "Get started with dozens of web components and interactive elements built on top of Tailwind CSS."
+  },
+  {
+    "icon": "juniorSchool",
+    "iconSize": "h-8 w-8",
+    "title": "10th from CBSE Board",
+    "subtitle": "Dynasty International School, Faridabad, Haryana",
+    "date": "2013-2014",
+    "description": "Got good grades & decided to focus on physics, chemistry, and mathematics."
+  },
+  {
+    "icon": "growing",
+    "iconSize": "h-8 w-8",
+    "title": "Growing up",
+    "description": "Growing up, life was all about cricket in the streets, late-night study sessions that turned into storytelling marathons, and the simple joy of Maggi shared with friends on rainy afternoons."
+  },
+  {
+    "icon": "born",
+    "iconSize": "h-8 w-8",
+    "title": "Born",
+    "date": "February, 1999",
+    "description": "Getting born was my first big adventure—entering the world crying, clueless, and ready to take on whatever life had in store."
+  }
+]

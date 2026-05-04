@@ -1,6 +1,6 @@
-import Oracle from "../../../../public/assets/company/oracle.png";
-import Cisco from "../../../../public/assets/company/cisco.png";
-import Securonix from "../../../../public/assets/company/securonix.png";
+import Oracle from "@/public/assets/company/oracle.png";
+import Cisco from "@/public/assets/company/cisco.png";
+import Securonix from "@/public/assets/company/securonix.png";
 import Image from "next/image";
 import React from "react";
 
