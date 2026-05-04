@@ -1,0 +1,40 @@
+{
+  "location": "Delhi, India",
+  "weather": {
+    "temp": "24°",
+    "condition": "Cloudy",
+    "high": "28°C",
+    "low": "20°C",
+    "wind": "9k/h",
+    "humidity": "68%",
+    "visibility": "10km"
+  },
+  "items": [
+    {
+      "heading": "Watching",
+      "icon": "tv",
+      "content": "I'm currently watching 'YellowStone' and absolutely hooked on its storyline!"
+    },
+    {
+      "heading": "Reading",
+      "icon": "bookmark",
+      "content": "I'm currently reading [book name] and finding it incredibly insightful and engaging!"
+    },
+    {
+      "heading": "Drinking",
+      "icon": "hotDrink",
+      "content": "I'm not addicted to coffee, we’re just in a committed relationship, and I’m fully loyal!"
+    },
+    {
+      "heading": "Listening",
+      "icon": "spotify",
+      "content": "My favorite soundtrack is 'Nachna' by Babbulicious and ZZORAWAR it's like the perfect vibe for conquering Monday mornings and life’s chaos!"
+    }
+  ],
+  "footerText": "Right now, I'm juggling between work, a strong cup of coffee, and some good music, trying to stay productive and beat the day’s to-do list one task at a time !",
+  "footerLinks": [
+    "FAQ",
+    "License",
+    "Terms & Conditions"
+  ]
+}

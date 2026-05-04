@@ -1,11 +1,12 @@
 import fs from "fs";
 import path from "path";
+import { READING_DIR } from "@/lib/constants";
 import matter from "gray-matter";
 
 import { MDXRemote } from "next-mdx-remote/rsc";
 
-import BlogHero from "@/components/molecules/blogHero";
-import { Separator } from "@/components/atom/separator";
+import BlogHero from "@/components/shared/BlogHero";
+import { Separator } from "@/components/ui/Separator";
 
 import rehypePrettyCode from "rehype-pretty-code";
 import { getHighlighter } from "shiki";
@@ -52,17 +53,7 @@ const prettyCodeOptions = {
   },
 };
 
-const projects = path.join(
-  __dirname,
-  "..",
-  "..",
-  "..",
-  "..",
-  "..",
-  "..",
-  "_markdown_content",
-  "bookshelf",
-);
+const projects = READING_DIR;
 export async function generateStaticParams() {
   const files = fs.readdirSync(projects);
 
@@ -92,13 +83,15 @@ function getPost({ slug }) {
   };
 }
 
+import { genPageMetadata } from "@/lib/seo";
+
 export async function generateMetadata({ params }) {
   const props = getPost(params);
 
-  return {
+  return genPageMetadata({
     title: props.contentMetadata.frontMatter.title,
     description: props.contentMetadata.frontMatter.description,
-  };
+  });
 }
 
 export default function Post({ params }) {

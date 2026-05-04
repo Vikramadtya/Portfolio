@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import FirstPublication from "../../../../public/assets/publications/first_publication.webp";
+import FirstPublication from "@/public/assets/publications/first_publication.webp";
 
 const certifications = [
   {

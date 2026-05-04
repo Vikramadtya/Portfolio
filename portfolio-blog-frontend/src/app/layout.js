@@ -1,17 +1,31 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import "animate.css";
-import Footer from "@/components/molecules/footer";
-import Header from "@/components/molecules/header";
-import ThemeProvider from "@/components/utils/themeProvider";
+import Footer from "@/components/layout/Footer";
+import Header from "@/components/layout/Header";
+import ThemeProvider from "@/components/layout/ThemeProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
-  title: "Vikramaditya Singh",
-  description: "Portfolio Site of Vikramaditya Singh",
-};
+import siteMetadata from "@/lib/metadata";
 
+export const metadata = {
+  metadataBase: new URL(siteMetadata.siteUrl || "https://your-portfolio.com"),
+  title: siteMetadata.title,
+  description: siteMetadata.description,
+  openGraph: {
+    title: siteMetadata.title,
+    description: siteMetadata.description,
+    url: siteMetadata.siteUrl,
+    siteName: siteMetadata.title,
+    locale: siteMetadata.locale,
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteMetadata.title,
+    description: siteMetadata.description,
+  },
+};
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
@@ -39,11 +53,6 @@ export default function RootLayout({ children }) {
         <meta name="application-name" content="Portfolio" />
         <meta name="msapplication-TileColor" content="#1abc9c" />
         <meta name="theme-color" content="#ecf0f1" />
-        <script
-          defer
-          src="https://eu.umami.is/script.js"
-          data-website-id="dffddd2d-5cad-4d0e-8d02-5938a359c24a"
-        ></script>
       </head>
       <body className={inter.className}>
         <div className="flex h-screen flex-col justify-between">
@@ -53,8 +62,17 @@ export default function RootLayout({ children }) {
             enableSystem
             disableTransitionOnChange
           >
+            {/* Skip-to-content link for keyboard/screen-reader users */}
+            <a
+              href="#main-content"
+              className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:bg-blue-600 focus:px-4 focus:py-2 focus:text-white"
+            >
+              Skip to content
+            </a>
             <Header />
-            <main className="mb-auto">{children}</main>
+            <main id="main-content" className="mb-auto">
+              {children}
+            </main>
             <Footer />
           </ThemeProvider>
         </div>

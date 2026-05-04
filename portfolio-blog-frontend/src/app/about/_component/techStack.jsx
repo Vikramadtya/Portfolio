@@ -1,5 +1,5 @@
-import CurrentTechStack from "@/lib/currentTechStack";
-import Icon from "@/components/atom/icon";
+import CurrentTechStack from "@/lib/techStackData";
+import Icon from "@/components/ui/Icon";
 
 const color = {
   0: "bg-indigo-500 text-white",

@@ -1,4 +1,4 @@
-import Icon from "@/components/atom/icon";
+import Icon from "@/components/ui/Icon";
 import Link from "next/link";
 
 const certifications = [

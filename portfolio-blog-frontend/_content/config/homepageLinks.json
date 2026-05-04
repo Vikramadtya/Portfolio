@@ -1,0 +1,7 @@
+[
+  { "icon": "manWithMonocle", "href": "/about", "label": "More about me", "event": "home-link-about" },
+  { "icon": "bolt", "href": "/projects", "label": "My snippet collection", "event": "home-link-projects" },
+  { "icon": "wrenchAndHammer", "href": "/projects", "label": "What have I built?", "event": "home-link-projects" },
+  { "icon": "memo", "href": "/blog", "label": "My writings", "event": "home-link-blog" },
+  { "icon": "rocket", "href": "/timeline", "label": "My journey", "event": "home-link-resume" }
+]
