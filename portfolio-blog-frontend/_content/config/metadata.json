@@ -15,8 +15,8 @@
     "linkUrl": "https://www.neuralcook.com"
   },
   "theme": "system",
-  "siteUrl": "https://your-portfolio.com",
-  "siteRepo": "",
+  "siteUrl": "https://www.vikramaditya-singh.in",
+  "siteRepo": "https://github.com/Vikramadtya/Portfolio",
   "siteLogo": "/static/images/logo.png",
   "image": "/static/images/logo.png",
   "socialBanner": "/static/images/twitter-card.jpg",
@@ -41,11 +41,13 @@
   "poweredBy": [
     {
       "name": "Vercel",
-      "url": "https://nextjs.org"
-    },
+      "url": "https://vercel.com"
+    }
+  ],
+  "builtWith": [
     {
-      "name": "Supabase",
-      "url": "https://tailwindcss.com"
+      "name": "NextJs",
+      "url": "https://nextjs.org"
     }
   ],
   "giscus": {
