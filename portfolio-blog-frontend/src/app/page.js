@@ -13,12 +13,18 @@ import PromoCard from "@/components/home/PromoCard";
  * The layout relies heavily on Tailwind CSS grids and flexboxes for responsiveness.
  */
 import { genPageMetadata } from "@/lib/seo";
-import { getPageContent } from "@/lib/markdown";
+import { getPageContent, getContentList } from "@/lib/markdown";
+import { PROJECTS_DIR } from "@/lib/constants";
+import ProjectCard from "@/components/shared/ProjectCard";
+import Link from "next/link";
 
 export const metadata = genPageMetadata({ title: "Home" });
 
 export default function Home() {
   const pageData = getPageContent("home");
+  const projects = getContentList(PROJECTS_DIR)
+    .sort((a, b) => a.id - b.id)
+    .slice(0, 6);
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
       <PromoCard />
@@ -38,6 +44,37 @@ export default function Home() {
                 <Icon kind="clinkingBeerMugs" size={"h-20 w-20"} />
               </p>
             </div>
+          </div>
+        </div>
+        
+        {/* Featured Projects Showcase */}
+        <div className="mt-40 border-t border-gray-200 pt-16 dark:border-gray-800">
+          <div className="mb-12 flex items-center justify-between">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
+              Featured Projects
+            </h2>
+            <Link
+              href="/projects"
+              className="flex items-center gap-2 text-base font-semibold text-gray-900 hover:text-gray-600 dark:text-gray-400 dark:hover:text-white"
+            >
+              View all
+              <span aria-hidden="true">→</span>
+            </Link>
+          </div>
+          <div className="grid w-full grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-2">
+            {projects.map((project) => (
+              <div key={project.id} className="flex h-full w-full">
+                <ProjectCard
+                  title={project.title}
+                  description={project.description}
+                  tags={project.tags}
+                  slug={project.slug}
+                  repo={project.repo}
+                  demo={project.demo}
+                  compact={true}
+                />
+              </div>
+            ))}
           </div>
         </div>
       </div>
