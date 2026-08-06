@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 const colors = {
-  1: "border-blue-400 bg-blue-100 text-blue-800",
+  1: "border-primary bg-primary/20 text-primary",
   2: "border-gray-500 bg-gray-100 text-gray-800",
   3: "border-red-400 bg-red-100 text-red-800",
   4: "border-green-400 bg-green-100 text-green-800",

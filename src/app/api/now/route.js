@@ -6,10 +6,8 @@ export async function GET() {
   const databaseId = process.env.NOTION_DATABASE_ID;
 
   if (!notionToken || !databaseId) {
-    return NextResponse.json(
-      { error: "Missing Notion credentials in .env.local" },
-      { status: 500 }
-    );
+    console.warn("Notion credentials missing. Returning graceful fallback.");
+    return NextResponse.json({ error: "Missing Notion credentials in .env.local" });
   }
 
   const notion = new Client({ auth: notionToken });

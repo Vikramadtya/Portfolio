@@ -105,7 +105,7 @@ export default function NowClient() {
         <p className="mt-1 text-base font-medium  text-gray-500 dark:text-gray-500">
           {nowPageData.footerText}
         </p>
-        <ul className="mb-20 w-full list-disc space-y-2 ps-5 text-base text-gray-600 marker:text-blue-600 dark:text-gray-100">
+        <ul className="mb-20 w-full list-disc space-y-2 ps-5 text-base text-gray-600 marker:text-primary dark:text-gray-100">
           {nowPageData.footerLinks.map((link, index) => (
             <li key={index}>{link}</li>
           ))}

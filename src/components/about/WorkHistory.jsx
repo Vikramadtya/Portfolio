@@ -89,7 +89,7 @@ const WorkHistory = () => {
               <h3 className="flex gap-x-1.5 font-semibold text-gray-800 dark:text-white">
                 {job.role}
               </h3>
-              <ul className="w-full list-disc ps-5 text-sm text-gray-600 marker:text-blue-600 dark:text-gray-100 mt-2">
+              <ul className="w-full list-disc ps-5 text-sm text-gray-600 marker:text-primary dark:text-gray-100 mt-2">
                 {job.bullets.map((bullet, i) => (
                   <li key={i}>{bullet}</li>
                 ))}

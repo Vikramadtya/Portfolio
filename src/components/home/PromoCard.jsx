@@ -12,7 +12,7 @@ const PromoCard = () => {
           <div className="flex-shrink-0">
             <Icon
               kind={"post"}
-              size={"mt-1 size-4 flex-shrink-0 text-blue-600 h-8 w-8"}
+              size={"mt-1 size-4 flex-shrink-0 text-primary h-8 w-8"}
             />
           </div>
           <div className="ms-3">
@@ -22,7 +22,7 @@ const PromoCard = () => {
             <p className="mt-2  text-sm text-gray-700 dark:text-gray-100">
               {siteMetadata.whatsNew.text}{" "}
               <a
-                className="hover:text-blue-500"
+                className="hover:text-primary"
                 href={siteMetadata.whatsNew.linkUrl}
               >
                 {siteMetadata.whatsNew.linkText}

@@ -25,7 +25,7 @@ const ThemeToggle = () => {
           ThemeSound();
           setTheme(theme === "light" ? "dark" : "light");
         }}
-        className="inline-flex items-center rounded-full border border-blue-700 p-2.5 text-center text-sm font-medium text-blue-700 hover:bg-blue-700 hover:text-white dark:border-blue-500 dark:text-blue-500 dark:hover:bg-blue-500  dark:hover:text-white"
+        className="inline-flex items-center rounded-full border border-primary p-2.5 text-center text-sm font-medium text-primary hover:bg-primary hover:text-white dark:border-primary dark:text-primary dark:hover:bg-primary  dark:hover:text-white"
       >
         <SunIcon className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
         <MoonIcon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />

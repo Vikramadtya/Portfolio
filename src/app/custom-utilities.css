@@ -40,11 +40,11 @@
 
   /* Timeline Components */
   .timeline-badge {
-    @apply me-2 ms-3 rounded bg-blue-100 px-2.5 py-0.5 text-sm font-medium text-blue-800 dark:bg-blue-900 dark:text-blue-300;
+    @apply me-2 ms-3 rounded bg-primary/20 px-2.5 py-0.5 text-sm font-medium text-primary dark:bg-primary/20 dark:text-primary;
   }
 
   .timeline-icon-container {
-    @apply flex h-10 w-10 items-center justify-center rounded-full bg-blue-100 ring-8 ring-white dark:bg-blue-900 dark:ring-gray-900;
+    @apply flex h-10 w-10 items-center justify-center rounded-full bg-primary/20 ring-8 ring-white dark:bg-primary/20 dark:ring-gray-900;
   }
 
   .timeline-date {

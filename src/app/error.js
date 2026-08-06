@@ -24,7 +24,7 @@ export default function Error({ error, reset }) {
       <div className="flex items-center gap-4">
         <button
           onClick={() => reset()}
-          className="rounded-xl bg-blue-600 px-6 py-3 font-semibold text-white transition-colors hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900"
+          className="rounded-xl bg-primary px-6 py-3 font-semibold text-white transition-colors hover:bg-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-gray-900"
         >
           Try again
         </button>

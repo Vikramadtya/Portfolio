@@ -6,7 +6,7 @@ const color = {
   1: "bg-lime-500 text-white",
   2: "bg-gray-500 text-white",
   3: "bg-teal-500 text-white",
-  4: "bg-blue-600 text-white",
+  4: "bg-primary text-white",
   5: "bg-red-500 text-white",
   6: "bg-yellow-500 text-white",
 };

@@ -25,7 +25,7 @@ const Footer = () => {
         <div className="mb-2 flex space-x-2 text-sm text-gray-500 dark:text-gray-100">
           <div>{`${footerData.copyrightPrefix} ${new Date().getFullYear()}`}</div>
           <div>{` • `}</div>
-          <Link href="/" className="hover:text-blue-500">
+          <Link href="/" className="hover:text-primary">
             {siteMetadata.title}
           </Link>
         </div>
@@ -33,7 +33,7 @@ const Footer = () => {
           {footerData.poweredByText}{` `}
           {siteMetadata.poweredBy?.map((tech, idx) => (
             <span key={tech.name}>
-              <a className={"underline hover:text-blue-500"} href={tech.url} target="_blank" rel="noopener noreferrer">
+              <a className={"underline hover:text-primary"} href={tech.url} target="_blank" rel="noopener noreferrer">
                 {tech.name}
               </a>
               {idx < siteMetadata.poweredBy.length - 1 ? ` & ` : ""}

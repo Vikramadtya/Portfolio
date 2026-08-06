@@ -1,10 +1,11 @@
 import { NextResponse } from "next/server";
 
-export async function GET(request) {
+export async function GET() {
   const apiKey = process.env.WEATHER_API_KEY;
 
   if (!apiKey) {
-    return NextResponse.json({ error: "Missing WEATHER_API_KEY" }, { status: 500 });
+    console.warn("WEATHER_API_KEY is missing. Returning graceful fallback.");
+    return NextResponse.json({ error: "Missing WEATHER_API_KEY" });
   }
 
   // Delhi coordinates

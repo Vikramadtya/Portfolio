@@ -74,7 +74,7 @@ const Courses = () => {
             <div className="text-sm">{certification.subHeading}</div>
             {certification.credential !== undefined ? (
               <Link href={certification.credential_href}>
-                <div className="text-sm text-blue-600">
+                <div className="text-sm text-primary">
                   Credential ID{" "}
                   <span className="lowercase">{certification.credential}</span>
                 </div>
