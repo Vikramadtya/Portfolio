@@ -16,7 +16,7 @@ export function useMDXComponents(components) {
       </h2>
     ),
     li: ({ children }) => (
-      <li className="mt-2 leading-7 text-primary/90 md:text-lg">{children}</li>
+      <li className="mt-2 leading-7 text-foreground/90 md:text-lg">{children}</li>
     ),
     ul: ({ children }) => (
       <ul className="ml-6 list-disc space-y-2 ps-5 text-sm text-gray-600 marker:text-primary dark:text-gray-100">
@@ -24,7 +24,7 @@ export function useMDXComponents(components) {
       </ul>
     ),
     p: ({ children }) => (
-      <p className="leading-7 text-primary/90 md:text-lg [&:not(:first-child)]:mt-6">
+      <p className="leading-7 text-foreground/90 md:text-lg [&:not(:first-child)]:mt-6">
         {" "}
         {children}
       </p>

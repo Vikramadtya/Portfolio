@@ -6,7 +6,7 @@ import siteMetadata from '@/lib/metadata';
 
 export default function AuthorProfile() {
   return (
-    <div className="flex w-full flex-col items-center px-6 pt-8 xl:sticky xl:top-0">
+    <div className="flex w-full shrink-0 flex-col items-center px-6 pt-8 md:w-64 xl:sticky xl:top-0">
       <div className="px-6">
         <Image
           src={siteMetadata.profileImage}
