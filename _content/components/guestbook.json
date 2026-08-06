@@ -1,0 +1,13 @@
+{
+  "title": "Guestbook",
+  "description": "Leave a message for future visitors. Sign in with GitHub to post.",
+  "signedInAs": "Signed in as",
+  "signOut": "Sign out",
+  "inputPlaceholder": "Your message...",
+  "submitButton": "Sign",
+  "submittingButton": "Signing...",
+  "signInMessage": "Sign in with GitHub to leave a message in the guestbook.",
+  "signInButton": "Sign in with GitHub",
+  "noMessages": "No messages yet. Be the first!",
+  "errorMessage": "Failed to submit message. Please try again."
+}

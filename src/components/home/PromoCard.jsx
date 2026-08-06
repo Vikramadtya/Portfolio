@@ -1,0 +1,38 @@
+import Icon from "@/components/ui/Icon";
+import siteMetadata from "@/lib/metadata";
+
+const PromoCard = () => {
+  return (
+    <>
+      <div
+        className="mt-10 w-1/2 rounded-lg border border-gray-200 bg-slate-100 p-4  shadow-lg dark:border-gray-700 dark:bg-gray-800 sm:w-1/2 md:w-1/3"
+        role="alert"
+      >
+        <div className="flex">
+          <div className="flex-shrink-0">
+            <Icon
+              kind={"post"}
+              size={"mt-1 size-4 flex-shrink-0 text-primary h-8 w-8"}
+            />
+          </div>
+          <div className="ms-3">
+            <h3 className="font-semibold text-gray-800 dark:text-white">
+              {siteMetadata.whatsNew.title}
+            </h3>
+            <p className="mt-2  text-sm text-gray-700 dark:text-gray-100">
+              {siteMetadata.whatsNew.text}{" "}
+              <a
+                className="hover:text-primary"
+                href={siteMetadata.whatsNew.linkUrl}
+              >
+                {siteMetadata.whatsNew.linkText}
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default PromoCard;

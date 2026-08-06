@@ -1,0 +1,143 @@
+{
+  "navLinks": [
+    {
+      "key": 1,
+      "href": "{{blogLink}}",
+      "title": "Blog",
+      "shortcut": "⌘+B"
+    },
+    {
+      "key": 2,
+      "href": "/about",
+      "title": "About",
+      "shortcut": "⌘+A"
+    },
+    {
+      "key": 4,
+      "href": "/projects",
+      "title": "Projects",
+      "shortcut": "⌘+P"
+    }
+  ],
+  "dropDownMenuNavLinks": [
+    {
+      "key": 1,
+      "href": "/",
+      "title": "Home",
+      "icon": "home",
+      "shortcut": "⌘+H"
+    },
+    {
+      "key": 2,
+      "href": "/about",
+      "title": "About",
+      "icon": "me",
+      "shortcut": "⌘+A"
+    },
+    {
+      "key": 3,
+      "href": "/resume",
+      "title": "Resume",
+      "icon": "resume",
+      "shortcut": "⌘+R"
+    },
+    {
+      "key": 4,
+      "href": "/projects",
+      "title": "Projects",
+      "icon": "wrenchAndHammer",
+      "shortcut": "⌘+P"
+    },
+    {
+      "key": 0,
+      "href": "{{blogLink}}",
+      "title": "Blog",
+      "icon": "memo",
+      "shortcut": "⌘+B"
+    },
+    {
+      "key": 17,
+      "href": "/contact",
+      "title": "Contact",
+      "icon": "contact",
+      "shortcut": "⌘+U"
+    },
+    {
+      "key": 18,
+      "href": "/guestbook",
+      "title": "Guestbook",
+      "icon": "memo",
+      "shortcut": "⌘+G"
+    },
+    {
+      "key": 5,
+      "href": "",
+      "title": "",
+      "icon": "",
+      "shortcut": ""
+    },
+    {
+      "key": 6,
+      "href": "/timeline",
+      "title": "Journey",
+      "icon": "rocket",
+      "shortcut": "⌘+J"
+    },
+    {
+      "key": 9,
+      "href": "/reading",
+      "title": "Reading",
+      "icon": "reading",
+      "shortcut": "⌘+V"
+    },
+    {
+      "key": 10,
+      "href": "/watching",
+      "title": "Watching",
+      "icon": "watching",
+      "shortcut": "⌘+W"
+    },
+    {
+      "key": 11,
+      "href": "/tools",
+      "title": "Tools",
+      "icon": "tool",
+      "shortcut": "⌘+T"
+    },
+    {
+      "key": 12,
+      "href": "/quotes",
+      "title": "Quotes",
+      "icon": "quote",
+      "shortcut": "⌘+Q"
+    },
+    {
+      "key": 13,
+      "href": "/photography",
+      "title": "Photography",
+      "icon": "photography",
+      "shortcut": "⌘+P"
+    },
+    {
+      "key": 14,
+      "href": "/now",
+      "title": "Now",
+      "icon": "now",
+      "shortcut": "⌘+N"
+    },
+    {
+      "key": 15,
+      "href": "",
+      "title": "",
+      "icon": "",
+      "shortcut": ""
+    },
+    {
+      "key": 16,
+      "href": "{{analyticsURL}}",
+      "title": "Analytics",
+      "icon": "chart",
+      "shortcut": "⌘+U"
+    }
+  ]
+}
