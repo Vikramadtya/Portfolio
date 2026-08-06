@@ -1,0 +1,19 @@
+{
+  "abbreviationText": "is the abbreviation I use on social media.",
+  "birthYearText": "I was born in",
+  "birthYear": "1999",
+  "locationPrefix": "I was raised in",
+  "locationName": "Delhi, India",
+  "locationIcon": "india",
+  "hobbiesPrefix": "I like",
+  "hobbies": ["swimming", "running", "gym"],
+  "animeText": "I like",
+  "animeName": "ナルト",
+  "gamePrefix": "I like \"The Last of Us\"",
+  "gameIcon": "game",
+  "musicText": "I love listening",
+  "musicIcon": "music",
+  "musicSuffix": "and rap music.",
+  "typingPrefix": "I’m",
+  "typingIcon": "partyingFace"
+}

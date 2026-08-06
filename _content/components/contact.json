@@ -1,0 +1,23 @@
+{
+  "emailCard": {
+    "title": "Email",
+    "description": "Mail me your query"
+  },
+  "linkedinCard": {
+    "title": "LinkedIn",
+    "description": "Connect with me on LinkedIn"
+  },
+  "instagramCard": {
+    "title": "Instagram",
+    "description": "Liked my photography skills, follow me on Instagram"
+  },
+  "form": {
+    "emailLabel": "Your email",
+    "emailPlaceholder": "name@email-service-provider.com",
+    "subjectLabel": "Subject",
+    "subjectPlaceholder": "Let me know how can i help you",
+    "messageLabel": "Your message",
+    "messagePlaceholder": "Type the message here...",
+    "submitButton": "Send message"
+  }
+}
