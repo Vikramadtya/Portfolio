@@ -1,6 +1,6 @@
 # Developer Portfolio & Blog
 
-![logo](../assets/logo.png)
+![logo](https://github.com/Vikramadtya/Portfolio/blob/main/assets/logo.png)
 
 A highly dynamic, modern developer portfolio built with **Next.js 14 (App Router)**, **Tailwind CSS**, and **MDX**. 
 
