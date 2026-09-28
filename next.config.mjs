@@ -90,4 +90,23 @@ const withMDX = createMDX({
   },
 });
 
-export default withMDX(nextConfig);
+import { withSentryConfig } from "@sentry/nextjs";
+
+const mdxConfig = withMDX(nextConfig);
+
+export default process.env.NEXT_PUBLIC_SENTRY_DSN
+  ? withSentryConfig(
+      mdxConfig,
+      {
+        silent: true,
+        org: "your-org",
+        project: "your-project",
+      },
+      {
+        widenClientFileUpload: true,
+        transpileClientSDK: true,
+        hideSourceMaps: true,
+        disableLogger: true,
+      }
+    )
+  : mdxConfig;

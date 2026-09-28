@@ -74,18 +74,11 @@ SPOTIFY_REFRESH_TOKEN=your_spotify_refresh_token_here
 
 ---
 
-## 🚀 Deployment (Vercel)
+## 🚀 Deployment & Observability
 
-This project is optimized for zero-config deployment on [Vercel](https://vercel.com).
+This project is optimized for zero-config deployment on Vercel and features full-stack, end-to-end distributed tracing via Sentry. 
 
-### Step-by-Step Deployment Plan:
-1. **Push to GitHub**: Ensure all your code, including your custom `_content/config/siteConfig.json` (if applicable), is committed and pushed to a GitHub repository. *(Do not commit your `.env.local` file!)*
-2. **Import Project**: Log into Vercel and click **Add New... > Project**. Import your GitHub repository.
-3. **Configure Environment Variables**: 
-   - Before clicking Deploy, open the **Environment Variables** section in the Vercel deployment screen.
-   - Copy **all** the keys from your `.env.local` file (`WEATHER_API_KEY`, `NOTION_TOKEN`, `DISCORD_WEBHOOK_URL`, `UPSTASH_REDIS_REST_URL`, etc.) and their respective values into Vercel.
-4. **Deploy**: Click the **Deploy** button. Vercel will automatically detect that this is a Next.js App Router project, run `npm install`, and build the application.
-5. **Live Updates**: Because our custom API routes (Notion, Weather, Spotify) fetch live data dynamically, your portfolio will reflect any changes you make in your Notion app or Spotify instantly—without needing a new Vercel rebuild!
+For step-by-step instructions on deploying the site and configuring the free Observability / Tracing tier, please read the **[Deployment Guide](deployment.md)**.
 
 ---
 

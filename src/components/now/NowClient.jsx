@@ -12,15 +12,26 @@ import NowPlaying from "@/components/shared/NowPlaying";
 const Clock = dynamic(() => import("react-clock"), { ssr: false });
 
 export default function NowClient() {
+  /**
+   * Helper function to get current exact time in Delhi timezone
+   * @returns {Date}
+   */
   const getDelhiTime = () => {
     // Force the Date object to represent the exact current time in Delhi
     const str = new Date().toLocaleString("en-US", { timeZone: "Asia/Kolkata" });
     return new Date(str);
   };
 
+  /** @type {[Date, React.Dispatch<React.SetStateAction<Date>>]} */
   const [value, setValue] = useState(getDelhiTime());
+  
+  /** @type {[any, React.Dispatch<React.SetStateAction<any>>]} */
   const [weatherData, setWeatherData] = useState(nowPageData.weather);
+  
+  /** @type {[Array<{heading: string, content: string, icon: string}>, React.Dispatch<React.SetStateAction<Array<any>>>]} */
   const [items, setItems] = useState(nowPageData.items);
+  
+  /** @type {[string, React.Dispatch<React.SetStateAction<string>>]} */
   const [location, setLocation] = useState(nowPageData.location);
 
   useEffect(() => {
