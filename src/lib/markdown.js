@@ -51,3 +51,53 @@ export function getContentList(contentDir) {
     return [];
   }
 }
+
+/**
+ * Generates an array of paths for Next.js generateStaticParams
+ * @param {string} contentDir - absolute path to the content directory
+ * @returns {Array<{ slug: string }>}
+ */
+export function getStaticPathsFromDir(contentDir) {
+  try {
+    const files = fs.readdirSync(contentDir);
+    return files
+      .filter((f) => f.endsWith(".mdx") || f.endsWith(".md"))
+      .map((fileName) => ({
+        slug: fileName.replace(/\.mdx?$/, ""),
+      }));
+  } catch (error) {
+    console.warn(`Content directory not found or unreadable: ${contentDir}`);
+    return [];
+  }
+}
+
+/**
+ * Gets a specific post's raw content and frontmatter metadata by slug
+ * @param {string} slug - The post slug
+ * @param {string} contentDir - The directory containing the post
+ * @returns {{ contentMetadata: { frontMatter: any }, slug: string, content: string }}
+ */
+export function getPostBySlug(slug, contentDir) {
+  try {
+    const fullPath = path.join(contentDir, `${slug}.mdx`);
+    // Fallback to .md if .mdx doesn't exist
+    const actualPath = fs.existsSync(fullPath) ? fullPath : path.join(contentDir, `${slug}.md`);
+    
+    const markdownFile = fs.readFileSync(actualPath, "utf-8");
+    const { data: frontMatter, content } = matter(markdownFile);
+
+    return {
+      contentMetadata: { frontMatter },
+      slug,
+      content,
+    };
+  } catch (error) {
+    console.error(`Error reading post ${slug} from ${contentDir}:`, error);
+    // Return empty fallback
+    return {
+      contentMetadata: { frontMatter: { title: "Not Found", description: "This post could not be found." } },
+      slug,
+      content: "Post not found.",
+    };
+  }
+}
