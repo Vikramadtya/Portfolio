@@ -17,7 +17,21 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        serif: ["var(--font-fraunces)", "Georgia", "serif"],
+      },
       colors: {
+        // warm neutrals replace the default cool grays
+        gray: {
+          50: "#faf7f2", 100: "#f3eee5", 200: "#e6dfd1", 300: "#d3c9b6",
+          400: "#a99f8e", 500: "#857b6b", 600: "#6b6255", 700: "#4f483e",
+          800: "#332e27", 900: "#221f1a", 950: "#161411",
+        },
+        slate: {
+          50: "#faf7f2", 100: "#f3eee5", 200: "#e6dfd1", 300: "#d3c9b6",
+          400: "#a99f8e", 500: "#857b6b", 600: "#6b6255", 700: "#4f483e",
+          800: "#332e27", 900: "#221f1a", 950: "#161411",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

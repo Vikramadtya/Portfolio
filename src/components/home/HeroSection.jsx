@@ -3,6 +3,7 @@
 import dynamic from "next/dynamic";
 import Icon from "@/components/ui/Icon";
 import { useEffect, useState } from "react";
+import { useTheme } from "next-themes";
 
 /* ------------------------------------------------------------------ */
 /*  Lazy-load heavy animation libraries — they are visual polish,     */
@@ -25,6 +26,7 @@ const RoughNotation = dynamic(
 const HeroSection = ({ data }) => {
   /* Reduce particle count on mobile to save GPU cycles */
   const [snowflakeCount, setSnowflakeCount] = useState(20);
+  const { resolvedTheme } = useTheme();
 
   useEffect(() => {
     const mq = window.matchMedia("(min-width: 768px)");
@@ -38,6 +40,7 @@ const HeroSection = ({ data }) => {
   return (
     <>
       <Snowfall
+        color={resolvedTheme === "dark" ? "#f5efe6" : "#d9c9b0"}
         snowflakeCount={snowflakeCount}
         style={{
           zIndex: -1,

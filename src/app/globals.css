@@ -18,67 +18,49 @@
 
 @layer base {
   :root {
-    /* Light Mode Colors */
-    --background: 0 0% 100%;
-    --foreground: 0 0% 3.9%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 3.9%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 3.9%;
-
-    --primary: 221.2 83.2% 53.3%;
-    --primary-foreground: 0 0% 98%;
-
-    --secondary: 0 0% 96.1%;
-    --secondary-foreground: 0 0% 9%;
-
-    --muted: 0 0% 96.1%;
-    --muted-foreground: 0 0% 45.1%;
-
-    --accent: 0 0% 96.1%;
-    --accent-foreground: 0 0% 9%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
-
-    --border: 0 0% 89.8%;
-    --input: 0 0% 89.8%;
-    --ring: 221.2 83.2% 53.3%;
+    --background: 40 33% 96%;
+    --foreground: 25 22% 12%;
+    --card: 40 35% 98%;
+    --card-foreground: 25 22% 12%;
+    --popover: 40 35% 98%;
+    --popover-foreground: 25 22% 12%;
+    --primary: 14 62% 43%;
+    --primary-foreground: 40 33% 97%;
+    --secondary: 38 25% 91%;
+    --secondary-foreground: 25 22% 12%;
+    --muted: 38 25% 91%;
+    --muted-foreground: 25 10% 38%;
+    --accent: 38 25% 91%;
+    --accent-foreground: 25 22% 12%;
+    --destructive: 0 70% 45%;
+    --destructive-foreground: 40 33% 97%;
+    --border: 35 20% 83%;
+    --input: 35 20% 83%;
+    --ring: 14 62% 43%;
 
     --radius: 0.5rem;
   }
 
   .dark {
-    /* Dark Mode Colors */
-    --background: 0 0% 3.9%;
-    --foreground: 0 0% 98%;
-
-    --card: 0 0% 3.9%;
-    --card-foreground: 0 0% 98%;
-
-    --popover: 0 0% 3.9%;
-    --popover-foreground: 0 0% 98%;
-
-    --primary: 217.2 91.2% 59.8%;
-    --primary-foreground: 0 0% 9%;
-
-    --secondary: 0 0% 14.9%;
-    --secondary-foreground: 0 0% 98%;
-
-    --muted: 0 0% 14.9%;
-    --muted-foreground: 0 0% 63.9%;
-
-    --accent: 0 0% 14.9%;
-    --accent-foreground: 0 0% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-
-    --border: 0 0% 14.9%;
-    --input: 0 0% 14.9%;
-    --ring: 0 0% 83.1%;
+    --background: 30 8% 10%;
+    --foreground: 38 25% 90%;
+    --card: 30 8% 12%;
+    --card-foreground: 38 25% 90%;
+    --popover: 30 8% 12%;
+    --popover-foreground: 38 25% 90%;
+    --primary: 14 65% 63%;
+    --primary-foreground: 30 8% 10%;
+    --secondary: 30 8% 17%;
+    --secondary-foreground: 38 25% 90%;
+    --muted: 30 8% 17%;
+    --muted-foreground: 35 10% 66%;
+    --accent: 30 8% 17%;
+    --accent-foreground: 38 25% 90%;
+    --destructive: 0 62% 40%;
+    --destructive-foreground: 38 25% 90%;
+    --border: 30 8% 21%;
+    --input: 30 8% 21%;
+    --ring: 14 65% 63%;
   }
 }
 
@@ -88,5 +70,71 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-serif;
+    text-wrap: balance;
+  }
+  p,
+  li {
+    text-wrap: pretty;
+  }
+  body {
+    font-feature-settings: "kern", "liga", "calt";
+    text-rendering: optimizeLegibility;
+  }
+  :focus-visible {
+    @apply outline-none ring-2 ring-primary/60 ring-offset-2 ring-offset-background;
+    border-radius: 4px;
+  }
+
+  /* Soft paper atmosphere: a warm glow at the top and a faint grain.
+     Fixed, behind everything, and never intercepts clicks. */
+  body::before,
+  body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -2;
+    pointer-events: none;
+  }
+  body::before {
+    background:
+      radial-gradient(60rem 32rem at 50% -8rem, hsl(var(--primary) / 0.09), transparent 70%),
+      radial-gradient(40rem 28rem at 105% 90%, hsl(38 80% 60% / 0.07), transparent 70%);
+  }
+  body::after {
+    opacity: 0.045;
+    mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .6 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  }
+  .dark body::before {
+    background:
+      radial-gradient(60rem 32rem at 50% -8rem, hsl(var(--primary) / 0.12), transparent 70%),
+      radial-gradient(40rem 28rem at 105% 90%, hsl(38 80% 60% / 0.05), transparent 70%);
+  }
+  .dark body::after {
+    opacity: 0.06;
+    mix-blend-mode: screen;
+  }
+
+  /* Links inside written content get a refined underline; nav and cards are untouched */
+  main :is(p, li) > a {
+    @apply text-primary underline decoration-primary/30 decoration-1 underline-offset-4 transition-all;
+  }
+  main :is(p, li) > a:hover {
+    @apply decoration-primary decoration-2;
+  }
+
+  /* Slim warm scrollbar */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--border)) transparent;
+  }
+  ::selection {
+    @apply bg-primary/25;
   }
 }

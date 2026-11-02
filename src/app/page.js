@@ -12,9 +12,11 @@ export const metadata = genPageMetadata({ title: "Home" });
 
 export default function Home() {
   const pageData = getPageContent("home");
+  // Featured projects mirror the ones listed on the latest resume
+  const featured = ["expensesplit", "meditor", "dga-classifier", "blog", "bookmarker"];
   const projects = getContentList(PROJECTS_DIR)
-    .sort((a, b) => a.id - b.id)
-    .slice(0, 6);
+    .filter((p) => featured.includes(p.slug))
+    .sort((a, b) => featured.indexOf(a.slug) - featured.indexOf(b.slug));
 
   return (
     <div className="flex min-h-screen flex-col items-center justify-between">

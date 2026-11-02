@@ -8,7 +8,7 @@
 @layer components {
   /* Hero Section Components */
   .hero-title-text {
-    @apply flex items-center bg-gradient-to-r from-lime-500 to-yellow-400 bg-clip-text py-1 text-3xl font-extrabold text-transparent dark:to-blue-500 sm:text-5xl md:text-7xl;
+    @apply flex items-center bg-gradient-to-r from-orange-700 to-amber-500 bg-clip-text py-1 text-3xl font-extrabold text-transparent dark:from-orange-400 dark:to-amber-300 sm:text-5xl md:text-7xl;
   }
 
   /* General Layout */
@@ -17,7 +17,7 @@
   }
 
   .text-body {
-    @apply text-lg leading-8 text-gray-600 dark:text-gray-100;
+    @apply text-lg leading-8 text-gray-700 dark:text-gray-200;
   }
 
   /* Mobile Navigation Overlay */
@@ -27,15 +27,15 @@
 
   /* Project Card Components */
   .project-card-container {
-    @apply relative mb-10 flex max-w-[24rem] flex-col overflow-hidden rounded-xl border-2 bg-white bg-clip-border text-gray-700 shadow-md hover:border-solid hover:border-gray-700 dark:bg-black dark:hover:border-white;
+    @apply relative mb-10 flex max-w-[24rem] flex-col overflow-hidden rounded-xl border bg-card bg-clip-border text-gray-700 shadow-[0_1px_2px_hsl(25_20%_20%/0.06),0_8px_24px_-12px_hsl(25_20%_20%/0.12)] transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 hover:shadow-[0_2px_4px_hsl(25_20%_20%/0.06),0_18px_36px_-14px_hsl(14_62%_43%/0.28)] dark:text-gray-200 dark:shadow-none dark:hover:shadow-[0_18px_36px_-14px_hsl(14_65%_63%/0.25)];
   }
 
   .project-card-title {
-    @apply text-slate-900 hover:underline-offset-4 block font-sans text-2xl font-semibold leading-snug tracking-normal antialiased hover:underline dark:text-white;
+    @apply text-foreground block font-serif text-2xl font-medium leading-snug tracking-tight antialiased transition-colors hover:text-primary;
   }
 
   .project-card-description {
-    @apply mt-3 block font-sans text-xl font-normal leading-relaxed text-gray-700 antialiased dark:text-white;
+    @apply mt-3 block font-sans text-base font-normal leading-relaxed text-muted-foreground antialiased;
   }
 
   /* Timeline Components */
@@ -63,7 +63,6 @@
     animation-iteration-count: infinite;
     transform-origin: 70% 70%;
     display: inline-block;
-    color: greenyellow;
   }
 
   @keyframes wave-animation {

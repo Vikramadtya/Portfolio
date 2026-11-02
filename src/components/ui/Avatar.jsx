@@ -87,7 +87,8 @@ const Avatar = () => {
           className="h-auto w-full object-cover"
           sizes="(max-width: 768px) 100vw, 400px"
           style={{
-            boxShadow: "13px 13px 43px #b3b3b3",
+            boxShadow:
+              "0 2px 4px hsl(25 20% 20% / 0.08), 14px 18px 40px -10px hsl(25 25% 20% / 0.28)",
             borderRadius: "6px",
           }}
         />
