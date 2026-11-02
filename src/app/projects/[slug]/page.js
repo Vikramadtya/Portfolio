@@ -44,6 +44,10 @@ export default function Post({ params }) {
         title={props.contentMetadata.frontMatter.title}
         tags={props.contentMetadata.frontMatter.tags}
         content={props.content}
+        demo={props.contentMetadata.frontMatter.demo}
+        repo={props.contentMetadata.frontMatter.repo}
+        backHref="/projects"
+        backLabel="All projects"
       />
     </>
   );

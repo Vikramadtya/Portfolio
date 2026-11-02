@@ -8,8 +8,13 @@ export async function POST(request) {
   try {
     const body = await request.json();
 
-    // notify via discord
-    notifyDiscord(body);
+    // notify via discord; tell the client honestly if the message was not delivered
+    const delivered = await notifyDiscord(body);
+    if (!delivered) {
+      return new Response(JSON.stringify({ error: "Delivery unavailable" }), {
+        status: 503,
+      });
+    }
 
     // send response back
     return new Response(

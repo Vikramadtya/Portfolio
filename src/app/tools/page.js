@@ -9,13 +9,13 @@ export const metadata = genPageMetadata({ title: "Tools" });
 export default function ToolsPage() {
   return (
     <main>
-      <div className="px-8 py-12 md:px-24 lg:px-32 xl:px-48 2xl:px-60">
+      <div className="px-12 pb-0 pt-12 md:px-24 lg:px-32 xl:px-48 2xl:px-60">
         <PageHeader pageName="tools" />
       </div>
       <div className="grid grid-cols-1 gap-3 px-12 pb-10 md:px-24 lg:grid-cols-2 lg:px-32 xl:px-48 2xl:px-60">
         {tools.map((tool) => (
           <div
-            className="flex flex-col rounded-xl border bg-white shadow-sm dark:border-gray-700 dark:bg-slate-900 dark:shadow-slate-700/[.7]"
+            className="flex flex-col rounded-xl border bg-card shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-md"
             key={tool.id}
           >
             <div className="flex items-center">
@@ -24,12 +24,12 @@ export default function ToolsPage() {
               </div>
               <div className="pr-10">
                 <div className="flex items-center justify-between rounded-t-xl border-b px-4 py-2 dark:border-gray-700 md:px-5">
-                  <h3 className="text-lg font-bold text-gray-800 dark:text-white">
+                  <h3 className="font-serif text-lg font-medium text-foreground">
                     {tool.name}
                   </h3>
                 </div>
                 <div className="px-4 pb-2 md:px-5">
-                  <p className="mt-2 text-gray-500 dark:text-gray-100">
+                  <p className="mt-2 text-muted-foreground">
                     {tool.description}
                   </p>
                 </div>

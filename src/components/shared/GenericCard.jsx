@@ -1,15 +1,22 @@
 import React from "react";
+import Link from "next/link";
 
-const GenericCard = ({ icon, heading, content }) => {
+const GenericCard = ({ icon, heading, content, href }) => {
   return (
     <>
-      <div className="flex flex-col rounded-xl border bg-white shadow-sm dark:border-gray-700 dark:bg-slate-900 dark:shadow-slate-700/[.7]">
+      <div className="flex flex-col rounded-xl border bg-card shadow-sm transition-shadow hover:shadow-md">
         <div className="flex items-center">
           <div className="relative inline-block pl-10 pr-10">{icon}</div>
           <div className="pr-10">
             <div className="flex items-center justify-between rounded-t-xl border-b px-4 py-3 dark:border-gray-700 md:px-5">
-              <h3 className="text-lg font-bold text-gray-800 dark:text-white">
-                {heading}
+              <h3 className="font-serif text-lg font-medium text-foreground">
+                {href ? (
+                  <Link href={href} className="hover:text-primary">
+                    {heading}
+                  </Link>
+                ) : (
+                  heading
+                )}
               </h3>
             </div>
             <div className="p-4 md:p-5">

@@ -1,5 +1,5 @@
 export async function notify(formData) {
-  await fetch("/api/notify", {
+  const response = await fetch("/api/notify", {
     method: "POST",
     body: JSON.stringify({
       id: crypto.randomUUID(),
@@ -8,4 +8,5 @@ export async function notify(formData) {
       message: formData.get("message"),
     }),
   });
+  return response.ok;
 }

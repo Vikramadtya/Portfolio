@@ -23,6 +23,8 @@ export default function Post({ params }) {
       title={props.contentMetadata.frontMatter.title}
       tags={props.contentMetadata.frontMatter.tags}
       content={props.content}
+        backHref="/watching"
+        backLabel="Watchlist"
     />
   );
 }

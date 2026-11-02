@@ -6,11 +6,12 @@ const PageHeader = ({ pageName }) => {
   const pageData = getPageContent(pageName);
 
   return (
-    <div className="w-full space-y-2 pb-8 pt-6 md:space-y-5">
-      <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-relaxed">
+    <div className="w-full pb-8 pt-6">
+      <h1 className="text-4xl font-medium leading-tight tracking-tight text-foreground sm:text-5xl md:text-6xl">
         {pageData.title}
       </h1>
-      <div className="prose prose-lg max-w-none text-gray-500 dark:prose-invert dark:text-gray-100">
+      <span className="mb-6 mt-4 block h-1 w-14 rounded-full bg-primary/70" aria-hidden="true" />
+      <div className="prose prose-lg max-w-2xl text-foreground/75 prose-p:leading-8 prose-a:text-primary dark:prose-invert dark:text-gray-200">
         <MDXRemote source={pageData.content} />
       </div>
     </div>
