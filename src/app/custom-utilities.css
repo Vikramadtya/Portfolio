@@ -8,7 +8,7 @@
 @layer components {
   /* Hero Section Components */
   .hero-title-text {
-    @apply flex items-center bg-gradient-to-r from-lime-500 to-yellow-400 bg-clip-text py-1 text-3xl font-extrabold text-transparent dark:to-blue-500 sm:text-5xl md:text-7xl;
+    @apply flex items-center bg-gradient-to-r from-orange-700 to-amber-500 bg-clip-text py-1 text-3xl font-extrabold text-transparent dark:from-orange-400 dark:to-amber-300 sm:text-5xl md:text-7xl;
   }
 
   /* General Layout */

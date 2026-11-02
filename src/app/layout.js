@@ -1,4 +1,4 @@
-import { Inter } from "next/font/google";
+import { Inter, Fraunces } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
@@ -8,6 +8,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({ subsets: ["latin"] });
+const fraunces = Fraunces({ subsets: ["latin"], variable: "--font-fraunces" });
 
 import siteMetadata from "@/lib/metadata";
 
@@ -70,13 +71,13 @@ export default function RootLayout({ children }) {
         <meta name="apple-mobile-web-app-title" content={siteMetadata.title} />
         <meta name="application-name" content={siteMetadata.title} />
         <meta name="msapplication-TileColor" content="#1abc9c" />
-        <meta name="theme-color" content="#ecf0f1" />
+        <meta name="theme-color" content="#f6f2ea" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className={inter.className}>
+      <body className={`${inter.className} ${fraunces.variable}`}>
         <div className="flex h-screen flex-col justify-between">
           <ThemeProvider
             attribute="class"
