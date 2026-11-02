@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 const colors = {
   0: "border-primary/30 bg-primary/10 text-primary",
   1: "border-primary/30 bg-primary/10 text-primary",
@@ -15,12 +13,11 @@ const colors = {
 const Tag = ({ text, id }) => {
   let color = colors[id];
   return (
-    <Link
-      href={`/tags`}
+    <span
       className={`me-2 rounded-full border ${color} px-2.5 py-0.5 text-xs font-medium transition-colors hover:bg-primary/20 `}
     >
       <span>{text.split(" ").join("-")}</span>
-    </Link>
+    </span>
   );
 };
 

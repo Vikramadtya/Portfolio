@@ -2,7 +2,7 @@ export const notifyDiscord = async (data) => {
   const webhookUrl = process.env.DISCORD_WEBHOOK_URL;
   if (!webhookUrl) {
     console.warn("DISCORD_WEBHOOK_URL is not set.");
-    return;
+    return false;
   }
 
   // Parse the data back to an object if it's a JSON string, otherwise use as is
@@ -15,14 +15,16 @@ export const notifyDiscord = async (data) => {
 ${parsedData.message || "N/A"}`;
 
   try {
-    await fetch(webhookUrl, {
+    const res = await fetch(webhookUrl, {
       method: "POST",
       body: JSON.stringify({ content }),
       headers: {
         "Content-Type": "application/json",
       },
     });
+    return res.ok;
   } catch (error) {
     console.error("Failed to send message to Discord", error);
+    return false;
   }
 };

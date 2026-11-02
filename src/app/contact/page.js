@@ -12,23 +12,23 @@ export default function ContactPage() {
   const pageData = getPageContent("contact");
   return (
     <main className="flex flex-col items-center justify-between">
-      <section className="bg-white dark:bg-gray-900">
+      <section>
         <div className="container mx-auto px-6 py-12">
           <div className="text-center">
             <p className="font-medium text-primary dark:text-primary">
               {pageData.subtitle}
             </p>
-            <h1 className="mt-2 text-2xl font-semibold text-gray-800 dark:text-white md:text-3xl">
+            <h1 className="mt-2 font-serif text-3xl font-medium text-foreground md:text-4xl">
               {pageData.title}
             </h1>
           </div>
 
           <div className="mt-10 grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
             <div className="flex flex-col items-center justify-center text-center">
-              <span className="rounded-full bg-primary/20 p-3 text-primary dark:bg-gray-800">
+              <span className="rounded-full bg-primary/15 p-3 text-primary">
                 <Icon kind="mail" size="h-6 w-6" />
               </span>
-              <h2 className="mt-4 text-lg font-medium text-gray-800 dark:text-white">
+              <h2 className="mt-4 font-serif text-lg font-medium text-foreground">
                 {contactData.emailCard.title}
               </h2>
               <p className="mt-2 text-gray-500 dark:text-gray-100">
@@ -43,10 +43,10 @@ export default function ContactPage() {
             </div>
 
             <div className="flex flex-col items-center justify-center text-center">
-              <span className="rounded-full bg-primary/20 p-3 text-primary dark:bg-gray-800">
+              <span className="rounded-full bg-primary/15 p-3 text-primary">
                 <Icon kind="linkedin" size="h-6 w-6" />
               </span>
-              <h2 className="mt-4 text-lg font-medium text-gray-800 dark:text-white">
+              <h2 className="mt-4 font-serif text-lg font-medium text-foreground">
                 {contactData.linkedinCard.title}
               </h2>
               <p className="mt-2 text-gray-500 dark:text-gray-100">
@@ -63,10 +63,10 @@ export default function ContactPage() {
             </div>
 
             <div className="flex flex-col items-center justify-center text-center">
-              <span className="rounded-full bg-primary/20 p-3 text-primary dark:bg-gray-800">
+              <span className="rounded-full bg-primary/15 p-3 text-primary">
                 <Icon kind="instagram" size="h-6 w-6" />
               </span>
-              <h2 className="mt-4 text-lg font-medium text-gray-800 dark:text-white">
+              <h2 className="mt-4 font-serif text-lg font-medium text-foreground">
                 {contactData.instagramCard.title}
               </h2>
               <p className="mt-2 text-gray-500 dark:text-gray-100">
@@ -84,7 +84,7 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
-      <section className="bg-white dark:bg-gray-900">
+      <section>
         <div className="mx-auto max-w-screen-md px-4 py-8 lg:py-16">
           <p className="mb-8 text-center font-light text-gray-500 dark:text-gray-100 sm:text-xl lg:mb-16">
             {pageData.content}

@@ -1,18 +1,98 @@
 [
-  { "id": 1, "name": "Sublime", "icon": "sublime", "description": "Favourite editor for generic task" },
-  { "id": 2, "name": "Intellij IDEA", "icon": "intellij", "description": "Best java IDE ever" },
-  { "id": 3, "name": "Insomnia", "icon": "insomnia", "description": "The REST API client i am using" },
-  { "id": 4, "name": "Docker", "icon": "dockerTool", "description": "Favourite editor for generic task" },
-  { "id": 5, "name": "Draw.io", "icon": "drawio", "description": "Favourite editor for generic task" },
-  { "id": 6, "name": "Github", "icon": "githubTool", "description": "Best java IDE ever" },
-  { "id": 7, "name": "Overleaf", "icon": "overleaf", "description": "The REST API client i am using" },
-  { "id": 8, "name": "Slack", "icon": "slack", "description": "Favourite editor for generic task" },
-  { "id": 9, "name": "Spotify", "icon": "spotifyTool", "description": "Favourite editor for generic task" },
-  { "id": 10, "name": "ITerm2", "icon": "iterm", "description": "Favourite editor for generic task" },
-  { "id": 11, "name": "Linux", "icon": "linuxTool", "description": "Favourite editor for generic task" },
-  { "id": 12, "name": "Bash", "icon": "bash", "description": "Favourite editor for generic task" },
-  { "id": 13, "name": "GitBook", "icon": "gitbook", "description": "Favourite editor for generic task" },
-  { "id": 14, "name": "Notion", "icon": "notion", "description": "Favourite editor for generic task" },
-  { "id": 15, "name": "Raindrop", "icon": "raindrop", "description": "Favourite editor for generic task" },
-  { "id": 16, "name": "Airtable", "icon": "airtable", "description": "Favourite editor for generic task" }
+  {
+    "id": 1,
+    "name": "Sublime",
+    "icon": "sublime",
+    "description": "A fast, minimal text editor for quick edits and scratch work"
+  },
+  {
+    "id": 2,
+    "name": "Intellij IDEA",
+    "icon": "intellij",
+    "description": "JetBrains IDE for Java and JVM development"
+  },
+  {
+    "id": 3,
+    "name": "Insomnia",
+    "icon": "insomnia",
+    "description": "A REST and GraphQL API client for testing endpoints"
+  },
+  {
+    "id": 4,
+    "name": "Docker",
+    "icon": "dockerTool",
+    "description": "Containers for building, shipping and running applications"
+  },
+  {
+    "id": 5,
+    "name": "Draw.io",
+    "icon": "drawio",
+    "description": "Free diagramming tool for architecture and flow charts"
+  },
+  {
+    "id": 6,
+    "name": "Github",
+    "icon": "githubTool",
+    "description": "Code hosting, pull requests and CI for every project"
+  },
+  {
+    "id": 7,
+    "name": "Overleaf",
+    "icon": "overleaf",
+    "description": "Collaborative online LaTeX editor, used for the resume"
+  },
+  {
+    "id": 8,
+    "name": "Slack",
+    "icon": "slack",
+    "description": "Team messaging and collaboration"
+  },
+  {
+    "id": 9,
+    "name": "Spotify",
+    "icon": "spotifyTool",
+    "description": "Music streaming for focus and flow"
+  },
+  {
+    "id": 10,
+    "name": "ITerm2",
+    "icon": "iterm",
+    "description": "A powerful terminal emulator for macOS"
+  },
+  {
+    "id": 11,
+    "name": "Linux",
+    "icon": "linuxTool",
+    "description": "Open-source operating system behind most servers and developer machines"
+  },
+  {
+    "id": 12,
+    "name": "Bash",
+    "icon": "bash",
+    "description": "Shell scripting for automating everyday tasks"
+  },
+  {
+    "id": 13,
+    "name": "GitBook",
+    "icon": "gitbook",
+    "description": "Documentation and knowledge-base publishing"
+  },
+  {
+    "id": 14,
+    "name": "Notion",
+    "icon": "notion",
+    "description": "Notes, planning and personal wiki"
+  },
+  {
+    "id": 15,
+    "name": "Raindrop",
+    "icon": "raindrop",
+    "description": "Bookmark manager for saving and organising links"
+  },
+  {
+    "id": 16,
+    "name": "Airtable",
+    "icon": "airtable",
+    "description": "Spreadsheet-database hybrid for lightweight tracking"
+  }
 ]

@@ -8,7 +8,7 @@ export const metadata = genPageMetadata({ title: "Quotes" });
 export default function QuotesPage() {
   return (
     <main>
-      <div className="px-8 py-12 md:px-24 lg:px-32 xl:px-48 2xl:px-60">
+      <div className="px-12 pb-0 pt-12 md:px-24 lg:px-32 xl:px-48 2xl:px-60">
         <PageHeader pageName="quotes" />
       </div>
       <div className="flex flex-col items-start">
