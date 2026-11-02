@@ -5,22 +5,28 @@
     "isGrouped": true,
     "roles": [
       {
-        "title": "Software Developer III",
-        "company": "Cisco",
-        "date": "October 2024 to Present",
-        "description": "Contributing to cross-functional projects .. more to come ;)"
+        "title": "Senior Member of Technical Staff",
+        "company": "Oracle",
+        "date": "April 2025 to Present",
+        "description": "Building event-driven clinical microservices, low-latency notification services and the platform's shared integration framework on OCI."
       },
       {
-        "title": "Software Developer II",
+        "title": "Software Engineer III",
         "company": "Cisco",
-        "date": "October 2022 to October 2024 (2 year 1 months)",
-        "description": "Architected key solutions like the Policy Analyser and Zero Trust policies, driving significant business impact. Led efforts to design and optimize core functionalities, improve performance, and integrate advanced features."
+        "date": "October 2024 to April 2025",
+        "description": "Led backend development for the Zero Trust network access policy feature on Firewall Management Center and cut IPS/NAP snapshot creation time by 70%."
       },
       {
-        "title": "Software Developer I",
+        "title": "Software Engineer II",
+        "company": "Cisco",
+        "date": "October 2022 to October 2024 (2 years)",
+        "description": "Architected the Policy Analyser and Optimiser platform from the ground up, with a pub/sub framework on AWS SQS/SNS delivering real-time analysis updates."
+      },
+      {
+        "title": "Software Engineer I",
         "company": "Cisco",
         "date": "August 2021 to September 2022 (1 year 2 months)",
-        "description": "Focused on foundational development tasks, including implementing backend services, optimizing code performance, and building robust APIs. Collaborated with team members to execute well-defined projects, ensuring high-quality and maintainable code while gaining hands-on experience."
+        "description": "Reduced FMC device listing page load time by 96% and delivered Elephant Flow Detection and Threat Detection end to end."
       }
     ]
   },
@@ -35,10 +41,10 @@
   {
     "icon": "work",
     "iconSize": "h-8 w-8",
-    "title": "Software Intern",
+    "title": "SDE Intern",
     "company": "Securonix",
     "date": "August 2020 - April 2021 (9 months)",
-    "description": "Developed microservices for automated incident reporting and email notifications using Spring Framework and Jasper Reports. Additionally, created scripts to streamline various tasks and automated data analysis reports, improving efficiency for the Cyber Threat Analysis (CTA) team."
+    "description": "Developed an email microservice and automated incident report generation using Spring Framework and Jasper Reports."
   },
   {
     "icon": "degree",
@@ -49,10 +55,10 @@
   {
     "icon": "work",
     "iconSize": "h-8 w-8",
-    "title": "Software Intern",
+    "title": "SDE Intern",
     "company": "Cisco",
     "date": "May 2020 to July 2020 (3 months)",
-    "description": "Contributed to enhancing network security by developing tools for real-time threat detection and integrating frameworks to analyze and process data efficiently. This work improved system capabilities and strengthened overall security measures."
+    "description": "Developed a gRPC detector for Snort 2.9.16 and integrated it with FTD to enable alert generation, and contributed to the gRPC preprocessor framework."
   },
   {
     "icon": "college",
