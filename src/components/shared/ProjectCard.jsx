@@ -16,14 +16,14 @@ const ProjectCard = ({ title, description, tags, slug, demo, repo }) => {
         <div className="p-6">
           <div className="flex items-start justify-between gap-4">
             <h4 className="project-card-title">{title}</h4>
-            <div className="mt-1 flex shrink-0 items-center gap-2 rounded-full border border-gray-200 bg-white px-3 py-1 text-sm font-medium text-gray-900 dark:border-gray-700 dark:bg-black dark:text-white">
+            <div className="mt-1 flex shrink-0 items-center gap-2 rounded-full border border-border bg-background/70 px-3 py-1 text-xs font-medium tracking-wide text-foreground/80">
               <span className="relative flex h-3 w-3">
                 {demo && (
-                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"></span>
+                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-60"></span>
                 )}
                 <span
                   className={`relative inline-flex h-3 w-3 rounded-full ${
-                    demo ? "bg-green-500" : "bg-red-500"
+                    demo ? "bg-emerald-500" : "bg-stone-400"
                   }`}
                 ></span>
               </span>
