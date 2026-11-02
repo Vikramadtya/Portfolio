@@ -13,7 +13,7 @@ export default function WatchingPage() {
   return (
     <main className="flex flex-col items-center justify-between px-12 md:px-24 lg:px-32 xl:px-48">
       <PageHeader pageName="watching" />
-      <div className="w-full columns-1 pb-32 pt-32 md:columns-2 xl:columns-3">
+      <div className="w-full columns-1 pb-24 pt-12 md:columns-2 xl:columns-3">
         {shows.map((show) => (
           <Card
             title={show.title}

@@ -6,7 +6,7 @@ import footerData from "@/../_content/components/footer.json";
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className="mt-12 border-t border-border/60 pt-2">
       <div className="mt-16 flex flex-col items-center">
         <div className="mb-3 flex space-x-4">
           <SocialIcon
